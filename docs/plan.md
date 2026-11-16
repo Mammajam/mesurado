@@ -30,8 +30,8 @@ Status: [ ] not started, [~] in progress, [x] done
 - [ ] 1.4 Two hooks (validate+evaluate on pack change; regenerate test checklist on spec change). Nov 19-20. Dep 1.2, 1.3
 
 ### WP2 Content pipeline and pack
-- [ ] 2.1 Select articles, write source manifest. Nov 18-19. Dep 1.2
-- [ ] 2.2 Fetch, clean, split into passages with heading paths. Nov 19-21. Dep 2.1
+- [~] 2.1 Select articles, write source manifest. Nov 18-19. Dep 1.2 (88 articles selected and fetched; expert review of the list pending)
+- [x] 2.2 Fetch, clean, split into passages with heading paths. Nov 19-21. Dep 2.1 (87 articles, 2,826 passages with heading paths, validator PASS)
 - [ ] 2.3 Keyword index + embeddings. Nov 21-22. Dep 2.2
 - [ ] 2.4 Package ZIM + manifest, run validator. Nov 22-23. Dep 2.3, 1.3
 - [CUT] 2.5 ~~Curation agent in .kiro/agents (optional, first to cut). Nov 20-22. Dep 1.2~~

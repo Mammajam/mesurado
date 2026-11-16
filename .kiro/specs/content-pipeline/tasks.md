@@ -18,10 +18,10 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [x] 3.3 Write manifest entries for every fetched item. _R2.1_
 
 - [ ] 4. Clean and passages (plan 2.2)
-  - [ ] 4.1 Cleaning rules with HTML fixtures from at least 10 real pages. _R3.1_
-  - [ ] 4.2 Passage splitter with heading paths, stable ids and offsets. _R3.2 to R3.4_
-  - [ ] 4.3 Property-based tests for splitter bounds, offset reproduction and id stability. _R3_
-  - [ ] 4.4 Report and drop empty articles. _R3.5_
+  - [~] 4.1 Cleaning rules with HTML fixtures from at least 10 real pages. _R3.1_ (rules tested on snippets, one saved real page, and a scan of all 87 real pages; only one page is saved as a fixture)
+  - [x] 4.2 Passage splitter with heading paths, stable ids and offsets. _R3.2 to R3.4_
+  - [x] 4.3 Property-based tests for splitter bounds, offset reproduction and id stability. _R3_
+  - [x] 4.4 Report and drop empty articles. _R3.5_
 
 - [ ] 5. Index and embeddings (plan 2.3)
   - [ ] 5.1 Build the keyword index and measure load time on the demo Android phone. _R4.1, R4.3_
@@ -30,7 +30,7 @@ Each task names the requirements it satisfies and the plan task it advances. Che
 
 - [ ] 6. Package and validate (plan 2.4)
   - [ ] 6.1 Write the ZIM with articles and compressed images. _R5.1, R5.2_
-  - [ ] 6.2 Write `meta.json` with version and content hash; atomic build directory swap. _R5.3, R5.4_
+  - [~] 6.2 Write `meta.json` with version and content hash; atomic build directory swap. _R5.3, R5.4_ (unpacked pack with hash and atomic swap done; ZIM and indexes pending)
   - [ ] 6.3 Generate the attribution file and per-article credit text. _R7_
   - [ ] 6.4 Generate `sample-questions.json` (at least 10 per subject, linked to passages); add its check to the validator. _R9_
   - [ ] 6.5 Run the validator as the last stage; fail the build on any error. _R6_

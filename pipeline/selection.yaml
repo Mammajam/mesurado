@@ -57,7 +57,6 @@ subjects:
     articles:
       # Liberia
       - {source: wikipedia, title: Geography of Liberia}
-      - {source: wikipedia, title: Counties of Liberia}
       - {source: wikipedia, title: Montserrado County}
       - {source: wikipedia, title: Bong County}
       - {source: wikipedia, title: Nimba County}
