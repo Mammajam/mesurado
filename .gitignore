@@ -1,0 +1,11 @@
+# Do NOT add .kiro/ here: the Kiroween rules require it in the repo.
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+.env
+.env.*
+__pycache__/
+.venv/
+# The content pack (.zim, indexes) is a required asset for judges: decide how to ship it (repo or release) in the pipeline spec; do not ignore it by default.
