@@ -51,6 +51,7 @@ Images have `type: image`, the Commons file page as `source_url`, and the licens
 - `keyword.idx`: inverted index over lowercased, accent-folded tokens of passages and titles (format chosen to be loaded by a small JS reader; MiniSearch-compatible JSON or a custom compact binary).
 - `embeddings.i8`: row per passage, int8, with a header (model, dims, count) and a scale table.
 - `meta.json`: pack version, content hash, model name and license, counts, build date, subjects.
+- `sample-questions.json`: `[{"subject":"history","question":"Who founded Monrovia?","passage":"wp:Monrovia#002"}]`, built from headings and first sentences or a reviewed list.
 
 ## Key decisions
 - **Python 3.12** for the build: good tooling for text cleaning and embeddings, and `python-libzim` writes ZIM files.
@@ -77,6 +78,7 @@ Images have `type: image`, the Commons file page as `source_url`, and the licens
 4. Every embedding row maps to a passage id, counts match.
 5. No file or text contains "Encarta" (case-insensitive).
 6. The pack metadata hash matches the files.
+7. Every sample question links to an existing passage id.
 
 ## Testing strategy
 - **Property-based (Hypothesis):** for any generated article text, passages concatenated by offsets reproduce the cleaned text and each is within size bounds; for any generated manifest, `validate` fails exactly when a required field is missing or the license is not allowed; passage ids are stable under unchanged text.

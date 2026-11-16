@@ -37,6 +37,7 @@ group, dedupe, cap per article -> attach highlights and normalized score -> retu
 type Hit = {
   passageId: string;        // "wp:Liberia#007"
   articleId: string;        // "wp:Liberia"
+  license: string;          // SPDX id of the article, read from the manifest
   title: string;
   headingPath: string[];
   excerpt: string;          // passage text trimmed around the best match
@@ -48,6 +49,7 @@ type Hit = {
 type SearchOptions = { limit?: number; subject?: string; mode?: "keyword" | "hybrid" };
 // worker API
 search(query: string, options?: SearchOptions): Promise<Hit[]>;
+getPassage(id: string): Promise<{ id: string; articleId: string; headingPath: string[]; text: string; start: number; end: number } | null>; // full text, for Ask
 suggest(prefix: string): Promise<string[]>;
 status(): { mode: "keyword" | "hybrid"; ready: boolean; loadedMs: number };
 ```

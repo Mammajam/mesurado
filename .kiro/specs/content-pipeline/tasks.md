@@ -32,8 +32,9 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [ ] 6.1 Write the ZIM with articles and compressed images. _R5.1, R5.2_
   - [ ] 6.2 Write `meta.json` with version and content hash; atomic build directory swap. _R5.3, R5.4_
   - [ ] 6.3 Generate the attribution file and per-article credit text. _R7_
-  - [ ] 6.4 Run the validator as the last stage; fail the build on any error. _R6_
-  - [ ] 6.5 Measure pack size and load time on the demo Android phone against the budgets. _R4.3, R5.2_
+  - [ ] 6.4 Generate `sample-questions.json` (at least 10 per subject, linked to passages); add its check to the validator. _R9_
+  - [ ] 6.5 Run the validator as the last stage; fail the build on any error. _R6_
+  - [ ] 6.6 Measure pack size and load time on the demo Android phone against the budgets. _R4.3, R5.2_
 
 - [ ] 7. Orchestration
   - [ ] 7.1 `build.py` runs stages in order, prints progress and a summary, supports `--subjects`. _R8.2, R8.3_

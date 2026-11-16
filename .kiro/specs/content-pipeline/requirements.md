@@ -70,5 +70,12 @@ Glossary
 2. THE pipeline SHALL run from one command and SHALL print the stage it is in and a summary at the end.
 3. WHEN only the selection of one subject changes, THE pipeline SHALL reuse cached cleaning and embedding results for unchanged articles.
 
+### R9. Sample questions and quiz seeds
+**User story:** As a student, I want example questions to start from so that I know what the pack can answer.
+1. THE pipeline SHALL write `sample-questions.json`: for each subject, at least 10 example questions, each linked to the passage id that answers it.
+2. THE pipeline SHALL create the sample questions by a rule-based method from passage headings and first sentences, or from a reviewed hand-written list, and SHALL NOT use a generative model at build time unless its output is reviewed and recorded.
+3. THE validator SHALL fail the build if a sample question links to a passage id that does not exist.
+4. THE same file MAY seed quiz questions; the quizzes spec defines how quizzes use it.
+
 ## Out of scope
 Live updates, user-contributed content, any source that is not openly licensed, generating articles with a model.

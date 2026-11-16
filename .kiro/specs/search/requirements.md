@@ -48,6 +48,8 @@ Glossary
 1. THE search worker SHALL expose one function, `search(query, options) -> Hit[]`, with options for result limit, subject filter and mode (keyword, hybrid).
 2. EVERY hit's passage id SHALL exist in the pack, and its highlight ranges SHALL lie within the passage text.
 3. THE search worker SHALL expose `suggest(prefix) -> string[]` returning up to 8 article titles and common terms for typeahead.
+   - THE search worker SHALL expose `getPassage(id)` returning the full passage text and offsets, or null if the id is unknown, so that Ask mode can verify citations against full text.
+   - EVERY hit SHALL carry the article's license id read from the pack manifest.
 4. THE search SHALL expose the threshold-relevant score so that Ask mode can refuse when no hit is relevant enough (see cite-or-refuse).
 
 ### R6. Performance and device limits
