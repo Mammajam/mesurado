@@ -1,0 +1,103 @@
+# Pack v1 selection (content-pipeline spec R1). Draft 2026-11-16: history and geography first.
+# Titles are English Wikipedia page titles; redirects are resolved at fetch time and the resolved
+# title is recorded in the manifest. Review each list with the subject expert before release.
+# Science and mathematics are added later, only if plan gate M2 passes on time.
+allowed_licenses: [CC-BY-SA-4.0, CC-BY-SA-3.0, CC-BY-4.0, CC0-1.0, PD]
+
+subjects:
+  history:
+    articles:
+      # Liberia
+      - {source: wikipedia, title: Liberia}
+      - {source: wikipedia, title: History of Liberia}
+      - {source: wikipedia, title: American Colonization Society}
+      - {source: wikipedia, title: Monrovia}
+      - {source: wikipedia, title: Joseph Jenkins Roberts}
+      - {source: wikipedia, title: Liberian Declaration of Independence}
+      - {source: wikipedia, title: Americo-Liberians}
+      - {source: wikipedia, title: Cape Mesurado}
+      - {source: wikipedia, title: William Tubman}
+      - {source: wikipedia, title: William Tolbert}
+      - {source: wikipedia, title: Samuel Doe}
+      - {source: wikipedia, title: Charles Taylor (Liberian politician)}
+      - {source: wikipedia, title: First Liberian Civil War}
+      - {source: wikipedia, title: Second Liberian Civil War}
+      - {source: wikipedia, title: Ellen Johnson Sirleaf}
+      - {source: wikipedia, title: Leymah Gbowee}
+      - {source: wikipedia, title: West African Ebola epidemic}
+      - {source: wikipedia, title: Firestone Natural Rubber Company}
+      - {source: wikipedia, title: Politics of Liberia}
+      - {source: wikipedia, title: Economy of Liberia}
+      # West and wider Africa
+      - {source: wikipedia, title: Ghana Empire}
+      - {source: wikipedia, title: Mali Empire}
+      - {source: wikipedia, title: Mansa Musa}
+      - {source: wikipedia, title: Songhai Empire}
+      - {source: wikipedia, title: Timbuktu}
+      - {source: wikipedia, title: Trans-Saharan trade}
+      - {source: wikipedia, title: Ashanti Empire}
+      - {source: wikipedia, title: Oyo Empire}
+      - {source: wikipedia, title: Kingdom of Dahomey}
+      - {source: wikipedia, title: Kingdom of Benin}
+      - {source: wikipedia, title: Kanem–Bornu Empire}
+      - {source: wikipedia, title: Sokoto Caliphate}
+      - {source: wikipedia, title: Nok culture}
+      - {source: wikipedia, title: Atlantic slave trade}
+      - {source: wikipedia, title: Scramble for Africa}
+      - {source: wikipedia, title: Berlin Conference}
+      - {source: wikipedia, title: Decolonisation of Africa}
+      - {source: wikipedia, title: Pan-Africanism}
+      - {source: wikipedia, title: Kwame Nkrumah}
+      - {source: wikipedia, title: Organisation of African Unity}
+      - {source: wikipedia, title: African Union}
+      - {source: wikipedia, title: Economic Community of West African States}
+      - {source: wikipedia, title: Ethiopia}
+      - {source: wikipedia, title: Sierra Leone Civil War}
+  geography:
+    articles:
+      # Liberia
+      - {source: wikipedia, title: Geography of Liberia}
+      - {source: wikipedia, title: Counties of Liberia}
+      - {source: wikipedia, title: Montserrado County}
+      - {source: wikipedia, title: Bong County}
+      - {source: wikipedia, title: Nimba County}
+      - {source: wikipedia, title: Lofa County}
+      - {source: wikipedia, title: Grand Bassa County}
+      - {source: wikipedia, title: Grand Gedeh County}
+      - {source: wikipedia, title: Maryland County}
+      - {source: wikipedia, title: Sinoe County}
+      - {source: wikipedia, title: Grand Cape Mount County}
+      - {source: wikipedia, title: Margibi County}
+      - {source: wikipedia, title: "Buchanan, Liberia"}
+      - {source: wikipedia, title: "Harper, Liberia"}
+      - {source: wikipedia, title: Saint Paul River}
+      - {source: wikipedia, title: Mount Nimba}
+      - {source: wikipedia, title: Lake Piso}
+      - {source: wikipedia, title: Cestos River}
+      - {source: wikipedia, title: Mano River}
+      - {source: wikipedia, title: Sapo National Park}
+      - {source: wikipedia, title: Upper Guinean forests}
+      # West Africa
+      - {source: wikipedia, title: West Africa}
+      - {source: wikipedia, title: Geography of Africa}
+      - {source: wikipedia, title: Sahara}
+      - {source: wikipedia, title: Sahel}
+      - {source: wikipedia, title: Niger River}
+      - {source: wikipedia, title: Gulf of Guinea}
+      - {source: wikipedia, title: Lake Volta}
+      - {source: wikipedia, title: Harmattan}
+      - {source: wikipedia, title: Sierra Leone}
+      - {source: wikipedia, title: Guinea}
+      - {source: wikipedia, title: Ivory Coast}
+      - {source: wikipedia, title: Ghana}
+      - {source: wikipedia, title: Nigeria}
+      - {source: wikipedia, title: Senegal}
+      - {source: wikipedia, title: Mali}
+      - {source: wikipedia, title: Burkina Faso}
+      - {source: wikipedia, title: The Gambia}
+      - {source: wikipedia, title: Freetown}
+      - {source: wikipedia, title: Conakry}
+      - {source: wikipedia, title: Abidjan}
+      - {source: wikipedia, title: Accra}
+      - {source: wikipedia, title: Lagos}
+      - {source: wikipedia, title: Dakar}

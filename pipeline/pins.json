@@ -1,0 +1,802 @@
+{
+ "Abidjan": {
+  "coordinates": {
+   "lat": 5.31666667,
+   "lon": -4.03333333,
+   "precision": "page"
+  },
+  "pageid": 21371767,
+  "revid": 1384747974,
+  "revision_time": "2026-11-09T22:53:41Z",
+  "title": "Abidjan"
+ },
+ "Accra": {
+  "coordinates": {
+   "lat": 5.55,
+   "lon": -0.2,
+   "precision": "page"
+  },
+  "pageid": 56824,
+  "revid": 1385482382,
+  "revision_time": "2026-11-13T14:07:08Z",
+  "title": "Accra"
+ },
+ "African Union": {
+  "coordinates": null,
+  "pageid": 10634933,
+  "revid": 1386032102,
+  "revision_time": "2026-11-16T14:09:46Z",
+  "title": "African Union"
+ },
+ "American Colonization Society": {
+  "coordinates": null,
+  "pageid": 259151,
+  "revid": 1383359482,
+  "revision_time": "2026-11-02T08:04:27Z",
+  "title": "American Colonization Society"
+ },
+ "Americo-Liberians": {
+  "coordinates": null,
+  "pageid": 54827586,
+  "revid": 1386059590,
+  "revision_time": "2026-11-16T18:05:09Z",
+  "title": "Americo-Liberian people"
+ },
+ "Ashanti Empire": {
+  "coordinates": {
+   "lat": 5.45,
+   "lon": -0.96666667,
+   "precision": "page"
+  },
+  "pageid": 12521667,
+  "revid": 1385723368,
+  "revision_time": "2026-11-14T23:08:19Z",
+  "title": "Asante Empire"
+ },
+ "Atlantic slave trade": {
+  "coordinates": null,
+  "pageid": 49005,
+  "revid": 1385871473,
+  "revision_time": "2026-11-15T18:33:30Z",
+  "title": "Atlantic slave trade"
+ },
+ "Berlin Conference": {
+  "coordinates": null,
+  "pageid": 290515,
+  "revid": 1385059157,
+  "revision_time": "2026-11-11T17:35:52Z",
+  "title": "Berlin Conference"
+ },
+ "Bong County": {
+  "coordinates": null,
+  "pageid": 2380331,
+  "revid": 1375147641,
+  "revision_time": "2026-09-16T02:33:46Z",
+  "title": "Bong County"
+ },
+ "Buchanan, Liberia": {
+  "coordinates": {
+   "lat": 5.88083333,
+   "lon": -10.04666667,
+   "precision": "page"
+  },
+  "pageid": 1561389,
+  "revid": 1377127478,
+  "revision_time": "2026-09-28T00:49:30Z",
+  "title": "Buchanan, Liberia"
+ },
+ "Burkina Faso": {
+  "coordinates": {
+   "lat": 12.33333333,
+   "lon": -1.83333333,
+   "precision": "page"
+  },
+  "pageid": 3470,
+  "revid": 1385691999,
+  "revision_time": "2026-11-14T19:27:31Z",
+  "title": "Burkina Faso"
+ },
+ "Cape Mesurado": {
+  "coordinates": {
+   "lat": 6.31333333,
+   "lon": -10.80777778,
+   "precision": "page"
+  },
+  "pageid": 16389606,
+  "revid": 1362489448,
+  "revision_time": "2026-07-04T08:07:25Z",
+  "title": "Cape Mesurado"
+ },
+ "Cestos River": {
+  "coordinates": {
+   "lat": 5.45,
+   "lon": -9.56666667,
+   "precision": "page"
+  },
+  "pageid": 18685023,
+  "revid": 1359540291,
+  "revision_time": "2026-06-15T21:16:38Z",
+  "title": "Cestos River"
+ },
+ "Charles Taylor (Liberian politician)": {
+  "coordinates": null,
+  "pageid": 241458,
+  "revid": 1384320538,
+  "revision_time": "2026-11-07T18:36:19Z",
+  "title": "Charles Taylor (Liberian politician)"
+ },
+ "Conakry": {
+  "coordinates": {
+   "lat": 9.50916667,
+   "lon": -13.71222222,
+   "precision": "page"
+  },
+  "pageid": 56638,
+  "revid": 1385701902,
+  "revision_time": "2026-11-14T20:38:41Z",
+  "title": "Conakry"
+ },
+ "Counties of Liberia": {
+  "coordinates": null,
+  "pageid": 480042,
+  "revid": 1358999403,
+  "revision_time": "2026-06-12T11:29:39Z",
+  "title": "Counties of Liberia"
+ },
+ "Dakar": {
+  "coordinates": {
+   "lat": 14.69277778,
+   "lon": -17.44666667,
+   "precision": "page"
+  },
+  "pageid": 44251,
+  "revid": 1385580158,
+  "revision_time": "2026-11-14T01:18:58Z",
+  "title": "Dakar"
+ },
+ "Decolonisation of Africa": {
+  "coordinates": null,
+  "pageid": 1815296,
+  "revid": 1385520708,
+  "revision_time": "2026-11-13T18:46:21Z",
+  "title": "Decolonisation of Africa"
+ },
+ "Economic Community of West African States": {
+  "coordinates": {
+   "lat": 9.04194444,
+   "lon": 7.525,
+   "precision": "page"
+  },
+  "pageid": 36848,
+  "revid": 1385660644,
+  "revision_time": "2026-11-14T15:33:15Z",
+  "title": "ECOWAS"
+ },
+ "Economy of Liberia": {
+  "coordinates": null,
+  "pageid": 17796,
+  "revid": 1378716079,
+  "revision_time": "2026-10-05T21:07:18Z",
+  "title": "Economy of Liberia"
+ },
+ "Ellen Johnson Sirleaf": {
+  "coordinates": null,
+  "pageid": 2642141,
+  "revid": 1383751266,
+  "revision_time": "2026-11-04T16:46:30Z",
+  "title": "Ellen Johnson Sirleaf"
+ },
+ "Ethiopia": {
+  "coordinates": {
+   "lat": 9,
+   "lon": 39,
+   "precision": "page"
+  },
+  "pageid": 187749,
+  "revid": 1383283274,
+  "revision_time": "2026-11-01T22:36:31Z",
+  "title": "Ethiopia"
+ },
+ "Firestone Natural Rubber Company": {
+  "coordinates": null,
+  "pageid": 41556404,
+  "revid": 1382700751,
+  "revision_time": "2026-10-29T21:27:57Z",
+  "title": "Firestone Natural Rubber Company"
+ },
+ "First Liberian Civil War": {
+  "coordinates": null,
+  "pageid": 1561462,
+  "revid": 1384631857,
+  "revision_time": "2026-11-09T06:35:50Z",
+  "title": "First Liberian Civil War"
+ },
+ "Freetown": {
+  "coordinates": {
+   "lat": 8.48722222,
+   "lon": -13.23555556,
+   "precision": "page"
+  },
+  "pageid": 56661,
+  "revid": 1375881140,
+  "revision_time": "2026-09-20T17:14:54Z",
+  "title": "Freetown"
+ },
+ "Geography of Africa": {
+  "coordinates": null,
+  "pageid": 1854,
+  "revid": 1380292679,
+  "revision_time": "2026-10-14T22:23:00Z",
+  "title": "Geography of Africa"
+ },
+ "Geography of Liberia": {
+  "coordinates": null,
+  "pageid": 17793,
+  "revid": 1340126655,
+  "revision_time": "2026-02-24T02:31:29Z",
+  "title": "Geography of Liberia"
+ },
+ "Ghana": {
+  "coordinates": {
+   "lat": 8.03,
+   "lon": -1.08,
+   "precision": "page"
+  },
+  "pageid": 12067,
+  "revid": 1383875064,
+  "revision_time": "2026-11-05T08:06:01Z",
+  "title": "Ghana"
+ },
+ "Ghana Empire": {
+  "coordinates": {
+   "lat": 15.66666667,
+   "lon": -8,
+   "precision": "page"
+  },
+  "pageid": 21077671,
+  "revid": 1385488235,
+  "revision_time": "2026-11-13T14:46:55Z",
+  "title": "Ghana Empire"
+ },
+ "Grand Bassa County": {
+  "coordinates": null,
+  "pageid": 2380333,
+  "revid": 1375953736,
+  "revision_time": "2026-09-21T02:48:29Z",
+  "title": "Grand Bassa County"
+ },
+ "Grand Cape Mount County": {
+  "coordinates": null,
+  "pageid": 636802,
+  "revid": 1375953769,
+  "revision_time": "2026-09-21T02:48:41Z",
+  "title": "Grand Cape Mount County"
+ },
+ "Grand Gedeh County": {
+  "coordinates": null,
+  "pageid": 2380337,
+  "revid": 1385800325,
+  "revision_time": "2026-11-15T07:24:45Z",
+  "title": "Grand Gedeh County"
+ },
+ "Guinea": {
+  "coordinates": {
+   "lat": 11,
+   "lon": -10,
+   "precision": "page"
+  },
+  "pageid": 12176,
+  "revid": 1384981775,
+  "revision_time": "2026-11-11T05:30:31Z",
+  "title": "Guinea"
+ },
+ "Gulf of Guinea": {
+  "coordinates": {
+   "lat": 0,
+   "lon": 0,
+   "precision": "page"
+  },
+  "pageid": 42548,
+  "revid": 1366018503,
+  "revision_time": "2026-07-25T20:16:09Z",
+  "title": "Gulf of Guinea"
+ },
+ "Harmattan": {
+  "coordinates": null,
+  "pageid": 987546,
+  "revid": 1383334096,
+  "revision_time": "2026-11-02T04:20:39Z",
+  "title": "Harmattan"
+ },
+ "Harper, Liberia": {
+  "coordinates": {
+   "lat": 4.36666667,
+   "lon": -7.71666667,
+   "precision": "page"
+  },
+  "pageid": 1561414,
+  "revid": 1377786701,
+  "revision_time": "2026-10-01T03:11:39Z",
+  "title": "Harper, Liberia"
+ },
+ "History of Liberia": {
+  "coordinates": null,
+  "pageid": 17792,
+  "revid": 1384443936,
+  "revision_time": "2026-11-08T06:51:17Z",
+  "title": "History of Liberia"
+ },
+ "Ivory Coast": {
+  "coordinates": {
+   "lat": 8,
+   "lon": -5,
+   "precision": "page"
+  },
+  "pageid": 57744,
+  "revid": 1386013422,
+  "revision_time": "2026-11-16T11:11:55Z",
+  "title": "Ivory Coast"
+ },
+ "Joseph Jenkins Roberts": {
+  "coordinates": null,
+  "pageid": 333909,
+  "revid": 1384704590,
+  "revision_time": "2026-11-09T18:16:53Z",
+  "title": "Joseph Jenkins Roberts"
+ },
+ "Kanem–Bornu Empire": {
+  "coordinates": null,
+  "pageid": 17270,
+  "revid": 1384943014,
+  "revision_time": "2026-11-10T23:12:50Z",
+  "title": "Kanem–Bornu Empire"
+ },
+ "Kingdom of Benin": {
+  "coordinates": {
+   "lat": 6.33333333,
+   "lon": 5.62222222,
+   "precision": "page"
+  },
+  "pageid": 25649488,
+  "revid": 1384520473,
+  "revision_time": "2026-11-08T17:24:26Z",
+  "title": "Kingdom of Benin"
+ },
+ "Kingdom of Dahomey": {
+  "coordinates": {
+   "lat": 7.18638889,
+   "lon": 1.99305556,
+   "precision": "page"
+  },
+  "pageid": 8765,
+  "revid": 1385965886,
+  "revision_time": "2026-11-16T04:33:25Z",
+  "title": "Dahomey"
+ },
+ "Kwame Nkrumah": {
+  "coordinates": null,
+  "pageid": 17062,
+  "revid": 1384444392,
+  "revision_time": "2026-11-08T06:54:40Z",
+  "title": "Kwame Nkrumah"
+ },
+ "Lagos": {
+  "coordinates": {
+   "lat": 6.45611111,
+   "lon": 3.39361111,
+   "precision": "page"
+  },
+  "pageid": 85232,
+  "revid": 1385884549,
+  "revision_time": "2026-11-15T20:08:28Z",
+  "title": "Lagos"
+ },
+ "Lake Piso": {
+  "coordinates": {
+   "lat": 6.73527778,
+   "lon": -11.25111111,
+   "precision": "page"
+  },
+  "pageid": 16202846,
+  "revid": 1371358367,
+  "revision_time": "2026-08-26T02:18:36Z",
+  "title": "Lake Piso"
+ },
+ "Lake Volta": {
+  "coordinates": {
+   "lat": 6.5,
+   "lon": 0,
+   "precision": "page"
+  },
+  "pageid": 1477772,
+  "revid": 1383411930,
+  "revision_time": "2026-11-02T15:20:07Z",
+  "title": "Lake Volta"
+ },
+ "Leymah Gbowee": {
+  "coordinates": null,
+  "pageid": 28418433,
+  "revid": 1380262912,
+  "revision_time": "2026-10-14T19:10:31Z",
+  "title": "Leymah Gbowee"
+ },
+ "Liberia": {
+  "coordinates": {
+   "lat": 6.5,
+   "lon": -9.5,
+   "precision": "page"
+  },
+  "pageid": 17791,
+  "revid": 1385762351,
+  "revision_time": "2026-11-15T02:51:20Z",
+  "title": "Liberia"
+ },
+ "Liberian Declaration of Independence": {
+  "coordinates": null,
+  "pageid": 30160731,
+  "revid": 1375042153,
+  "revision_time": "2026-09-15T14:37:00Z",
+  "title": "Liberian Declaration of Independence"
+ },
+ "Lofa County": {
+  "coordinates": {
+   "lat": 7.91666667,
+   "lon": -10,
+   "precision": "page"
+  },
+  "pageid": 636787,
+  "revid": 1376738730,
+  "revision_time": "2026-09-25T23:57:33Z",
+  "title": "Lofa County"
+ },
+ "Mali": {
+  "coordinates": {
+   "lat": 17,
+   "lon": -4,
+   "precision": "page"
+  },
+  "pageid": 19127,
+  "revid": 1385705259,
+  "revision_time": "2026-11-14T21:03:42Z",
+  "title": "Mali"
+ },
+ "Mali Empire": {
+  "coordinates": null,
+  "pageid": 182049,
+  "revid": 1383590998,
+  "revision_time": "2026-11-03T15:20:36Z",
+  "title": "Mali Empire"
+ },
+ "Mano River": {
+  "coordinates": {
+   "lat": 6.92083333,
+   "lon": -11.50583333,
+   "precision": "page"
+  },
+  "pageid": 1848631,
+  "revid": 1336498404,
+  "revision_time": "2026-02-04T03:41:35Z",
+  "title": "Mano River"
+ },
+ "Mansa Musa": {
+  "coordinates": null,
+  "pageid": 159784,
+  "revid": 1380333093,
+  "revision_time": "2026-10-15T02:52:49Z",
+  "title": "Mansa Musa"
+ },
+ "Margibi County": {
+  "coordinates": {
+   "lat": 6.5,
+   "lon": -10.25,
+   "precision": "page"
+  },
+  "pageid": 2380346,
+  "revid": 1376411200,
+  "revision_time": "2026-09-24T01:03:56Z",
+  "title": "Margibi County"
+ },
+ "Maryland County": {
+  "coordinates": {
+   "lat": 4.75,
+   "lon": -7.75,
+   "precision": "page"
+  },
+  "pageid": 772890,
+  "revid": 1377294365,
+  "revision_time": "2026-09-28T19:18:37Z",
+  "title": "Maryland County"
+ },
+ "Monrovia": {
+  "coordinates": {
+   "lat": 6.31333333,
+   "lon": -10.80138889,
+   "precision": "page"
+  },
+  "pageid": 285213,
+  "revid": 1382462959,
+  "revision_time": "2026-10-28T20:55:19Z",
+  "title": "Monrovia"
+ },
+ "Montserrado County": {
+  "coordinates": {
+   "lat": 6.5,
+   "lon": -10.5,
+   "precision": "page"
+  },
+  "pageid": 559044,
+  "revid": 1376840501,
+  "revision_time": "2026-09-26T15:21:57Z",
+  "title": "Montserrado County"
+ },
+ "Mount Nimba": {
+  "coordinates": {
+   "lat": 7.6225,
+   "lon": -8.40555556,
+   "precision": "page"
+  },
+  "pageid": 1198203,
+  "revid": 1369581705,
+  "revision_time": "2026-08-15T21:40:39Z",
+  "title": "Mount Richard-Molard"
+ },
+ "Niger River": {
+  "coordinates": {
+   "lat": 5.32222222,
+   "lon": 6.46916667,
+   "precision": "page"
+  },
+  "pageid": 21437,
+  "revid": 1385827672,
+  "revision_time": "2026-11-15T11:14:50Z",
+  "title": "Niger River"
+ },
+ "Nigeria": {
+  "coordinates": {
+   "lat": 8,
+   "lon": 10,
+   "precision": "page"
+  },
+  "pageid": 21383,
+  "revid": 1385888850,
+  "revision_time": "2026-11-15T20:34:57Z",
+  "title": "Nigeria"
+ },
+ "Nimba County": {
+  "coordinates": {
+   "lat": 6.75,
+   "lon": -8.75,
+   "precision": "page"
+  },
+  "pageid": 1618355,
+  "revid": 1376933176,
+  "revision_time": "2026-09-27T01:41:57Z",
+  "title": "Nimba County"
+ },
+ "Nok culture": {
+  "coordinates": {
+   "lat": 9.5,
+   "lon": 8,
+   "precision": "page"
+  },
+  "pageid": 1889558,
+  "revid": 1368847651,
+  "revision_time": "2026-08-11T11:52:32Z",
+  "title": "Nok culture"
+ },
+ "Organisation of African Unity": {
+  "coordinates": null,
+  "pageid": 48549,
+  "revid": 1362717692,
+  "revision_time": "2026-07-05T20:00:59Z",
+  "title": "Organisation of African Unity"
+ },
+ "Oyo Empire": {
+  "coordinates": null,
+  "pageid": 1717625,
+  "revid": 1384959225,
+  "revision_time": "2026-11-11T01:28:29Z",
+  "title": "Oyo Empire"
+ },
+ "Pan-Africanism": {
+  "coordinates": null,
+  "pageid": 952984,
+  "revid": 1379651664,
+  "revision_time": "2026-10-11T04:05:12Z",
+  "title": "Pan-Africanism"
+ },
+ "Politics of Liberia": {
+  "coordinates": null,
+  "pageid": 17795,
+  "revid": 1369200585,
+  "revision_time": "2026-08-13T13:09:04Z",
+  "title": "Politics of Liberia"
+ },
+ "Sahara": {
+  "coordinates": {
+   "lat": 23,
+   "lon": 13,
+   "precision": "page"
+  },
+  "pageid": 325363,
+  "revid": 1380508422,
+  "revision_time": "2026-10-16T04:18:26Z",
+  "title": "Sahara"
+ },
+ "Sahel": {
+  "coordinates": null,
+  "pageid": 82595,
+  "revid": 1383645456,
+  "revision_time": "2026-11-03T22:37:01Z",
+  "title": "Sahel"
+ },
+ "Saint Paul River": {
+  "coordinates": {
+   "lat": 6.41666667,
+   "lon": -10.71666667,
+   "precision": "page"
+  },
+  "pageid": 11706035,
+  "revid": 1358622525,
+  "revision_time": "2026-06-09T22:07:03Z",
+  "title": "Saint Paul River"
+ },
+ "Samuel Doe": {
+  "coordinates": null,
+  "pageid": 253749,
+  "revid": 1382117234,
+  "revision_time": "2026-10-26T18:32:52Z",
+  "title": "Samuel Doe"
+ },
+ "Sapo National Park": {
+  "coordinates": {
+   "lat": 5.41111389,
+   "lon": -8.414625,
+   "precision": "page"
+  },
+  "pageid": 14662899,
+  "revid": 1368794154,
+  "revision_time": "2026-08-11T03:35:40Z",
+  "title": "Sapo National Park"
+ },
+ "Scramble for Africa": {
+  "coordinates": null,
+  "pageid": 286469,
+  "revid": 1385504677,
+  "revision_time": "2026-11-13T16:43:09Z",
+  "title": "Scramble for Africa"
+ },
+ "Second Liberian Civil War": {
+  "coordinates": null,
+  "pageid": 2192998,
+  "revid": 1384600403,
+  "revision_time": "2026-11-09T02:07:12Z",
+  "title": "Second Liberian Civil War"
+ },
+ "Senegal": {
+  "coordinates": {
+   "lat": 14,
+   "lon": -14,
+   "precision": "page"
+  },
+  "pageid": 27278,
+  "revid": 1384463039,
+  "revision_time": "2026-11-08T09:52:54Z",
+  "title": "Senegal"
+ },
+ "Sierra Leone": {
+  "coordinates": {
+   "lat": 8.5,
+   "lon": -12.1,
+   "precision": "page"
+  },
+  "pageid": 27308,
+  "revid": 1384894834,
+  "revision_time": "2026-11-10T17:52:20Z",
+  "title": "Sierra Leone"
+ },
+ "Sierra Leone Civil War": {
+  "coordinates": null,
+  "pageid": 2477816,
+  "revid": 1382280000,
+  "revision_time": "2026-10-27T19:24:57Z",
+  "title": "Sierra Leone Civil War"
+ },
+ "Sinoe County": {
+  "coordinates": {
+   "lat": 5.33333333,
+   "lon": -8.66666667,
+   "precision": "page"
+  },
+  "pageid": 2380367,
+  "revid": 1378719480,
+  "revision_time": "2026-10-05T21:28:21Z",
+  "title": "Sinoe County"
+ },
+ "Sokoto Caliphate": {
+  "coordinates": {
+   "lat": 13.06722222,
+   "lon": 5.24777778,
+   "precision": "page"
+  },
+  "pageid": 840510,
+  "revid": 1378665182,
+  "revision_time": "2026-10-05T15:21:20Z",
+  "title": "Sokoto Caliphate"
+ },
+ "Songhai Empire": {
+  "coordinates": null,
+  "pageid": 588220,
+  "revid": 1385526331,
+  "revision_time": "2026-11-13T19:27:49Z",
+  "title": "Songhai Empire"
+ },
+ "The Gambia": {
+  "coordinates": {
+   "lat": 13.45,
+   "lon": -16.575,
+   "precision": "page"
+  },
+  "pageid": 65656,
+  "revid": 1383965879,
+  "revision_time": "2026-11-05T21:44:24Z",
+  "title": "The Gambia"
+ },
+ "Timbuktu": {
+  "coordinates": {
+   "lat": 16.77583333,
+   "lon": -3.00944444,
+   "precision": "page"
+  },
+  "pageid": 254061,
+  "revid": 1384192772,
+  "revision_time": "2026-11-07T02:08:43Z",
+  "title": "Timbuktu"
+ },
+ "Trans-Saharan trade": {
+  "coordinates": null,
+  "pageid": 1437959,
+  "revid": 1381249502,
+  "revision_time": "2026-10-21T00:34:01Z",
+  "title": "Trans-Saharan trade"
+ },
+ "Upper Guinean forests": {
+  "coordinates": null,
+  "pageid": 4599491,
+  "revid": 1306002249,
+  "revision_time": "2025-08-15T09:57:52Z",
+  "title": "Upper Guinean forests"
+ },
+ "West Africa": {
+  "coordinates": {
+   "lat": 12,
+   "lon": 3,
+   "precision": "page"
+  },
+  "pageid": 67393,
+  "revid": 1386047570,
+  "revision_time": "2026-11-16T16:25:33Z",
+  "title": "West Africa"
+ },
+ "West African Ebola epidemic": {
+  "coordinates": null,
+  "pageid": 42345073,
+  "revid": 1384198540,
+  "revision_time": "2026-11-07T02:45:20Z",
+  "title": "Western African Ebola epidemic"
+ },
+ "William Tolbert": {
+  "coordinates": null,
+  "pageid": 277818,
+  "revid": 1368504862,
+  "revision_time": "2026-08-09T12:32:33Z",
+  "title": "William Tolbert"
+ },
+ "William Tubman": {
+  "coordinates": null,
+  "pageid": 294161,
+  "revid": 1379371502,
+  "revision_time": "2026-10-09T15:44:35Z",
+  "title": "William Tubman"
+ }
+}

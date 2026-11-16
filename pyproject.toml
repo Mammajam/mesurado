@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Content pipeline and pack validator for Mesurado"
 requires-python = ">=3.12,<3.13"
 license = { text = "MIT" }
-dependencies = ["mcp>=1.2,<2"]
+dependencies = [
+    "mcp>=1.2,<2",
+    "pyyaml>=6.0.3",
+]
 
 [dependency-groups]
 dev = ["pytest>=8", "hypothesis>=6.100"]

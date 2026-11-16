@@ -11,3 +11,6 @@ __pycache__/
 # The content pack (.zim, indexes) is a required asset for judges: decide how to ship it (repo or release) in the pipeline spec; do not ignore it by default.
 .pytest_cache/
 .hypothesis/
+pipeline/cache/
+pipeline/work/
+pipeline/out/

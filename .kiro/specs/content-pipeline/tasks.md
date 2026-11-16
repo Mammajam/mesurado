@@ -3,9 +3,9 @@
 Each task names the requirements it satisfies and the plan task it advances. Check off when done and commit with the plan id.
 
 - [ ] 1. Project setup (plan 2.1)
-  - [ ] 1.1 Create `pipeline/` package, `pyproject.toml` (Python 3.12), pinned dependencies, `pytest` and `hypothesis`. _R8_
-  - [ ] 1.2 Add `selection.yaml` schema and loader with allowed-source and allowed-license checks. _R1_
-  - [ ] 1.3 Draft pack v1 selection: about 40 history and 40 geography articles as a first slice, grow later. _R1_
+  - [x] 1.1 Create `pipeline/` package, `pyproject.toml` (Python 3.12), pinned dependencies, `pytest` and `hypothesis`. _R8_
+  - [x] 1.2 Add `selection.yaml` schema and loader with allowed-source and allowed-license checks. _R1_
+  - [~] 1.3 Draft pack v1 selection: about 40 history and 40 geography articles as a first slice, grow later. (drafted: 44 + 44 titles, all fetched; expert review pending) _R1_
 
 - [ ] 2. Validator library first (plan 1.3, shared)
   - [x] 2.1 Implement `pipeline/validate/` with the six checks in design.md and a `Report` type. _R6_
@@ -13,9 +13,9 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [x] 2.3 CLI `python -m pipeline.validate <pack>` that prints a report and exits non-zero on failure. _R6.5_
 
 - [ ] 3. Fetch and manifest (plan 2.1, 2.2)
-  - [ ] 3.1 Fetch Wikipedia articles by title with a pinned revision; cache raw responses. _R2.2, R8.1_
+  - [x] 3.1 Fetch Wikipedia articles by title with a pinned revision; cache raw responses. _R2.2, R8.1_
   - [ ] 3.2 Fetch image metadata from Commons, read license from `extmetadata`, exclude when unclear. _R2.3_
-  - [ ] 3.3 Write manifest entries for every fetched item. _R2.1_
+  - [x] 3.3 Write manifest entries for every fetched item. _R2.1_
 
 - [ ] 4. Clean and passages (plan 2.2)
   - [ ] 4.1 Cleaning rules with HTML fixtures from at least 10 real pages. _R3.1_
@@ -37,7 +37,7 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [ ] 6.6 Measure pack size and load time on the demo Android phone against the budgets. _R4.3, R5.2_
 
 - [ ] 6b. Map and timeline data (plan 3.6)
-  - [ ] 6b.1 Extract place coordinates into the manifest. _R10.1_
+  - [~] 6b.1 Extract place coordinates into the manifest. (coordinates captured at fetch; validated later) _R10.1_
   - [ ] 6b.2 Build map tiles and fallback SVG from Natural Earth and the Liberia OSM extract; manifest entries. _R10.2_
   - [ ] 6b.3 Build `timeline.json` from `timeline.yaml` and add event checks to the validator. _R10.3_
 
