@@ -16,7 +16,7 @@ inclusion: always
 - Offline vector-tile map for Liberia and West Africa (for example PMTiles with MapLibre).
 - Keyword index plus compact embeddings for hybrid search, computed at build time, loaded in the browser.
 - No generative model in the MVP. Ask mode is retrieval-only.
-- Pipeline scripts in Python or Node (choose one in the pipeline spec and record it here).
+- Pipeline scripts in Python 3.12 (decided in the content-pipeline spec).
 - Property-based tests (fast-check for JS or Hypothesis for Python) for the citation and license invariants.
 
 ## Rules

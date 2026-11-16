@@ -25,7 +25,7 @@ Status: [ ] not started, [~] in progress, [x] done
 - [x] 0.3 Public repo (MIT), /.kiro committed, name check. Done 2026-11-16: https://github.com/Mammajam/mesurado (no exact-name GitHub conflict; trademark and domain checks still open)
 - [ ] 0.4 Test demo device: WASM, WebGPU, storage; baseline. Nov 17. Dep 0.3. Decides model tier
 - [x] 1.1 Steering files (product, tech, structure, cite-or-refuse, license record). Nov 16-17. Dep 0.3 (5 files in .kiro/steering, 2026-11-16)
-- [ ] 1.2 Six specs (pipeline, search, Ask, map+timeline, quizzes, evaluation), each requirements/design/tasks. Nov 17-19. Dep 1.1
+- [~] 1.2 Six specs (pipeline, search, Ask, map+timeline, quizzes, evaluation), each requirements/design/tasks. Nov 17-19. Dep 1.1 (content-pipeline spec drafted 2026-11-16; five specs to go)
 - [ ] 1.3 Pack-validator MCP server. Nov 18-20. Dep 1.2. Fails on missing license / untraceable passage
 - [ ] 1.4 Two hooks (validate+evaluate on pack change; regenerate test checklist on spec change). Nov 19-20. Dep 1.2, 1.3
 
@@ -86,7 +86,7 @@ Committed and traced to a spec; validator and tests pass; works in airplane mode
 
 ## Answers (2026-11-16)
 1. Hours per day: 2-4 focused hours. The plan windows assume more, so apply the cut line early (see risk below).
-2. Demo device: STILL OPEN (model and memory). Needed for task 0.4 and the model tier.
+2. Demo device: an Android phone running Chrome (decided 2026-11-16). Exact model and memory still to be recorded for task 0.4; a laptop is the backup.
 3. Subjects beyond Liberian/African history: general science, geography, mathematics.
 4. Entry: individual (one builder).
 5. Subject expert: yes (name and contact to be added; schedule a review of the pack and question set).

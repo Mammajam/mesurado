@@ -13,6 +13,9 @@ Students with little or no connectivity (about 70% of Liberians are offline). Wi
 student can look up a topic, explore the map and timeline, take a quiz, and ask a question answered only from the
 content pack, with the source passage shown.
 
+## Demo platform
+The demo and primary target is a low-end Android phone running Chrome, with a laptop as backup. Design for a small touch screen first.
+
 ## Features in scope
 Articles and images, hybrid keyword and semantic search, timeline, offline map, quizzes from passages, Ask mode
 (retrieval-only, Tier 1). Stretch: dictionary. Pack v1: Liberian and African history plus geography; science and
