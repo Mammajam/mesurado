@@ -77,5 +77,11 @@ Glossary
 3. THE validator SHALL fail the build if a sample question links to a passage id that does not exist.
 4. THE same file MAY seed quiz questions; the quizzes spec defines how quizzes use it.
 
+### R10. Map and timeline data
+**User story:** As a student, I want places and dates linked to articles so that I can move between text, map and timeline.
+1. THE pipeline SHALL read coordinates (latitude, longitude, precision) for place articles from Wikipedia or Wikidata and SHALL store them in the manifest; an article without usable coordinates SHALL simply have none.
+2. THE pipeline SHALL build `map.pmtiles` and the fallback SVG map from the datasets listed in the map-and-timeline design, and SHALL record each dataset, license and attribution in the manifest.
+3. THE pipeline SHALL build `timeline.json` from `pipeline/timeline.yaml`, and the validator SHALL fail the build if an event has no resolvable passage, an invalid date or range, or a place without coordinates.
+
 ## Out of scope
 Live updates, user-contributed content, any source that is not openly licensed, generating articles with a model.
