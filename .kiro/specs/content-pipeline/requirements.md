@@ -83,5 +83,11 @@ Glossary
 2. THE pipeline SHALL build `map.pmtiles` and the fallback SVG map from the datasets listed in the map-and-timeline design, and SHALL record each dataset, license and attribution in the manifest.
 3. THE pipeline SHALL build `timeline.json` from `pipeline/timeline.yaml`, and the validator SHALL fail the build if an event has no resolvable passage, an invalid date or range, or a place without coordinates.
 
+### R11. Quiz bank
+**User story:** As a student, I want reliable practice questions so that I can check what I learned.
+1. THE pipeline SHALL build `quiz-bank.json` from the reviewed question file `pipeline/quiz/reviewed.yaml` (see the quizzes spec) and SHALL write unreviewed candidates only to `pipeline/quiz/candidates.yaml`, never into the pack.
+2. THE validator SHALL fail the build if any question has a missing field, an unresolvable passage, a correct answer not found in its passage, fewer or more than four distinct options, or `reviewed` not true.
+3. THE candidate generator SHALL be deterministic for the same passages and settings.
+
 ## Out of scope
 Live updates, user-contributed content, any source that is not openly licensed, generating articles with a model.
