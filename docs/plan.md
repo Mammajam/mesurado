@@ -26,7 +26,7 @@ Status: [ ] not started, [~] in progress, [x] done
 - [ ] 0.4 Test demo device: WASM, WebGPU, storage; baseline. Nov 17. Dep 0.3. Decides model tier
 - [x] 1.1 Steering files (product, tech, structure, cite-or-refuse, license record). Nov 16-17. Dep 0.3 (5 files in .kiro/steering, 2026-11-16)
 - [~] 1.2 Six specs (pipeline, search, Ask, map+timeline, quizzes, evaluation), each requirements/design/tasks. Nov 17-19. Dep 1.1 (content-pipeline spec drafted 2026-11-16; pipeline, search, ask-mode and all six specs drafted; review and approval pending for gate M1)
-- [ ] 1.3 Pack-validator MCP server. Nov 18-20. Dep 1.2. Fails on missing license / untraceable passage
+- [~] 1.3 Pack-validator MCP server. Nov 18-20. Dep 1.2. Fails on missing license / untraceable passage (server and shared validator built; 19 tests pass incl. a stdio MCP client test; first call from Kiro still to verify)
 - [ ] 1.4 Two hooks (validate+evaluate on pack change; regenerate test checklist on spec change). Nov 19-20. Dep 1.2, 1.3
 
 ### WP2 Content pipeline and pack

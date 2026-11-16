@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "pack-validator": {
+      "command": "uv",
+      "args": ["run", "--python", "3.12", "python", "tools/pack-validator/server.py"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": ["validate_pack", "check_manifest_entry", "list_allowed_licenses"]
+    }
+  }
+}

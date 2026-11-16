@@ -8,9 +8,9 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [ ] 1.3 Draft pack v1 selection: about 40 history and 40 geography articles as a first slice, grow later. _R1_
 
 - [ ] 2. Validator library first (plan 1.3, shared)
-  - [ ] 2.1 Implement `pipeline/validate/` with the six checks in design.md and a `Report` type. _R6_
-  - [ ] 2.2 Property-based tests: validate fails exactly on missing field, disallowed license, bad offsets, orphan files, "Encarta". _R6_
-  - [ ] 2.3 CLI `python -m pipeline.validate <pack>` that prints a report and exits non-zero on failure. _R6.5_
+  - [x] 2.1 Implement `pipeline/validate/` with the six checks in design.md and a `Report` type. _R6_
+  - [x] 2.2 Property-based tests: validate fails exactly on missing field, disallowed license, bad offsets, orphan files, "Encarta". _R6_
+  - [x] 2.3 CLI `python -m pipeline.validate <pack>` that prints a report and exits non-zero on failure. _R6.5_
 
 - [ ] 3. Fetch and manifest (plan 2.1, 2.2)
   - [ ] 3.1 Fetch Wikipedia articles by title with a pinned revision; cache raw responses. _R2.2, R8.1_
