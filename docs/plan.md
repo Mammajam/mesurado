@@ -22,7 +22,7 @@ Status: [ ] not started, [~] in progress, [x] done
 ### WP0-1 Setup, rules, Kiro foundation
 - [x] 0.1 Read rules/FAQ; confirm Liberia + Kiro eligible. Nov 16. Done: yes/no in docs/eligibility.md (rules read; Liberia not excluded; Kiro confirmed available; see eligibility.md)
 - [ ] 0.2 Request Kiro credits (ID verification). Nov 16-17. Dep 0.1. Deadline Dec 1 12:00 PM PT
-- [~] 0.3 Public repo (MIT/Apache-2.0), commit /.kiro, name conflict check. Nov 16. Dep 0.1 (MIT LICENSE, .gitignore, local git init done; first commit, GitHub repo and name check pending)
+- [x] 0.3 Public repo (MIT), /.kiro committed, name check. Done 2026-11-16: https://github.com/Mammajam/mesurado (no exact-name GitHub conflict; trademark and domain checks still open)
 - [ ] 0.4 Test demo device: WASM, WebGPU, storage; baseline. Nov 17. Dep 0.3. Decides model tier
 - [x] 1.1 Steering files (product, tech, structure, cite-or-refuse, license record). Nov 16-17. Dep 0.3 (5 files in .kiro/steering, 2026-11-16)
 - [ ] 1.2 Six specs (pipeline, search, Ask, map+timeline, quizzes, evaluation), each requirements/design/tasks. Nov 17-19. Dep 1.1
