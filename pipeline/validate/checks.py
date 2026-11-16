@@ -5,7 +5,9 @@ validate(pack) is pure: it only reads the Pack it is given and returns a Report.
 
 from __future__ import annotations
 
+import json
 import re
+import struct
 from collections.abc import Iterable
 from typing import Any
 
@@ -301,6 +303,50 @@ def check_quiz_bank(pack: Pack, report: Report) -> None:
         report.add("QUIZ_BANK_SMALL", f"{len(questions)} questions, target is {MIN_QUIZ_QUESTIONS}", "quiz-bank.json", "warning")
 
 
+# 7. Search indexes -----------------------------------------------------------------------------
+
+
+def _file_bytes(pack: Pack, rel: str) -> bytes | None:
+    src = pack.files.get(rel)
+    if src is None:
+        return None
+    return src if isinstance(src, bytes) else src.read_bytes()
+
+
+def check_indexes(pack: Pack, report: Report, passage_ids: list[str]) -> None:
+    """keyword.idx and embeddings.i8 are optional, but when present they must describe exactly the passages."""
+    raw = _file_bytes(pack, "keyword.idx")
+    if raw is not None:
+        try:
+            idx = json.loads(raw)
+            if idx.get("format") != "mesurado-keyword-1":
+                report.add("KEYWORD_INDEX_INVALID", f"unknown format {idx.get('format')!r}", "keyword.idx")
+            elif idx.get("doc_ids") != passage_ids:
+                report.add("KEYWORD_INDEX_MISMATCH", "doc_ids differ from passages.jsonl (count or order)", "keyword.idx")
+            elif len(idx.get("doc_len", [])) != len(passage_ids) or idx.get("n_docs") != len(passage_ids):
+                report.add("KEYWORD_INDEX_INVALID", "n_docs or doc_len length does not match the passages", "keyword.idx")
+        except (ValueError, AttributeError):
+            report.add("KEYWORD_INDEX_INVALID", "keyword.idx is not valid JSON", "keyword.idx")
+    raw = _file_bytes(pack, "embeddings.i8")
+    if raw is not None:
+        try:
+            if raw[:4] != b"MSE1":
+                raise ValueError("bad magic")
+            (hlen,) = struct.unpack("<I", raw[4:8])
+            h = json.loads(raw[8:8 + hlen])
+            n, d = int(h["count"]), int(h["dims"])
+            if len(raw) != 8 + hlen + 4 * n + n * d:
+                report.add("EMBEDDINGS_INVALID", "file size does not match the header", "embeddings.i8")
+            elif n != len(passage_ids):
+                report.add("EMBEDDINGS_MISMATCH", f"{n} vectors for {len(passage_ids)} passages", "embeddings.i8")
+            elif n and (h.get("first_id") != passage_ids[0] or h.get("last_id") != passage_ids[-1]):
+                report.add("EMBEDDINGS_MISMATCH", "first/last passage id differ from passages.jsonl", "embeddings.i8")
+            elif not h.get("model") or not h.get("license"):
+                report.add("EMBEDDINGS_INVALID", "header must name the model and its license", "embeddings.i8")
+        except (ValueError, KeyError, TypeError, struct.error):
+            report.add("EMBEDDINGS_INVALID", "unreadable embeddings header", "embeddings.i8")
+
+
 # Entry point -----------------------------------------------------------------------------------
 
 
@@ -317,6 +363,7 @@ def validate(pack: Pack, allowed_licenses: Iterable[str] | None = None) -> Repor
     check_sample_questions(pack, report, passage_ids)
     check_timeline(pack, report, passage_ids)
     check_quiz_bank(pack, report)
+    check_indexes(pack, report, [str(p.get("id")) for p in (pack.passages or []) if isinstance(p, dict)])
 
     items = _items(pack)
     licenses: dict[str, int] = {}

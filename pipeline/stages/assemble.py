@@ -28,7 +28,7 @@ from pipeline.validate.model import Report
 OUT_DIR = Path(__file__).resolve().parents[1] / "out"
 
 
-def assemble(name: str = "dev", out_dir: Path = OUT_DIR) -> tuple[Path | None, Report]:
+def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_index: bool = True) -> tuple[Path | None, Report]:
     items = json.loads((FETCH_DIR / "items.json").read_text(encoding="utf-8"))["items"]
     passages = [json.loads(line) for line in (PASSAGES_DIR / "passages.jsonl").read_text(encoding="utf-8").splitlines() if line]
     have_passages = {p["article"] for p in passages}
@@ -51,6 +51,12 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR) -> tuple[Path | None, R
     kept = [p for p in passages if p["article"] in {i["id"] for i in manifest_items}]
     (tmp / "passages.jsonl").write_text("\n".join(json.dumps(p, ensure_ascii=False) for p in kept) + "\n", encoding="utf-8")
 
+    index_stats = {}
+    if with_index:  # before the content hash, so the hash covers the index files
+        from pipeline.stages.index import build_indexes
+
+        index_stats = build_indexes(tmp, embedder)
+
     files = {p.relative_to(tmp).as_posix(): p for p in tmp.rglob("*") if p.is_file()}
     meta = {
         "name": name,
@@ -58,6 +64,7 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR) -> tuple[Path | None, R
         "articles": len(manifest_items),
         "passages": len(kept),
         "subjects": sorted({i["subject"] for i in manifest_items}),
+        **({"index": index_stats} if index_stats else {}),
         "content_hash": compute_content_hash(files),
     }
     (tmp / "meta.json").write_text(json.dumps(meta, indent=1) + "\n", encoding="utf-8")

@@ -23,10 +23,10 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [x] 4.3 Property-based tests for splitter bounds, offset reproduction and id stability. _R3_
   - [x] 4.4 Report and drop empty articles. _R3.5_
 
-- [ ] 5. Index and embeddings (plan 2.3)
-  - [ ] 5.1 Build the keyword index and measure load time on the demo Android phone. _R4.1, R4.3_
-  - [ ] 5.2 Compute int8 embeddings with the pinned model; write `embeddings.i8` and metadata. _R4.2_
-  - [ ] 5.3 Determinism test: two builds give identical hashes. _R4.4_
+- [~] 5. Index and embeddings (plan 2.3)
+  - [~] 5.1 Build the keyword index and measure load time on the demo Android phone. _R4.1, R4.3_ (index built: 25,050 terms, 1.5 MB; phone load time not measured yet)
+  - [x] 5.2 Compute int8 embeddings with the pinned model; write `embeddings.i8` and metadata. _R4.2_
+  - [x] 5.3 Determinism test: two builds give identical hashes. _R4.4_
 
 - [ ] 6. Package and validate (plan 2.4)
   - [ ] 6.1 Write the ZIM with articles and compressed images. _R5.1, R5.2_
