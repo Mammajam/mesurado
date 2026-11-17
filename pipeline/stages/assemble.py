@@ -60,6 +60,11 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
 
         index_stats = build_indexes(tmp, embedder)
 
+    if with_index:  # needs keyword.idx, so it runs after the index and before the hash
+        from pipeline.stages.questions import write_sample_questions
+
+        write_sample_questions(tmp)
+
     files = {p.relative_to(tmp).as_posix(): p for p in tmp.rglob("*") if p.is_file()}
     meta = {
         "name": name,
