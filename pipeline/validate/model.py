@@ -46,6 +46,7 @@ PACK_LEVEL_FILES: frozenset[str] = frozenset(
         "quiz-bank.json",
         "keyword.idx",
         "embeddings.i8",
+        "mesurado.zim",
         "map-style.json",
         "fallback-map.svg",
     }
@@ -154,9 +155,13 @@ def file_sha256(src: bytes | Path) -> str:
 
 
 def compute_content_hash(files: dict[str, bytes | Path]) -> str:
-    """Hash of every file except meta.json, over sorted (path, file hash) pairs."""
+    """Hash of every file except meta.json and the ZIM, over sorted (path, file hash) pairs.
+
+    The ZIM is excluded because libzim writes a random UUID, so its bytes differ between builds of the same
+    content; its entries are checked against the hashed files instead (check_zim).
+    """
     h = hashlib.sha256()
-    for rel in sorted(p for p in files if p != "meta.json"):
+    for rel in sorted(p for p in files if p != "meta.json" and not p.endswith(".zim")):
         h.update(rel.encode("utf-8"))
         h.update(b"\0")
         h.update(file_sha256(files[rel]).encode("ascii"))

@@ -29,7 +29,7 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [x] 5.3 Determinism test: two builds give identical hashes. _R4.4_
 
 - [ ] 6. Package and validate (plan 2.4)
-  - [ ] 6.1 Write the ZIM with articles and compressed images. _R5.1, R5.2_
+  - [~] 6.1 Write the ZIM with articles and compressed images. _R5.1, R5.2_ (ZIM with articles and metadata done, 0.84 MB; images wait for 3.2)
   - [~] 6.2 Write `meta.json` with version and content hash; atomic build directory swap. _R5.3, R5.4_ (unpacked pack with hash and atomic swap done; ZIM and indexes pending)
   - [ ] 6.3 Generate the attribution file and per-article credit text. _R7_
   - [ ] 6.4 Generate `sample-questions.json` (at least 10 per subject, linked to passages); add its check to the validator. _R9_

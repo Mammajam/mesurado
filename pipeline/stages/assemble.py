@@ -1,6 +1,6 @@
 """Assemble stage: write the unpacked pack directory and validate it (spec: content-pipeline R5.3, R5.4, R6).
 
-Layout of pipeline/out/<name>/ (the ZIM packager adds the ZIM and indexes later):
+Layout of pipeline/out/<name>/ (index and package stages add the indexes and the ZIM):
   manifest.json   items with source, license, revision, attribution, text_file
   passages.jsonl  one passage per line
   articles/*.txt  cleaned article text (what passage offsets point into)
@@ -28,7 +28,7 @@ from pipeline.validate.model import Report
 OUT_DIR = Path(__file__).resolve().parents[1] / "out"
 
 
-def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_index: bool = True) -> tuple[Path | None, Report]:
+def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_index: bool = True, with_zim: bool = True) -> tuple[Path | None, Report]:
     items = json.loads((FETCH_DIR / "items.json").read_text(encoding="utf-8"))["items"]
     passages = [json.loads(line) for line in (PASSAGES_DIR / "passages.jsonl").read_text(encoding="utf-8").splitlines() if line]
     have_passages = {p["article"] for p in passages}
@@ -68,6 +68,11 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
         "content_hash": compute_content_hash(files),
     }
     (tmp / "meta.json").write_text(json.dumps(meta, indent=1) + "\n", encoding="utf-8")
+
+    if with_zim:  # after meta.json (the date comes from it); the ZIM is not part of the content hash
+        from pipeline.stages.package import package_zim
+
+        package_zim(tmp)
 
     report = validate(load_pack(tmp))
     if not report.ok:

@@ -421,6 +421,21 @@ wheels = [
 ]
 
 [[package]]
+name = "libzim"
+version = "4.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b8/98/698efd326ecd15e45ba651250b7444945909c39ef2781c6a0e4ceba333b8/libzim-4.1.0.tar.gz", hash = "sha256:fe2b07af5a27bfde6ac8620cd2d35328b5b012ab4c8c48ecdf0a82901248cd01", size = 72659, upload-time = "2026-11-05T13:25:12.376Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/8b/6defb7c0ba251174b3a62dfc44dd553ae4dfd7bf0bbb61c6b89f47f65848/libzim-4.1.0-cp311-abi3-macosx_13_0_arm64.whl", hash = "sha256:a381bdd4afd7db7524f631d91485e4687fd1498354e4ecf47f51c12750913bf6", size = 3351098, upload-time = "2026-11-05T13:24:16.134Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/a8/7317e14ac3ca83555b34ccafc535c10c32c9e36c8e74cf36c11eb4d11e92/libzim-4.1.0-cp311-abi3-macosx_13_0_x86_64.whl", hash = "sha256:af2be7b69053ba822a1030ad49be50e3ab5d8c266357926475221d717149589c", size = 3667167, upload-time = "2026-11-05T13:24:19.154Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/2b/4a36963684f181b023cfd9be3db930ae817a437a9bac788d8b2e89bc1c31/libzim-4.1.0-cp311-abi3-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:791fccae1b3364c310320326dfea0277bc4677cb72719472ab9591750dd4a5e8", size = 19550057, upload-time = "2026-11-05T13:24:21.184Z" },
+    { url = "https://files.pythonhosted.org/packages/52/bd/a87402490110377c1411ef83b802f64ac1cc76ab7654ce1802a8b42ac9a7/libzim-4.1.0-cp311-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:cd26c60e90a2d7f619a6db98e89892d1f429cdbb80d47a4318a659b1d985db1f", size = 20020495, upload-time = "2026-11-05T13:24:24.622Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/89/8941c2015941acedb3c72c04457ad64f2b7574fc3006dcdcc1cc87646c1d/libzim-4.1.0-cp311-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:a71ea670673fd3ec0a025cb597a1813d449dda695897a8c112b598f293b27315", size = 20796867, upload-time = "2026-11-05T13:24:27.341Z" },
+    { url = "https://files.pythonhosted.org/packages/bb/d7/c9dc8f75977d72eb9ca0a24a2bfd23eaa9dbedeffb29c27ba9e40add941a/libzim-4.1.0-cp311-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:f50b61424f0b81f1a3a219ffb7c8c6d6213c3c6b2cee3e5b9336219cfe126211", size = 21263884, upload-time = "2026-11-05T13:24:30.318Z" },
+    { url = "https://files.pythonhosted.org/packages/62/80/de104dc819d7bb3aa33c896e8bbac624ad2dfc60e44eabf63621e8e11beb/libzim-4.1.0-cp311-abi3-win_amd64.whl", hash = "sha256:dca423764a70bfe9420f0f5f4697ed6d9f2615f63b7bd37a75c0e616522d988e", size = 16065476, upload-time = "2026-11-05T13:24:33.16Z" },
+]
+
+[[package]]
 name = "loguru"
 version = "0.7.3"
 source = { registry = "https://pypi.org/simple" }
@@ -465,6 +480,7 @@ source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
     { name = "fastembed" },
+    { name = "libzim" },
     { name = "mcp" },
     { name = "numpy" },
     { name = "pyyaml" },
@@ -480,6 +496,7 @@ dev = [
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.15.0" },
     { name = "fastembed", specifier = ">=0.9.1" },
+    { name = "libzim", specifier = ">=4.1.0" },
     { name = "mcp", specifier = ">=1.2,<2" },
     { name = "numpy", specifier = ">=2.5.5" },
     { name = "pyyaml", specifier = ">=6.0.3" },

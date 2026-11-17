@@ -347,6 +347,45 @@ def check_indexes(pack: Pack, report: Report, passage_ids: list[str]) -> None:
             report.add("EMBEDDINGS_INVALID", "unreadable embeddings header", "embeddings.i8")
 
 
+# 8. ZIM container ------------------------------------------------------------------------------
+
+ZIM_FILE = "mesurado.zim"
+
+
+def check_zim(pack: Pack, report: Report) -> None:
+    """If a ZIM is present, every manifest article must be in it, byte for byte, and nothing else (R5.1)."""
+    src = pack.files.get(ZIM_FILE)
+    if src is None:
+        return
+    if isinstance(src, bytes):
+        report.add("ZIM_UNREADABLE", "ZIM given as bytes; expected a file on disk", ZIM_FILE)
+        return
+    try:
+        from libzim.reader import Archive
+    except ImportError:
+        report.add("ZIM_NOT_CHECKED", "python-libzim is not installed; ZIM contents not checked", ZIM_FILE, "warning")
+        return
+    try:
+        zim = Archive(src)
+    except Exception as exc:  # libzim raises RuntimeError for corrupt files
+        report.add("ZIM_UNREADABLE", f"cannot open ZIM: {exc}", ZIM_FILE)
+        return
+    expected: dict[str, bytes] = {}
+    for item in _items(pack):
+        ref = item.get("text_file")
+        if item.get("type") == "article" and isinstance(ref, str) and ref in pack.files:
+            expected[ref] = _file_bytes(pack, ref) or b""
+    in_zim = {zim.get_entry_by_id(i).path for i in range(zim.all_entry_count)}
+    for ref, data in sorted(expected.items()):
+        if ref not in in_zim:
+            report.add("ZIM_ENTRY_MISSING", f"`{ref}` is not in the ZIM", ZIM_FILE)
+        elif bytes(zim.get_entry_by_path(ref).get_item().content) != data:
+            report.add("ZIM_ENTRY_MISMATCH", f"`{ref}` differs from the pack file", ZIM_FILE)
+    # libzim adds its own entries (metadata, listing/...); only pack content under articles/ is checked.
+    for extra in sorted(p for p in in_zim if p.startswith("articles/") and p not in expected):
+        report.add("ZIM_ENTRY_EXTRA", f"`{extra}` is in the ZIM but not in the manifest", ZIM_FILE)
+
+
 # Entry point -----------------------------------------------------------------------------------
 
 
@@ -364,6 +403,7 @@ def validate(pack: Pack, allowed_licenses: Iterable[str] | None = None) -> Repor
     check_timeline(pack, report, passage_ids)
     check_quiz_bank(pack, report)
     check_indexes(pack, report, [str(p.get("id")) for p in (pack.passages or []) if isinstance(p, dict)])
+    check_zim(pack, report)
 
     items = _items(pack)
     licenses: dict[str, int] = {}
