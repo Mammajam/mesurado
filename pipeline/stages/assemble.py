@@ -51,6 +51,9 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
     kept = [p for p in passages if p["article"] in {i["id"] for i in manifest_items}]
     (tmp / "passages.jsonl").write_text("\n".join(json.dumps(p, ensure_ascii=False) for p in kept) + "\n", encoding="utf-8")
 
+    from pipeline.stages.attribution import PACK_LICENSE, write_attribution
+
+    write_attribution(tmp)  # before the hash: attribution files are part of the pack content
     index_stats = {}
     if with_index:  # before the content hash, so the hash covers the index files
         from pipeline.stages.index import build_indexes
@@ -65,8 +68,10 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
         "passages": len(kept),
         "subjects": sorted({i["subject"] for i in manifest_items}),
         **({"index": index_stats} if index_stats else {}),
+        "license": PACK_LICENSE,
         "content_hash": compute_content_hash(files),
     }
+    meta["version"] = f"{meta['built']}+{meta['content_hash'][:8]}"  # changes whenever the content changes
     (tmp / "meta.json").write_text(json.dumps(meta, indent=1) + "\n", encoding="utf-8")
 
     if with_zim:  # after meta.json (the date comes from it); the ZIM is not part of the content hash

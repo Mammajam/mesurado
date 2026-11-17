@@ -386,6 +386,42 @@ def check_zim(pack: Pack, report: Report) -> None:
         report.add("ZIM_ENTRY_EXTRA", f"`{extra}` is in the ZIM but not in the manifest", ZIM_FILE)
 
 
+# 9. Attribution --------------------------------------------------------------------------------
+
+
+def check_attribution(pack: Pack, report: Report) -> None:
+    """attribution.json must cover every manifest item and agree with it (R7). Missing is a warning so
+    that partial packs (tests, early builds) still validate; the assemble stage always writes it."""
+    raw = _file_bytes(pack, "attribution.json")
+    if raw is None:
+        report.add("ATTRIBUTION_MISSING", "attribution.json is not in the pack", "attribution.json", "warning")
+        return
+    try:
+        att = json.loads(raw)
+        entries = {str(e["id"]): e for e in att["items"]}
+    except (ValueError, KeyError, TypeError):
+        report.add("ATTRIBUTION_INVALID", "attribution.json is unreadable or has no items list", "attribution.json")
+        return
+    if att.get("pack_license") not in DEFAULT_ALLOWED_LICENSES:
+        report.add("ATTRIBUTION_INVALID", f"pack_license {att.get('pack_license')!r} is not an allowed license", "attribution.json")
+    ids = set()
+    for item in _items(pack):
+        iid = str(item.get("id"))
+        ids.add(iid)
+        e = entries.get(iid)
+        if e is None:
+            report.add("ATTRIBUTION_ITEM_MISSING", "item has no attribution entry", iid)
+            continue
+        for key in ("source_url", "license", "revision", "attribution"):
+            if e.get(key) != item.get(key):
+                report.add("ATTRIBUTION_MISMATCH", f"`{key}` differs from the manifest", iid)
+        credit = str(e.get("credit", ""))
+        if not credit.strip() or str(item.get("title")) not in credit or str(item.get("license", "")).replace("-", " ").split()[0] not in credit:
+            report.add("ATTRIBUTION_CREDIT_WEAK", "credit text must name the title and license", iid)
+    for extra in sorted(set(entries) - ids):
+        report.add("ATTRIBUTION_ITEM_EXTRA", "attribution entry has no manifest item", extra)
+
+
 # Entry point -----------------------------------------------------------------------------------
 
 
@@ -404,6 +440,7 @@ def validate(pack: Pack, allowed_licenses: Iterable[str] | None = None) -> Repor
     check_quiz_bank(pack, report)
     check_indexes(pack, report, [str(p.get("id")) for p in (pack.passages or []) if isinstance(p, dict)])
     check_zim(pack, report)
+    check_attribution(pack, report)
 
     items = _items(pack)
     licenses: dict[str, int] = {}
