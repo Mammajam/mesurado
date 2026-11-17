@@ -441,6 +441,32 @@ def check_attribution(pack: Pack, report: Report) -> None:
         report.add("ATTRIBUTION_ITEM_EXTRA", "attribution entry has no manifest item", extra)
 
 
+# 10. Fallback map ------------------------------------------------------------------------------
+
+MAX_FALLBACK_MAP_BYTES = 400_000
+
+
+def check_fallback_map(pack: Pack, report: Report) -> None:
+    """If fallback-map.svg is present it must be small, carry its projection, and offer a #markers layer (R2.3)."""
+    raw = _file_bytes(pack, "fallback-map.svg")
+    if raw is None:
+        return
+    if len(raw) > MAX_FALLBACK_MAP_BYTES:
+        report.add("FALLBACK_MAP_TOO_LARGE", f"{len(raw)} bytes exceeds the {MAX_FALLBACK_MAP_BYTES} byte budget", "fallback-map.svg")
+    text = raw.decode("utf-8", errors="replace")
+    head = text[:1200]
+    if "<svg" not in head or "viewBox=" not in head:
+        report.add("FALLBACK_MAP_INVALID", "not an SVG with a viewBox", "fallback-map.svg")
+        return
+    for attr in ("data-projection", "data-bbox", "data-scale", "data-k"):
+        if attr + "=" not in head:
+            report.add("FALLBACK_MAP_INVALID", f"root element lacks `{attr}` (the app needs it to place markers)", "fallback-map.svg")
+    if 'id="markers"' not in text:
+        report.add("FALLBACK_MAP_INVALID", "no `markers` group for the app to draw into", "fallback-map.svg")
+    if "<script" in text.lower() or "http://" in text.replace("http://www.w3.org/2000/svg", ""):
+        report.add("FALLBACK_MAP_UNSAFE", "SVG must not contain scripts or external references", "fallback-map.svg")
+
+
 # Entry point -----------------------------------------------------------------------------------
 
 
@@ -460,6 +486,7 @@ def validate(pack: Pack, allowed_licenses: Iterable[str] | None = None) -> Repor
     check_indexes(pack, report, [str(p.get("id")) for p in (pack.passages or []) if isinstance(p, dict)])
     check_zim(pack, report)
     check_attribution(pack, report)
+    check_fallback_map(pack, report)
 
     items = _items(pack)
     licenses: dict[str, int] = {}

@@ -10,7 +10,7 @@ Cut order (plan): quizzes go before the map and timeline, so this is cut last; w
 - [ ] 2. Data (plan 2.x, 3.6)
   - [ ] 2.1 Pipeline: extract place coordinates into the manifest for place articles. _pipeline R10_
   - [ ] 2.2 Build `map.pmtiles` from Natural Earth and the Liberia OSM extract; style, glyphs, sprites; record datasets and licenses in the manifest. _R1.1, R2.1, R2.2_
-  - [ ] 2.3 Generate the SVG fallback map from simplified Natural Earth. _R2.3_
+  - [x] 2.3 Generate the SVG fallback map from simplified Natural Earth. _R2.3_
   - [ ] 2.4 Write `timeline.yaml`: eras and at least 60 events with passage links; build `timeline.json`. _R3.6, R5.1_
   - [ ] 2.5 Validator checks for events (passage, date, place coordinates). _R5.2_
   - [ ] 2.6 Subject expert reviews events and era names. _R3.6_

@@ -182,7 +182,7 @@ def semantic_search(header: dict, q: np.ndarray, scales: np.ndarray, doc_ids: Se
 def read_pack_passages(pack: Path) -> tuple[list[dict], dict[str, str]]:
     passages = [json.loads(line) for line in (pack / "passages.jsonl").read_text(encoding="utf-8").splitlines() if line]
     items = json.loads((pack / "manifest.json").read_text(encoding="utf-8"))["items"]
-    return passages, {i["id"]: i["title"] for i in items}
+    return passages, {i["id"]: i["title"] for i in items if i.get("type") == "article"}
 
 
 def build_indexes(pack: Path, embedder: Embedder | None = None, log=lambda s: None) -> dict:

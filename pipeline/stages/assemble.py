@@ -47,8 +47,14 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
         (tmp / rel).write_text(clean["text"], encoding="utf-8")
         manifest_items.append({**item, "text_file": rel})
 
+    from pipeline.stages.fallback_map import dataset_manifest_items, write_fallback_map
+
+    write_fallback_map(tmp)  # SVG map; the source datasets get manifest entries so license and credit are recorded (R10.2)
+    articles_n = len(manifest_items)
+    manifest_items += dataset_manifest_items(date.today().isoformat())
+
     (tmp / "manifest.json").write_text(json.dumps({"items": manifest_items}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    kept = [p for p in passages if p["article"] in {i["id"] for i in manifest_items}]
+    kept = [p for p in passages if p["article"] in {i["id"] for i in manifest_items if i["type"] == "article"}]
     (tmp / "passages.jsonl").write_text("\n".join(json.dumps(p, ensure_ascii=False) for p in kept) + "\n", encoding="utf-8")
 
     from pipeline.stages.attribution import PACK_LICENSE, write_attribution
@@ -72,7 +78,7 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
     meta = {
         "name": name,
         "built": date.today().isoformat(),
-        "articles": len(manifest_items),
+        "articles": articles_n,
         "passages": len(kept),
         "subjects": sorted({i["subject"] for i in manifest_items}),
         **({"index": index_stats} if index_stats else {}),

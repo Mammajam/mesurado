@@ -24,6 +24,7 @@ LICENSE_URLS = {
     "PD": "https://creativecommons.org/publicdomain/mark/1.0/",
 }
 SPDX_NAMES = {k: k.replace("CC-BY-SA-", "CC BY-SA ").replace("CC-BY-", "CC BY ").replace("CC0-1.0", "CC0 1.0") for k in LICENSE_URLS}
+SPDX_NAMES["PD"] = "Public domain (PD)"
 
 
 def license_name(spdx: str) -> str:

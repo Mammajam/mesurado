@@ -40,7 +40,7 @@ class _TextItem(Item):
 
 def package_zim(pack: Path, date: str | None = None) -> Path:
     """Write pack/mesurado.zim from the manifest and article files. Returns its path."""
-    items = json.loads((pack / "manifest.json").read_text(encoding="utf-8"))["items"]
+    items = [i for i in json.loads((pack / "manifest.json").read_text(encoding="utf-8"))["items"] if i.get("type") == "article"]
     meta = json.loads((pack / "meta.json").read_text(encoding="utf-8")) if (pack / "meta.json").exists() else {}
     out = pack / ZIM_NAME
     if out.exists():
