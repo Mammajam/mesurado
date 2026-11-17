@@ -37,9 +37,9 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [ ] 6.6 Measure pack size and load time on the demo Android phone against the budgets. _R4.3, R5.2_
 
 - [ ] 6b. Map and timeline data (plan 3.6)
-  - [~] 6b.1 Extract place coordinates into the manifest. (coordinates captured at fetch; validated later) _R10.1_
+  - [x] 6b.1 Extract place coordinates into the manifest. (46 of 87 articles have coordinates; the validator checks timeline places against them) _R10.1_
   - [ ] 6b.2 Build map tiles and fallback SVG from Natural Earth and the Liberia OSM extract; manifest entries. _R10.2_
-  - [ ] 6b.3 Build `timeline.json` from `timeline.yaml` and add event checks to the validator. _R10.3_
+  - [~] 6b.3 Build `timeline.json` from `timeline.yaml` and add event checks to the validator. _R10.3_ (62 events built and validated; none reviewed by the subject expert yet)
 
 - [ ] 6c. Quiz bank (plan 3.7)
   - [ ] 6c.1 Build `quiz-bank.json` from `pipeline/quiz/reviewed.yaml` and add the quiz checks to the validator. _R11.1, R11.2_

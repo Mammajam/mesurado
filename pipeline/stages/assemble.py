@@ -54,6 +54,9 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
     from pipeline.stages.attribution import PACK_LICENSE, write_attribution
 
     write_attribution(tmp)  # before the hash: attribution files are part of the pack content
+    from pipeline.stages.timeline import write_timeline
+
+    write_timeline(tmp)  # raises if an event's quote is not in its passage
     index_stats = {}
     if with_index:  # before the content hash, so the hash covers the index files
         from pipeline.stages.index import build_indexes

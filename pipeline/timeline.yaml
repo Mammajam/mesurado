@@ -1,0 +1,82 @@
+# Timeline source (spec: map-and-timeline R3; content-pipeline R10.3).
+# Every event is tied to a passage in the pack. `quote` is a verbatim fragment of that passage; the build copies the
+# whole sentence containing it as the event summary (summaryType "copied"), so no summary is ever written by us.
+# Years are integers, negative for BCE. `end` is for ranges, `approx: true` for "about" dates.
+# `reviewed` stays false until the subject expert has checked the event; the validator warns about unreviewed events.
+eras:
+  - {id: early-states, name: "Early states and trade", until: 1443}
+  - {id: atlantic, name: "Atlantic trade and kingdoms", until: 1815}
+  - {id: settlement, name: "Settlement and colonization", until: 1846}
+  - {id: republic, name: "Independence and the republic", until: 1979}
+  - {id: conflict, name: "Coup and civil wars", until: 2003}
+  - {id: recovery, name: "Peace and recovery", until: 9999}
+
+events:
+  # --- Early states and trade
+  - {id: ev-nok, era: early-states, start: -1500, end: -1, approx: true, title: "Nok culture", passage: "wp:Nok_culture#000", quote: "may have emerged in 1500 BCE"}
+  - {id: ev-kanem-700, era: early-states, start: 700, approx: true, title: "Kanem-Bornu founded", passage: "wp:Kanem–Bornu_Empire#000", quote: "founded around the year 700"}
+  - {id: ev-ghana-830, era: early-states, start: 830, title: "Ghana Empire first recorded", passage: "wp:Ghana_Empire#000", quote: "The first identifiable mention of the imperial dynasty"}
+  - {id: ev-almoravids-1050, era: early-states, start: 1050, approx: true, title: "Ghana loses Aoudaghost", passage: "wp:Trans-Saharan_trade#008", quote: "Ghana lost Aoudaghost to the Almoravids"}
+  - {id: ev-islam-1200, era: early-states, start: 1200, approx: true, title: "Islam spreads among West African rulers", passage: "wp:Trans-Saharan_trade#013", quote: "had converted to Islam"}
+  - {id: ev-mali-1235, era: early-states, start: 1235, approx: true, title: "Mali becomes a major power", passage: "wp:Mali_Empire#000", quote: "marked the emergence of Mali as a major power"}
+  - {id: ev-sakura-1285, era: early-states, start: 1285, title: "Sakura seizes the Mali throne", passage: "wp:Mali_Empire#001", quote: "Sakura, a former slave of the imperial family"}
+  - {id: ev-musa-hajj, era: early-states, start: 1324, title: "Mansa Musa's pilgrimage to Mecca", passage: "wp:Mansa_Musa#001", quote: "Musa went on Hajj to Mecca in 1324"}
+  - {id: ev-ewuare-1440, era: early-states, start: 1440, title: "Oba Ewuare expands Benin", passage: "wp:Kingdom_of_Benin#008", quote: "In 1440, Oba Ewuare"}
+  # --- Atlantic trade and kingdoms
+  - {id: ev-lagos-1444, era: atlantic, start: 1444, title: "Start of the Atlantic slave trade, according to historians", passage: "wp:Atlantic_slave_trade#005", quote: "in 1444, six caravels"}
+  - {id: ev-portugal-1462, era: atlantic, start: 1462, approx: true, title: "Portuguese contact with the Liberian coast", passage: "wp:History_of_Liberia#002", quote: "as early as 1462"}
+  - {id: ev-timbuktu-1468, era: atlantic, start: 1468, title: "Songhai absorbs Timbuktu", passage: "wp:Timbuktu#000", quote: "absorbed it in 1468", place: "wp:Timbuktu"}
+  - {id: ev-tondibi-1591, era: atlantic, start: 1591, title: "Battle of Tondibi ends the Songhai Empire", passage: "wp:Songhai_Empire#001", quote: "The Songhai Empire collapsed after the defeat at the Battle of Tondibi"}
+  - {id: ev-dutch-1602, era: atlantic, start: 1602, title: "Dutch trading post at Grand Cape Mount", passage: "wp:History_of_Liberia#002", quote: "In 1602, the Dutch established"}
+  - {id: ev-english-1663, era: atlantic, start: 1663, title: "English trading posts on the Pepper Coast", passage: "wp:History_of_Liberia#002", quote: "In 1663, the English established"}
+  - {id: ev-asante-1701, era: atlantic, start: 1701, title: "Asante conquers Denkyira", passage: "wp:Asante_Empire#000", quote: "In 1701, the Asante army conquered Denkyira"}
+  - {id: ev-whydah-1727, era: atlantic, start: 1727, title: "Dahomey conquers Whydah", passage: "wp:Dahomey#004", quote: "in 1727 he conquered Whydah"}
+  - {id: ev-oyo-dahomey-1748, era: atlantic, start: 1748, title: "Oyo subjugates Dahomey", passage: "wp:Oyo_Empire#008", quote: "before finally subjugating the kingdom in 1748"}
+  - {id: ev-akyem-1764, era: atlantic, start: 1764, title: "Joint force defeats an Ashanti invasion", passage: "wp:Oyo_Empire#009", quote: "In 1764, a joint Akyem-Dahomey-Oyo force"}
+  - {id: ev-sokoto-1804, era: atlantic, start: 1804, title: "Usman dan Fodio leads his followers to Gudu", passage: "wp:Sokoto_Caliphate#000", quote: "migrated towards Gudu in February 1804"}
+  - {id: ev-sokoto-1808, era: atlantic, start: 1808, title: "Sokoto controls Hausaland", passage: "wp:Sokoto_Caliphate#000", quote: "By 1808, the Sokoto Caliphate had gained control"}
+  # --- Settlement and colonization
+  - {id: ev-acs-1816, era: settlement, start: 1816, title: "American Colonization Society founded", passage: "wp:American_Colonization_Society#000", quote: "was an American organization founded in 1816"}
+  - {id: ev-elizabeth-1820, era: settlement, start: 1820, title: "The Elizabeth sails for West Africa", passage: "wp:History_of_Liberia#004", quote: "departed New York on February 6, 1820"}
+  - {id: ev-land-1821, era: settlement, start: 1821, title: "Land at Cape Mesurado purchased", passage: "wp:Monrovia#003", quote: "negotiated the purchase of land at Cape Mesurado in December 1821", place: "wp:Cape_Mesurado"}
+  - {id: ev-monrovia-1822, era: settlement, start: 1822, title: "Monrovia founded", passage: "wp:Monrovia#000", quote: "was founded in April 1822", place: "wp:Monrovia"}
+  - {id: ev-monrovia-1824, era: settlement, start: 1824, title: "Christopolis renamed Monrovia", passage: "wp:Monrovia#003", quote: "In 1824, the city was renamed Monrovia", place: "wp:Monrovia"}
+  - {id: ev-roberts-1829, era: settlement, start: 1829, title: "Joseph Jenkins Roberts emigrates to Liberia", passage: "wp:Joseph_Jenkins_Roberts#000", quote: "was an African American merchant who emigrated to Liberia in 1829"}
+  - {id: ev-convention-1845, era: settlement, start: 1845, title: "Constitutional convention in Monrovia", passage: "wp:Monrovia#003", quote: "In 1845 there was a constitutional convention", place: "wp:Monrovia"}
+  # --- Independence and the republic
+  - {id: ev-independence-1847, era: republic, start: 1847, title: "Liberia declares independence", passage: "wp:Liberian_Declaration_of_Independence#002", quote: "declared its independence from the American Colonization Society on 26 July 1847", place: "wp:Monrovia"}
+  - {id: ev-roberts-1848, era: republic, start: 1848, title: "Roberts sworn in as first president", passage: "wp:Liberian_Declaration_of_Independence#002", quote: "was sworn in as Liberia's first president", place: "wp:Monrovia"}
+  - {id: ev-us-recognition-1862, era: republic, start: 1862, title: "United States recognizes Liberia", passage: "wp:Liberian_Declaration_of_Independence#003", quote: "On 5 February 1862"}
+  - {id: ev-berlin-1884, era: republic, start: 1884, end: 1885, title: "Berlin Conference", passage: "wp:Berlin_Conference#000", quote: "was a meeting of colonial powers"}
+  - {id: ev-kanem-1893, era: republic, start: 1893, title: "Rabih az-Zubayr conquers Kanem-Bornu", passage: "wp:Kanem–Bornu_Empire#001", quote: "In 1893, Kanem–Bornu was conquered"}
+  - {id: ev-dahomey-1890, era: republic, start: 1890, title: "War between Dahomey and France", passage: "wp:Dahomey#001", quote: "led to the war in 1890"}
+  - {id: ev-panafrican-1900, era: republic, start: 1900, title: "First Pan-African Conference", passage: "wp:Pan-Africanism#005", quote: "First Pan-African Conference in London in 1900"}
+  - {id: ev-sokoto-1903, era: republic, start: 1903, title: "End of the Sokoto Caliphate", passage: "wp:Sokoto_Caliphate#000", quote: "In 1903, the twelfth and last caliph Attahiru was assassinated"}
+  - {id: ev-outside-1914, era: republic, start: 1914, title: "Only Ethiopia and Liberia outside European control", passage: "wp:Scramble_for_Africa#001", quote: "By 1914, only Ethiopia and Liberia remained outside European control"}
+  - {id: ev-firestone-1926, era: republic, start: 1926, title: "Firestone lease signed", passage: "wp:Firestone_Natural_Rubber_Company#001", quote: "In 1926, the Liberian government granted Firestone"}
+  - {id: ev-firestone-loan-1952, era: republic, start: 1952, title: "Firestone loan paid off", passage: "wp:Firestone_Natural_Rubber_Company#005", quote: "The Firestone loan was finally paid off in 1952"}
+  - {id: ev-tubman-1944, era: republic, start: 1944, title: "William Tubman inaugurated", passage: "wp:William_Tubman#006", quote: "inaugurated 3 January 1944"}
+  - {id: ev-ghana-1957, era: republic, start: 1957, title: "Ghana becomes independent", passage: "wp:Pan-Africanism#007", quote: "With the independence of Ghana in March 1957", place: "wp:Accra"}
+  - {id: ev-accra-1958, era: republic, start: 1958, title: "First Congress of Independent African States", passage: "wp:African_Union#005", quote: "First Congress of Independent African States", place: "wp:Accra"}
+  - {id: ev-sanniquellie-1959, era: republic, start: 1959, title: "Sanniquellie Pledge", passage: "wp:Organisation_of_African_Unity#001", quote: "Sanniquellie Pledge"}
+  - {id: ev-oau-1963, era: republic, start: 1963, title: "Organisation of African Unity founded", passage: "wp:Organisation_of_African_Unity#000", quote: "established on 25 May 1963"}
+  - {id: ev-tolbert-1971, era: republic, start: 1971, title: "Tubman dies; Tolbert becomes president", passage: "wp:William_Tolbert#002", quote: "On 23 July 1971 President William Tubman died"}
+  - {id: ev-ecowas-1975, era: republic, start: 1975, title: "ECOWAS established", passage: "wp:ECOWAS#000", quote: "established on 28 May 1975", place: "wp:Lagos"}
+  - {id: ev-independence-1977, era: republic, start: 1977, title: "Fifty African countries independent", passage: "wp:Decolonisation_of_Africa#001", quote: "By 1977, 50 African countries had gained independence"}
+  # --- Coup and civil wars
+  - {id: ev-coup-1980, era: conflict, start: 1980, title: "Military coup overthrows Tolbert", passage: "wp:Samuel_Doe#003", quote: "On 12 April 1980", place: "wp:Monrovia"}
+  - {id: ev-election-1985, era: conflict, start: 1985, title: "Doe wins a disputed election", passage: "wp:First_Liberian_Civil_War#002", quote: "Doe held elections in 1985"}
+  - {id: ev-war-1989, era: conflict, start: 1989, title: "First Liberian Civil War begins", passage: "wp:First_Liberian_Civil_War#001", quote: "In December 1989, the National Patriotic Front of Liberia", place: "wp:Nimba_County"}
+  - {id: ev-doe-1990, era: conflict, start: 1990, title: "Doe's rule ends", passage: "wp:First_Liberian_Civil_War#001", quote: "Doe was captured"}
+  - {id: ev-peace-1996, era: conflict, start: 1996, title: "Peace agreement between the main factions", passage: "wp:First_Liberian_Civil_War#001", quote: "a peace agreement between the main factions occurred in August 1996"}
+  - {id: ev-taylor-1997, era: conflict, start: 1997, title: "Charles Taylor elected president", passage: "wp:First_Liberian_Civil_War#001", quote: "Taylor was elected President of Liberia following the 1997"}
+  - {id: ev-sierra-1997, era: conflict, start: 1997, title: "Coup in Sierra Leone", passage: "wp:Sierra_Leone_Civil_War#001", quote: "In May 1997, a group of disgruntled SLA officers staged a coup"}
+  - {id: ev-war2-1999, era: conflict, start: 1999, title: "Second Liberian Civil War begins", passage: "wp:Second_Liberian_Civil_War#003", quote: "The second civil war began in April 1999"}
+  - {id: ev-au-2002, era: conflict, start: 2002, title: "African Union launched", passage: "wp:African_Union#000", quote: "The bloc was launched on 9 July 2002"}
+  - {id: ev-taylor-2003, era: conflict, start: 2003, title: "Taylor resigns", passage: "wp:Second_Liberian_Civil_War#000", quote: "resigned in August 2003"}
+  # --- Peace and recovery
+  - {id: ev-sirleaf-2006, era: recovery, start: 2006, title: "Ellen Johnson Sirleaf takes office", passage: "wp:Ellen_Johnson_Sirleaf#001", quote: "took office on 16 January 2006"}
+  - {id: ev-nobel-2011, era: recovery, start: 2011, title: "Nobel Peace Prize for Sirleaf and Gbowee", passage: "wp:Leymah_Gbowee#000", quote: "were awarded the 2011 Nobel Peace Prize"}
+  - {id: ev-ebola-2013, era: recovery, start: 2013, end: 2016, title: "West African Ebola epidemic", passage: "wp:Western_African_Ebola_epidemic#000", quote: "was the most widespread outbreak of the disease in history"}
+  - {id: ev-unmil-2018, era: recovery, start: 2018, title: "UN mission in Liberia withdrawn", passage: "wp:Second_Liberian_Civil_War#001", quote: "officially withdrawn in 2018"}
+  - {id: ev-ecowas-2024, era: recovery, start: 2024, title: "Three states announce withdrawal from ECOWAS", passage: "wp:ECOWAS#001", quote: "jointly announced their withdrawal from the bloc"}

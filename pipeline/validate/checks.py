@@ -24,6 +24,7 @@ from .model import (
 
 MIN_QUIZ_QUESTIONS = 200
 MIN_SAMPLE_QUESTIONS_PER_SUBJECT = 10
+MIN_TIMELINE_EVENTS = 60
 _WS = re.compile(r"\s+")
 
 
@@ -223,7 +224,11 @@ def check_timeline(pack: Pack, report: Report, passage_ids: set[str]) -> None:
         report.add("TIMELINE_INVALID", "timeline.json must be a list or have an `events` list", "timeline.json")
         return
     places = {str(i.get("id")): i for i in _items(pack)}
+    texts = {str(p.get("id")): p.get("text", "") for p in (pack.passages or []) if isinstance(p, dict)}
+    era_ids = {str(e.get("id")) for e in tl.get("eras", []) if isinstance(e, dict)} if isinstance(tl, dict) else set()
     seen: set[str] = set()
+    starts: list[int] = []
+    unreviewed = 0
     for n, ev in enumerate(events):
         where = str(ev.get("id", f"events[{n}]")) if isinstance(ev, dict) else f"events[{n}]"
         if not isinstance(ev, dict):
@@ -240,13 +245,27 @@ def check_timeline(pack: Pack, report: Report, passage_ids: set[str]) -> None:
             report.add("TIMELINE_BAD_DATE", "`start` must be an integer year (negative for BCE)", where)
         elif end is not None and (not isinstance(end, int) or isinstance(end, bool) or end < start):
             report.add("TIMELINE_BAD_DATE", "`end` must be an integer year not before `start`", where)
+        if isinstance(start, int) and not isinstance(start, bool):
+            starts.append(start)
         if ev.get("passage") not in passage_ids:
             report.add("TIMELINE_BAD_PASSAGE", f"passage `{ev.get('passage')}` does not exist", where)
+        elif ev.get("summaryType") == "copied" and str(ev.get("summary", "")) not in texts.get(str(ev["passage"]), ""):
+            report.add("TIMELINE_SUMMARY_NOT_COPIED", "summary marked `copied` is not a verbatim part of the passage", where)
+        if era_ids and ev.get("era") not in era_ids:
+            report.add("TIMELINE_BAD_ERA", f"era `{ev.get('era')}` is not in the era list", where)
+        if ev.get("reviewed") is not True:
+            unreviewed += 1
         place = ev.get("place")
         if place is not None:
             item = places.get(str(place))
             if item is None or not _valid_coordinates(item.get("coordinates")):
                 report.add("TIMELINE_PLACE_NO_COORDINATES", f"place `{place}` has no valid coordinates in the manifest", where)
+    if starts != sorted(starts):
+        report.add("TIMELINE_NOT_SORTED", "events must be sorted by start year", "timeline.json")
+    if len(events) < MIN_TIMELINE_EVENTS:
+        report.add("TIMELINE_SMALL", f"{len(events)} events, target is {MIN_TIMELINE_EVENTS}", "timeline.json", "warning")
+    if unreviewed:
+        report.add("TIMELINE_UNREVIEWED", f"{unreviewed} of {len(events)} events are not marked reviewed by the subject expert", "timeline.json", "warning")
 
 
 # 8. Quiz bank ----------------------------------------------------------------------------------
