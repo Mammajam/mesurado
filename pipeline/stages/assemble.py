@@ -28,9 +28,26 @@ from pipeline.validate.model import Report
 OUT_DIR = Path(__file__).resolve().parents[1] / "out"
 
 
-def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_index: bool = True, with_zim: bool = True) -> tuple[Path | None, Report]:
-    items = json.loads((FETCH_DIR / "items.json").read_text(encoding="utf-8"))["items"]
-    passages = [json.loads(line) for line in (PASSAGES_DIR / "passages.jsonl").read_text(encoding="utf-8").splitlines() if line]
+def assemble(
+    name: str = "dev",
+    out_dir: Path = OUT_DIR,
+    embedder=None,
+    with_index: bool = True,
+    with_zim: bool = True,
+    *,
+    fetch_dir: Path = FETCH_DIR,
+    clean_dir: Path = CLEAN_DIR,
+    passages_dir: Path = PASSAGES_DIR,
+    timeline_source: Path | None = None,
+    reviewed_path: Path | None = None,
+    embed_cache: Path | None = None,
+    partial: bool = False,
+    log=lambda s: None,
+) -> tuple[Path | None, Report]:
+    """Build pack/<name> from the work directories. `partial` is for subject-limited builds: timeline events whose
+    passage is not in the pack are dropped instead of failing the build."""
+    items = json.loads((fetch_dir / "items.json").read_text(encoding="utf-8"))["items"]
+    passages = [json.loads(line) for line in (passages_dir / "passages.jsonl").read_text(encoding="utf-8").splitlines() if line]
     have_passages = {p["article"] for p in passages}
 
     tmp = out_dir / f"{name}.tmp"
@@ -42,7 +59,7 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
     for item in items:
         if item["id"] not in have_passages:
             continue  # R3.5: an article with no passages is dropped from the pack
-        clean = json.loads(next((CLEAN_DIR / item["subject"]).glob(f"{slug(item['id'])}.json")).read_text(encoding="utf-8"))
+        clean = json.loads(next((clean_dir / item["subject"]).glob(f"{slug(item['id'])}.json")).read_text(encoding="utf-8"))
         rel = f"articles/{slug(item['id'])}.txt"
         (tmp / rel).write_text(clean["text"], encoding="utf-8")
         manifest_items.append({**item, "text_file": rel})
@@ -62,15 +79,17 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
     write_attribution(tmp)  # before the hash: attribution files are part of the pack content
     from pipeline.stages.timeline import write_timeline
 
-    write_timeline(tmp)  # raises if an event's quote is not in its passage
+    log("timeline")
+    dropped_events = write_timeline(tmp, *([timeline_source] if timeline_source else []), skip_missing=partial)  # raises if a quote is not in its passage
     from pipeline.stages.quiz import write_quiz_bank
 
-    write_quiz_bank(tmp)  # reviewed questions only; writes nothing while pipeline/quiz/reviewed.yaml is empty
+    write_quiz_bank(tmp, *([reviewed_path] if reviewed_path else []))  # reviewed questions only; writes nothing while pipeline/quiz/reviewed.yaml is empty
     index_stats = {}
     if with_index:  # before the content hash, so the hash covers the index files
         from pipeline.stages.index import build_indexes
 
-        index_stats = build_indexes(tmp, embedder)
+        log("indexes and embeddings")
+        index_stats = build_indexes(tmp, embedder, embed_cache=embed_cache, log=log)
 
     if with_index:  # needs keyword.idx, so it runs after the index and before the hash
         from pipeline.stages.questions import write_sample_questions
@@ -83,8 +102,9 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
         "built": date.today().isoformat(),
         "articles": articles_n,
         "passages": len(kept),
-        "subjects": sorted({i["subject"] for i in manifest_items}),
+        "subjects": sorted({i["subject"] for i in manifest_items if i["type"] == "article"}),
         **({"index": index_stats} if index_stats else {}),
+        **({"partial": True, "timeline_events_dropped": dropped_events} if partial else {}),
         "license": PACK_LICENSE,
         "content_hash": compute_content_hash(files),
     }

@@ -41,12 +41,16 @@ def containing_sentence(text: str, quote: str) -> str:
     raise TimelineError(f"quote {quote!r} is not inside a sentence")
 
 
-def build_timeline(source: dict[str, Any], passages: dict[str, dict]) -> dict[str, Any]:
+def build_timeline(source: dict[str, Any], passages: dict[str, dict], skip_missing: bool = False,
+                   places: set[str] | None = None) -> dict[str, Any]:
+    """Events as timeline.json content. With skip_missing (subject-limited builds) events whose passage is not in the pack are
+    dropped, and a place that is not in `places` is cleared; otherwise both are errors."""
     eras = source["eras"]
     era_ids = [e["id"] for e in eras]
     events: list[dict[str, Any]] = []
     errors: list[str] = []
     seen: set[str] = set()
+    dropped = 0
     for raw in source["events"]:
         extra = set(raw) - EVENT_KEYS
         if extra:
@@ -59,6 +63,9 @@ def build_timeline(source: dict[str, Any], passages: dict[str, dict]) -> dict[st
         if raw["era"] not in era_ids:
             errors.append(f"{eid}: unknown era {raw['era']!r}")
         p = passages.get(raw["passage"])
+        if p is None and skip_missing:
+            dropped += 1
+            continue
         if p is None:
             errors.append(f"{eid}: passage {raw['passage']!r} is not in the pack")
             continue
@@ -70,24 +77,28 @@ def build_timeline(source: dict[str, Any], passages: dict[str, dict]) -> dict[st
         events.append({
             "id": eid, "era": raw["era"], "start": raw["start"], "end": raw.get("end"), "approx": bool(raw.get("approx", False)),
             "title": raw["title"], "summary": summary, "summaryType": "copied", "passage": raw["passage"],
-            "article": p["article"], "place": raw.get("place"), "subject": "history", "reviewed": bool(raw.get("reviewed", False)),
+            "article": p["article"], "place": raw.get("place") if places is None or raw.get("place") in places else None, "subject": "history", "reviewed": bool(raw.get("reviewed", False)),
         })
     if errors:
         raise TimelineError("\n".join(errors))
     events.sort(key=lambda e: (e["start"], e["end"] if e["end"] is not None else e["start"], e["id"]))
-    return {"format": "mesurado-timeline-1", "eras": [{"id": e["id"], "name": e["name"], "until": e["until"]} for e in eras], "events": events}
+    return {"format": "mesurado-timeline-1", "dropped": dropped, "eras": [{"id": e["id"], "name": e["name"], "until": e["until"]} for e in eras], "events": events}
 
 
-def write_timeline(pack: Path, source_path: Path = TIMELINE_YAML) -> dict[str, Any]:
+def write_timeline(pack: Path, source_path: Path = TIMELINE_YAML, skip_missing: bool = False) -> int:
+    """Write pack/timeline.json. Returns the number of events dropped because their passage is not in a partial pack."""
     source = yaml.safe_load(source_path.read_text(encoding="utf-8"))
     passages = {}
     for line in (pack / "passages.jsonl").read_text(encoding="utf-8").splitlines():
         if line:
             p = json.loads(line)
             passages[p["id"]] = p
-    tl = build_timeline(source, passages)
+    items = json.loads((pack / "manifest.json").read_text(encoding="utf-8"))["items"] if (pack / "manifest.json").exists() else []
+    places = {i["id"] for i in items if i.get("coordinates")} if skip_missing else None
+    tl = build_timeline(source, passages, skip_missing, places)
+    dropped = tl.pop("dropped")
     (pack / "timeline.json").write_text(json.dumps(tl, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    return tl
+    return dropped
 
 
 def main(argv: list[str]) -> int:
@@ -95,11 +106,11 @@ def main(argv: list[str]) -> int:
 
     pack = Path(argv[0]) if argv else OUT_DIR / "dev"
     try:
-        tl = write_timeline(pack)
+        write_timeline(pack)
     except TimelineError as exc:
         print(exc)
         return 1
-    print(f"{len(tl['events'])} events")
+    print(f"{len(json.loads((pack / 'timeline.json').read_text(encoding='utf-8'))['events'])} events")
     return 0
 
 

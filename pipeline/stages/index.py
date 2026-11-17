@@ -11,6 +11,7 @@ the reference the client is tested against.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import re
@@ -170,6 +171,18 @@ def fastembed_embedder(model: str = MODEL_NAME) -> Embedder:
     return embed
 
 
+def _lazy_fastembed() -> Embedder:
+    """Load the real model only if the cache cannot answer every text (loading takes about 10 seconds)."""
+    holder: list[Embedder] = []
+
+    def embed(texts: Sequence[str]) -> np.ndarray:
+        if not holder:
+            holder.append(fastembed_embedder())
+        return holder[0](texts)
+
+    return embed
+
+
 def semantic_search(header: dict, q: np.ndarray, scales: np.ndarray, doc_ids: Sequence[str], query_vec: np.ndarray, limit: int = 10) -> list[tuple[str, float]]:
     sims = (q.astype(np.float32) @ query_vec.astype(np.float32)) * scales
     order = sorted(range(len(sims)), key=lambda i: (-float(sims[i]), doc_ids[i]))[:limit]
@@ -185,15 +198,39 @@ def read_pack_passages(pack: Path) -> tuple[list[dict], dict[str, str]]:
     return passages, {i["id"]: i["title"] for i in items if i.get("type") == "article"}
 
 
-def build_indexes(pack: Path, embedder: Embedder | None = None, log=lambda s: None) -> dict:
+def embed_with_cache(texts: Sequence[str], embed: Embedder, cache_path: Path | None, model: str = MODEL_NAME) -> tuple[np.ndarray, int]:
+    """Embed texts, reusing cached vectors for texts seen before (key: sha256 of model + text). Returns (vectors, number embedded now).
+
+    The cache is a single .npz of float32 vectors; unchanged articles are therefore not embedded again on a rebuild (R8.3).
+    """
+    keys = [hashlib.sha256((model + "\0" + t).encode("utf-8")).hexdigest() for t in texts]
+    cached: dict[str, np.ndarray] = {}
+    if cache_path is not None and cache_path.exists():
+        with np.load(cache_path) as z:
+            cached = dict(zip(z["keys"].tolist(), z["vectors"]))
+    missing = [i for i, k in enumerate(keys) if k not in cached]
+    if missing:
+        new = embed([texts[i] for i in missing])
+        for i, v in zip(missing, new):
+            cached[keys[i]] = np.asarray(v, dtype=np.float32)
+        if cache_path is not None:
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            used = {k: cached[k] for k in dict.fromkeys(keys)}  # drop vectors for texts no longer in the pack
+            np.savez(cache_path, keys=np.array(list(used)), vectors=np.stack(list(used.values())))
+    out = np.stack([cached[k] for k in keys]) if keys else np.zeros((0, DIMS), dtype=np.float32)
+    return out, len(missing)
+
+
+def build_indexes(pack: Path, embedder: Embedder | None = None, log=lambda s: None, embed_cache: Path | None = None) -> dict:
     """Write keyword.idx and embeddings.i8 into an unpacked pack directory. Returns size/count stats."""
     passages, titles = read_pack_passages(pack)
     kw = build_keyword_index(passages, titles)
     write_keyword_index(kw, pack / "keyword.idx")
     log(f"keyword index: {len(kw['postings'])} terms")
-    embed = embedder or fastembed_embedder()
     texts = [index_text(p, titles.get(p["article"], "")) for p in passages]
-    vectors = embed(texts)
+    embed = embedder or _lazy_fastembed()
+    vectors, fresh = embed_with_cache(texts, embed, embed_cache)
+    log(f"embeddings: {fresh} computed, {len(texts) - fresh} reused from cache")
     if vectors.shape != (len(passages), DIMS):
         raise ValueError(f"embedder returned shape {vectors.shape}, expected {(len(passages), DIMS)}")
     q, scales = quantize(vectors)

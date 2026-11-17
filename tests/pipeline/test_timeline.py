@@ -79,7 +79,8 @@ def test_validator_accepts_a_built_timeline_and_flags_tampering(tmp_path):
     root = disk_pack(tmp_path)
     src = {"eras": source()["eras"], "events": [source(quote="The Kru live on the coast", place="wp:Article0")["events"][0]]}
     (tmp_path / "tl.yaml").write_text(yaml.safe_dump(src))
-    tl = write_timeline(root, tmp_path / "tl.yaml")
+    write_timeline(root, tmp_path / "tl.yaml")
+    tl = json.loads((root / "timeline.json").read_text())
     assert validate(load_pack(root)).error_codes() - {"META_HASH_MISMATCH"} == set()
     assert tl["events"][0]["summary"] == "The Kru live on the coast."
 
