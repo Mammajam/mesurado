@@ -63,6 +63,9 @@ def assemble(name: str = "dev", out_dir: Path = OUT_DIR, embedder=None, with_ind
     from pipeline.stages.timeline import write_timeline
 
     write_timeline(tmp)  # raises if an event's quote is not in its passage
+    from pipeline.stages.quiz import write_quiz_bank
+
+    write_quiz_bank(tmp)  # reviewed questions only; writes nothing while pipeline/quiz/reviewed.yaml is empty
     index_stats = {}
     if with_index:  # before the content hash, so the hash covers the index files
         from pipeline.stages.index import build_indexes

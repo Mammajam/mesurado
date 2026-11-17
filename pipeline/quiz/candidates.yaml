@@ -1,0 +1,4271 @@
+# Quiz candidates (generated). Set `status: accepted` or `status: rejected` for each; edit stem, options, answer or
+# explanation if needed (keep the answer text inside the passage). Then run `python -m pipeline.stages.quiz promote`.
+# These are never shipped: only reviewed.yaml reaches the pack.
+candidates:
+- id: q-00a1c90cbae8
+  subject: history
+  topic: Dahomey
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The Kingdom of Dahomey was established around _____ as an offshoot of the royal dynasty of the Kingdom of Allada.'
+  options:
+  - '1599'
+  - '1601'
+  - '1602'
+  - '1600'
+  answer: 3
+  explanation: The Kingdom of Dahomey was established around 1600 as an offshoot of the royal dynasty of the Kingdom of Allada.
+  explanationType: copied
+  passage: wp:Dahomey#003
+  generation: rule
+  status: pending
+- id: q-01cdbf062a3c
+  subject: history
+  topic: First Liberian Civil War
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the group effectively broke into two separate militias: The ULIMO-J, an ethnic Krahn faction led by General Roosevelt Johnson; and the ULIMO-K, a Mandingo-based faction led by Alhaji G.V. Kromah.'
+  options:
+  - '1993'
+  - '1995'
+  - '1994'
+  - '1992'
+  answer: 2
+  explanation: 'In 1994, the group effectively broke into two separate militias: The ULIMO-J, an ethnic Krahn faction led by General Roosevelt Johnson; and the ULIMO-K, a Mandingo-based faction led by Alhaji G.V. Kromah.'
+  explanationType: copied
+  passage: wp:First_Liberian_Civil_War#012
+  generation: rule
+  status: pending
+- id: q-03248e376c1f
+  subject: geography
+  topic: Lagos
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Three of _____’s four largest shipyards are located in Lagos: Nigerdock on Snake Island, Naval Dockyard Limited on Victoria Island and Samsung Heavy Industries Mega Construction Yard at Tarkwa Bay.'
+  options:
+  - Abidjan
+  - Conakry
+  - Senegal
+  - Nigeria
+  answer: 3
+  explanation: 'Three of Nigeria’s four largest shipyards are located in Lagos: Nigerdock on Snake Island, Naval Dockyard Limited on Victoria Island and Samsung Heavy Industries Mega Construction Yard at Tarkwa Bay.'
+  explanationType: copied
+  passage: wp:Lagos#025
+  generation: rule
+  status: pending
+- id: q-04cde0bfdf98
+  subject: geography
+  topic: Sahara
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: There are approximately _____ mature individuals left in the wild.'
+  options:
+  - '1999'
+  - '2000'
+  - '2001'
+  - '1998'
+  answer: 1
+  explanation: There are approximately 2000 mature individuals left in the wild.
+  explanationType: copied
+  passage: wp:Sahara#023
+  generation: rule
+  status: pending
+- id: q-054d088a0692
+  subject: history
+  topic: Organisation of African Unity
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The OAU was founded in May 1963 in Addis Ababa, _____, by 32 African states with the main aim of bringing the African nations together and resolve the issues within the continent.'
+  options:
+  - Monrovia
+  - Timbuktu
+  - Dahomey
+  - Ethiopia
+  answer: 3
+  explanation: The OAU was founded in May 1963 in Addis Ababa, Ethiopia, by 32 African states with the main aim of bringing the African nations together and resolve the issues within the continent.
+  explanationType: copied
+  passage: wp:Organisation_of_African_Unity#001
+  generation: rule
+  status: pending
+- id: q-066b88f508ad
+  subject: history
+  topic: ECOWAS
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Mauritania signed a new associate-membership agreement in August _____.'
+  options:
+  - '2016'
+  - '2018'
+  - '2017'
+  - '2015'
+  answer: 2
+  explanation: Mauritania signed a new associate-membership agreement in August 2017.
+  explanationType: copied
+  passage: wp:ECOWAS#003
+  generation: rule
+  status: pending
+- id: q-0686926cb286
+  subject: geography
+  topic: Lagos
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The remains of the first bishop of African descent in the Anglican Church and translator of the Bible into the Yoruba language, Samuel Ajayi Crowther, were transferred to this cathedral in _____.'
+  options:
+  - '1975'
+  - '1976'
+  - '1977'
+  - '1974'
+  answer: 1
+  explanation: The remains of the first bishop of African descent in the Anglican Church and translator of the Bible into the Yoruba language, Samuel Ajayi Crowther, were transferred to this cathedral in 1976.
+  explanationType: copied
+  passage: wp:Lagos#047
+  generation: rule
+  status: pending
+- id: q-075f05ae000c
+  subject: geography
+  topic: Maryland County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Following a referendum in _____, the colony declared its independence from the Colonization Society across the Atlantic Ocean and formed the Republic of Maryland.'
+  options:
+  - '1852'
+  - '1851'
+  - '1853'
+  - '1850'
+  answer: 2
+  explanation: Following a referendum in 1853, the colony declared its independence from the Colonization Society across the Atlantic Ocean and formed the Republic of Maryland.
+  explanationType: copied
+  passage: wp:Maryland_County#001
+  generation: rule
+  status: pending
+- id: q-0a1ea96c2a9e
+  subject: history
+  topic: Songhai Empire
+  difficulty: easy
+  type: cloze-year
+  stem: 'Fill in the blank: The Songhai Empire collapsed after the defeat at the Battle of Tondibi in _____.'
+  options:
+  - '1589'
+  - '1591'
+  - '1593'
+  - '1588'
+  answer: 1
+  explanation: The Songhai Empire collapsed after the defeat at the Battle of Tondibi in 1591.
+  explanationType: copied
+  passage: wp:Songhai_Empire#001
+  generation: rule
+  status: pending
+- id: q-0aab53de223d
+  subject: history
+  topic: Cape Mesurado
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: To commemorate her action, a local holiday, called “Matilda Newport Day,” was established in _____.'
+  options:
+  - '1916'
+  - '1915'
+  - '1917'
+  - '1914'
+  answer: 0
+  explanation: To commemorate her action, a local holiday, called “Matilda Newport Day,” was established in 1916.
+  explanationType: copied
+  passage: wp:Cape_Mesurado#002
+  generation: rule
+  status: pending
+- id: q-0abf2bb79f4d
+  subject: history
+  topic: Joseph Jenkins Roberts
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Some time after his wife''s death, Roberts married again, to Jane Rose Waring, in _____ in Monrovia, Liberia.'
+  options:
+  - '1835'
+  - '1837'
+  - '1834'
+  - '1836'
+  answer: 3
+  explanation: Some time after his wife's death, Roberts married again, to Jane Rose Waring, in 1836 in Monrovia, Liberia.
+  explanationType: copied
+  passage: wp:Joseph_Jenkins_Roberts#003
+  generation: rule
+  status: pending
+- id: q-0aecec710910
+  subject: history
+  topic: William Tubman
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In June _____, he and former president Edwin Barclay traveled to the White House as guests of President Franklin D. Roosevelt, and became the first African heads of state to be received there.'
+  options:
+  - '1943'
+  - '1945'
+  - '1942'
+  - '1944'
+  answer: 3
+  explanation: In June 1944, he and former president Edwin Barclay traveled to the White House as guests of President Franklin D. Roosevelt, and became the first African heads of state to be received there.
+  explanationType: copied
+  passage: wp:William_Tubman#007
+  generation: rule
+  status: pending
+- id: q-0c9f559647d8
+  subject: geography
+  topic: Ghana
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Following the _____ general election, Mahama became president in his own right, and Ghana was described as a "stable democracy".'
+  options:
+  - '2011'
+  - '2013'
+  - '2012'
+  - '2010'
+  answer: 2
+  explanation: Following the 2012 general election, Mahama became president in his own right, and Ghana was described as a "stable democracy".
+  explanationType: copied
+  passage: wp:Ghana#016
+  generation: rule
+  status: pending
+- id: q-0d86fa90ff4e
+  subject: history
+  topic: Firestone Natural Rubber Company
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: As early as May _____ British officials in Monrovia informed their superiors in London of how unfeasible these numbers were and warned that "natives would soon be converted into wage-slaves..."'
+  options:
+  - '1925'
+  - '1924'
+  - '1926'
+  - '1923'
+  answer: 0
+  explanation: As early as May 1925 British officials in Monrovia informed their superiors in London of how unfeasible these numbers were and warned that "natives would soon be converted into wage-slaves..."
+  explanationType: copied
+  passage: wp:Firestone_Natural_Rubber_Company#003
+  generation: rule
+  status: pending
+- id: q-0df76c68958b
+  subject: history
+  topic: William Tolbert
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: William Tubman who was president in _____ chose Tolbert as his vice president.'
+  options:
+  - '1950'
+  - '1952'
+  - '1951'
+  - '1949'
+  answer: 2
+  explanation: William Tubman who was president in 1951 chose Tolbert as his vice president.
+  explanationType: copied
+  passage: wp:William_Tolbert#002
+  generation: rule
+  status: pending
+- id: q-0e65dc3d24a5
+  subject: history
+  topic: Firestone Natural Rubber Company
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Similarly, the fungicide captafol, extensively used during that period, has been discontinued in the United States since _____ due to its carcinogenic properties.'
+  options:
+  - '1986'
+  - '1987'
+  - '1988'
+  - '1985'
+  answer: 1
+  explanation: Similarly, the fungicide captafol, extensively used during that period, has been discontinued in the United States since 1987 due to its carcinogenic properties.
+  explanationType: copied
+  passage: wp:Firestone_Natural_Rubber_Company#018
+  generation: rule
+  status: pending
+- id: q-0e8039114518
+  subject: geography
+  topic: Geography of Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Westernmost point - unnamed headland immediately west of the town of Sewulu at the mouth of the _____, Grand Cape Mount County.'
+  options:
+  - Niger River
+  - Cestos River
+  - Saint Paul River
+  - Mano River
+  answer: 3
+  explanation: Westernmost point - unnamed headland immediately west of the town of Sewulu at the mouth of the Mano River, Grand Cape Mount County.
+  explanationType: copied
+  passage: wp:Geography_of_Liberia#003
+  generation: rule
+  status: pending
+- id: q-10ab6fd038ae
+  subject: history
+  topic: Ethiopia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Under Emperor Susenyos I, Roman Catholicism became the state religion of the Ethiopian Empire in _____.'
+  options:
+  - '1622'
+  - '1621'
+  - '1624'
+  - '1626'
+  answer: 0
+  explanation: Under Emperor Susenyos I, Roman Catholicism became the state religion of the Ethiopian Empire in 1622.
+  explanationType: copied
+  passage: wp:Ethiopia#014
+  generation: rule
+  status: pending
+- id: q-112442fd7856
+  subject: geography
+  topic: Sahel
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The climate is similar to, but less extreme than, the climate of the _____ desert located just to the north.'
+  options:
+  - Sahara
+  - Guinea
+  - Abidjan
+  - Accra
+  answer: 0
+  explanation: The climate is similar to, but less extreme than, the climate of the Sahara desert located just to the north.
+  explanationType: copied
+  passage: wp:Sahel#004
+  generation: rule
+  status: pending
+- id: q-1223baf1b83e
+  subject: history
+  topic: Leymah Gbowee
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, Gbowee was a Bartels World Affairs Fellows at Cornell University, giving the annual Bartels World Affairs Lecture.'
+  options:
+  - '2021'
+  - '2023'
+  - '2022'
+  - '2020'
+  answer: 2
+  explanation: In 2022, Gbowee was a Bartels World Affairs Fellows at Cornell University, giving the annual Bartels World Affairs Lecture.
+  explanationType: copied
+  passage: wp:Leymah_Gbowee#034
+  generation: rule
+  status: pending
+- id: q-125378d48485
+  subject: geography
+  topic: Nigeria
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Despite the official declaration of French as the second official language in _____ by General Sani Abacha, the policy has remained largely theoretical.'
+  options:
+  - '1995'
+  - '1997'
+  - '1996'
+  - '1994'
+  answer: 2
+  explanation: Despite the official declaration of French as the second official language in 1996 by General Sani Abacha, the policy has remained largely theoretical.
+  explanationType: copied
+  passage: wp:Nigeria#069
+  generation: rule
+  status: pending
+- id: q-130ffb0f77f5
+  subject: history
+  topic: Decolonisation of Africa
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Until _____ the FRELIMO showed less interest in Tete region, putting its efforts on the two northernmost districts of the country where the use of landmines became very common.'
+  options:
+  - '1966'
+  - '1968'
+  - '1965'
+  - '1967'
+  answer: 3
+  explanation: Until 1967 the FRELIMO showed less interest in Tete region, putting its efforts on the two northernmost districts of the country where the use of landmines became very common.
+  explanationType: copied
+  passage: wp:Decolonisation_of_Africa#038
+  generation: rule
+  status: pending
+- id: q-15d62bfb5c6f
+  subject: geography
+  topic: Burkina Faso
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The other international airport, Bobo Dioulasso Airport, has flights to Ouagadougou and _____.'
+  options:
+  - Conakry
+  - Nigeria
+  - Senegal
+  - Abidjan
+  answer: 3
+  explanation: The other international airport, Bobo Dioulasso Airport, has flights to Ouagadougou and Abidjan.
+  explanationType: copied
+  passage: wp:Burkina_Faso#045
+  generation: rule
+  status: pending
+- id: q-1690fe825ce9
+  subject: geography
+  topic: Niger River
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The region of the Niger bend, in the Sahel, was a key origin and destination for trans-Saharan trade, fueling the wealth of great empires such as the _____, Mali, and Songhai Empires.'
+  options:
+  - Ghana
+  - Accra
+  - Dakar
+  - Lagos
+  answer: 0
+  explanation: The region of the Niger bend, in the Sahel, was a key origin and destination for trans-Saharan trade, fueling the wealth of great empires such as the Ghana, Mali, and Songhai Empires.
+  explanationType: copied
+  passage: wp:Niger_River#009
+  generation: rule
+  status: pending
+- id: q-1785b9ddc14e
+  subject: history
+  topic: Cape Mesurado
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: There is a lighthouse on Cape Mesurado, located in the Mamba Point neighborhood of _____ and in the cape''s northwestern portion, that was established in 1855.'
+  options:
+  - Monrovia
+  - Ethiopia
+  - Timbuktu
+  - Dahomey
+  answer: 0
+  explanation: There is a lighthouse on Cape Mesurado, located in the Mamba Point neighborhood of Monrovia and in the cape's northwestern portion, that was established in 1855.
+  explanationType: copied
+  passage: wp:Cape_Mesurado#000
+  generation: rule
+  status: pending
+- id: q-1a9853084891
+  subject: history
+  topic: William Tubman
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: William Tubman was born on 29 November _____, in Harper, which is located in southeastern Liberia.'
+  options:
+  - '1894'
+  - '1895'
+  - '1896'
+  - '1893'
+  answer: 1
+  explanation: William Tubman was born on 29 November 1895, in Harper, which is located in southeastern Liberia.
+  explanationType: copied
+  passage: wp:William_Tubman#001
+  generation: rule
+  status: pending
+- id: q-1b4fa020629f
+  subject: history
+  topic: Second Liberian Civil War
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The first Nigerian battalion detached from the United Nations Mission in _____, and the second came from Nigeria itself.'
+  options:
+  - Sierra Leone
+  - Burkina Faso
+  - Cestos River
+  - Nimba County
+  answer: 0
+  explanation: The first Nigerian battalion detached from the United Nations Mission in Sierra Leone, and the second came from Nigeria itself.
+  explanationType: copied
+  passage: wp:Second_Liberian_Civil_War#007
+  generation: rule
+  status: pending
+- id: q-1d8adbefe7e3
+  subject: geography
+  topic: Ghana
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Christianity is the largest religion in Ghana, with 71.3% of the population being members of various Christian denominations as of the _____ census.'
+  options:
+  - '2020'
+  - '2022'
+  - '2019'
+  - '2021'
+  answer: 3
+  explanation: Christianity is the largest religion in Ghana, with 71.3% of the population being members of various Christian denominations as of the 2021 census.
+  explanationType: copied
+  passage: wp:Ghana#036
+  generation: rule
+  status: pending
+- id: q-1de2101a26c4
+  subject: history
+  topic: Charles Taylor (Liberian politician)
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Taylor''s attorneys filed a motion to have him transferred to a prison in Rwanda, but in March _____, the motion was denied and he was ordered to continue serving his sentence in the United Kingdom.'
+  options:
+  - '2014'
+  - '2015'
+  - '2016'
+  - '2012'
+  answer: 1
+  explanation: Taylor's attorneys filed a motion to have him transferred to a prison in Rwanda, but in March 2015, the motion was denied and he was ordered to continue serving his sentence in the United Kingdom.
+  explanationType: copied
+  passage: wp:Charles_Taylor_(Liberian_politician)#024
+  generation: rule
+  status: pending
+- id: q-20f386ecab86
+  subject: geography
+  topic: The Gambia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Responsibility for the military has rested directly with the President since Jammeh seized power at the head of a bloodless military coup in _____.'
+  options:
+  - '1993'
+  - '1995'
+  - '1992'
+  - '1994'
+  answer: 3
+  explanation: Responsibility for the military has rested directly with the President since Jammeh seized power at the head of a bloodless military coup in 1994.
+  explanationType: copied
+  passage: wp:The_Gambia#031
+  generation: rule
+  status: pending
+- id: q-212adc07fc1c
+  subject: geography
+  topic: Conakry
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: A port city, it serves as the economic, financial and cultural centre of _____.'
+  options:
+  - Guinea
+  - Gulf of Guinea
+  - Sahara
+  - Abidjan
+  answer: 0
+  explanation: A port city, it serves as the economic, financial and cultural centre of Guinea.
+  explanationType: copied
+  passage: wp:Conakry#000
+  generation: rule
+  status: pending
+- id: q-215f700fc8fa
+  subject: history
+  topic: Leymah Gbowee
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Gbowee is the narrator and central character in the _____ documentary film Pray the Devil Back to Hell, which consists of scores of film and audio clips from the war period.'
+  options:
+  - '2007'
+  - '2008'
+  - '2009'
+  - '2006'
+  answer: 1
+  explanation: Gbowee is the narrator and central character in the 2008 documentary film Pray the Devil Back to Hell, which consists of scores of film and audio clips from the war period.
+  explanationType: copied
+  passage: wp:Leymah_Gbowee#033
+  generation: rule
+  status: pending
+- id: q-2183b53197b1
+  subject: geography
+  topic: Gulf of Guinea
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: One of the main issues of IUU is that a lot of the fish that is caught in the Gulf of _____ is fish that is unreported when caught.'
+  options:
+  - Sahara
+  - Abidjan
+  - Guinea
+  - Accra
+  answer: 2
+  explanation: One of the main issues of IUU is that a lot of the fish that is caught in the Gulf of Guinea is fish that is unreported when caught.
+  explanationType: copied
+  passage: wp:Gulf_of_Guinea#009
+  generation: rule
+  status: pending
+- id: q-22902a2721f0
+  subject: history
+  topic: Mansa Musa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: While Musa''s palace has since vanished, the university and mosque still stand in _____.'
+  options:
+  - Timbuktu
+  - Ethiopia
+  - Monrovia
+  - Dahomey
+  answer: 0
+  explanation: While Musa's palace has since vanished, the university and mosque still stand in Timbuktu.
+  explanationType: copied
+  passage: wp:Mansa_Musa#012
+  generation: rule
+  status: pending
+- id: q-25c97260f297
+  subject: geography
+  topic: Ivory Coast
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The _____, the earliest of the Sudanic empires, flourished in the region encompassing present-day southeast Mauritania and southern Mali between the 4th and 13th centuries.'
+  options:
+  - Asante Empire
+  - Cape Mesurado
+  - Nok culture
+  - Ghana Empire
+  answer: 3
+  explanation: The Ghana Empire, the earliest of the Sudanic empires, flourished in the region encompassing present-day southeast Mauritania and southern Mali between the 4th and 13th centuries.
+  explanationType: copied
+  passage: wp:Ivory_Coast#006
+  generation: rule
+  status: pending
+- id: q-25dc5a259352
+  subject: geography
+  topic: Harper, Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: John Brown Russwurm, an African-American abolitionist and governor of _____, was buried in Harper after his death.'
+  options:
+  - Ethiopia
+  - Monrovia
+  - Timbuktu
+  - Dahomey
+  answer: 1
+  explanation: John Brown Russwurm, an African-American abolitionist and governor of Monrovia, was buried in Harper after his death.
+  explanationType: copied
+  passage: wp:Harper,_Liberia#003
+  generation: rule
+  status: pending
+- id: q-2a9b58159423
+  subject: geography
+  topic: Niger River
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The northern part of the river, known as the Niger bend, is an important area because it is the major river and source of water in that part of the _____.'
+  options:
+  - Sahara
+  - Guinea
+  - Abidjan
+  - Accra
+  answer: 0
+  explanation: The northern part of the river, known as the Niger bend, is an important area because it is the major river and source of water in that part of the Sahara.
+  explanationType: copied
+  passage: wp:Niger_River#007
+  generation: rule
+  status: pending
+- id: q-2a9dadf18e99
+  subject: history
+  topic: Atlantic slave trade
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: According to Frances Stafford, a long and mostly uninhabited coastline and its proximity to Cuba made Florida an ideal location, and as early as _____ it was a centre of slave trading.'
+  options:
+  - '1809'
+  - '1810'
+  - '1811'
+  - '1812'
+  answer: 1
+  explanation: According to Frances Stafford, a long and mostly uninhabited coastline and its proximity to Cuba made Florida an ideal location, and as early as 1810 it was a centre of slave trading.
+  explanationType: copied
+  passage: wp:Atlantic_slave_trade#057
+  generation: rule
+  status: pending
+- id: q-3114c67b315b
+  subject: geography
+  topic: Mali
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____ the government passed the Educational Reform Law which introduced 9 years of mandatory education across Mali.'
+  options:
+  - '1965'
+  - '1961'
+  - '1960'
+  - '1964'
+  answer: 3
+  explanation: In 1964 the government passed the Educational Reform Law which introduced 9 years of mandatory education across Mali.
+  explanationType: copied
+  passage: wp:Mali#014
+  generation: rule
+  status: pending
+- id: q-31871e36835b
+  subject: history
+  topic: American Colonization Society
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The ACS did have some success, in the _____s, with state legislatures, such as those of Virginia, Pennsylvania, and New Jersey.'
+  options:
+  - '1849'
+  - '1851'
+  - '1850'
+  - '1848'
+  answer: 2
+  explanation: The ACS did have some success, in the 1850s, with state legislatures, such as those of Virginia, Pennsylvania, and New Jersey.
+  explanationType: copied
+  passage: wp:American_Colonization_Society#030
+  generation: rule
+  status: pending
+- id: q-34362a2afd73
+  subject: history
+  topic: Pan-Africanism
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In the _____s, Dr Nnamdi Azikiwe''s anti-colonial writings from the United States, Accra, and Lagos established him as the most prominent Pan-Africanist in the British West Africa.'
+  options:
+  - '1930'
+  - '1929'
+  - '1931'
+  - '1928'
+  answer: 0
+  explanation: In the 1930s, Dr Nnamdi Azikiwe's anti-colonial writings from the United States, Accra, and Lagos established him as the most prominent Pan-Africanist in the British West Africa.
+  explanationType: copied
+  passage: wp:Pan-Africanism#005
+  generation: rule
+  status: pending
+- id: q-3444a0d238e2
+  subject: geography
+  topic: Montserrado County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In 1974, the county capital was moved by President Tolbert from _____ to his hometown of Bensonville.'
+  options:
+  - Monrovia
+  - Ethiopia
+  - Timbuktu
+  - Dahomey
+  answer: 0
+  explanation: In 1974, the county capital was moved by President Tolbert from Monrovia to his hometown of Bensonville.
+  explanationType: copied
+  passage: wp:Montserrado_County#014
+  generation: rule
+  status: pending
+- id: q-34ef451f5bdb
+  subject: history
+  topic: Atlantic slave trade
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The historian Ernest Obadele-Starks, referring to calculations made by Curtin, deduces that after _____ the number of enslaved Africans smuggled into the United States annually averaged as low as 3,500.'
+  options:
+  - '1807'
+  - '1808'
+  - '1809'
+  - '1806'
+  answer: 1
+  explanation: The historian Ernest Obadele-Starks, referring to calculations made by Curtin, deduces that after 1808 the number of enslaved Africans smuggled into the United States annually averaged as low as 3,500.
+  explanationType: copied
+  passage: wp:Atlantic_slave_trade#061
+  generation: rule
+  status: pending
+- id: q-3567758ba112
+  subject: history
+  topic: African Union
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the African Union adopted the Free Movement Protocol.'
+  options:
+  - '2017'
+  - '2019'
+  - '2018'
+  - '2020'
+  answer: 2
+  explanation: In 2018, the African Union adopted the Free Movement Protocol.
+  explanationType: copied
+  passage: wp:African_Union#057
+  generation: rule
+  status: pending
+- id: q-386182b77195
+  subject: history
+  topic: Sokoto Caliphate
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Sokoto Caliphate extended its influence into the northern areas of present-day Benin, which borders _____ to the west.'
+  options:
+  - Abidjan
+  - Conakry
+  - Nigeria
+  - Senegal
+  answer: 2
+  explanation: The Sokoto Caliphate extended its influence into the northern areas of present-day Benin, which borders Nigeria to the west.
+  explanationType: copied
+  passage: wp:Sokoto_Caliphate#016
+  generation: rule
+  status: pending
+- id: q-38c390f0dee7
+  subject: geography
+  topic: Harmattan
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Harmattan is a season in _____ that occurs between the end of November and the middle of March.'
+  options:
+  - Ivory Coast
+  - West Africa
+  - Lofa County
+  - Niger River
+  answer: 1
+  explanation: The Harmattan is a season in West Africa that occurs between the end of November and the middle of March.
+  explanationType: copied
+  passage: wp:Harmattan#000
+  generation: rule
+  status: pending
+- id: q-38e260d19486
+  subject: history
+  topic: Nok culture
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Nok people and the Gajiganna people may have migrated from the Central _____, along with pearl millet and pottery, and diverged prior to arriving in the northern region of modern-day Nigeria.'
+  options:
+  - Sahara
+  - Guinea
+  - Abidjan
+  - Accra
+  answer: 0
+  explanation: The Nok people and the Gajiganna people may have migrated from the Central Sahara, along with pearl millet and pottery, and diverged prior to arriving in the northern region of modern-day Nigeria.
+  explanationType: copied
+  passage: wp:Nok_culture#000
+  generation: rule
+  status: pending
+- id: q-39faffbc1c3e
+  subject: history
+  topic: Kwame Nkrumah
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Philip Gbeho was commissioned to compose the new national anthem, "God Bless Our Homeland _____".'
+  options:
+  - Ghana
+  - Accra
+  - Dakar
+  - Lagos
+  answer: 0
+  explanation: Philip Gbeho was commissioned to compose the new national anthem, "God Bless Our Homeland Ghana".
+  explanationType: copied
+  passage: wp:Kwame_Nkrumah#026
+  generation: rule
+  status: pending
+- id: q-3aae9a1010f9
+  subject: geography
+  topic: Harper, Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: During the _____s, Harper was terrorized by Maryland ritual killings.'
+  options:
+  - '1969'
+  - '1971'
+  - '1970'
+  - '1968'
+  answer: 2
+  explanation: During the 1970s, Harper was terrorized by Maryland ritual killings.
+  explanationType: copied
+  passage: wp:Harper,_Liberia#005
+  generation: rule
+  status: pending
+- id: q-3bd62969f0fa
+  subject: geography
+  topic: Accra
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: A 2021 review by the Environmental Protection Agency in _____ found that the levels were exceeding national and international standards for health.'
+  options:
+  - Dakar
+  - Lagos
+  - Guinea
+  - Ghana
+  answer: 3
+  explanation: A 2021 review by the Environmental Protection Agency in Ghana found that the levels were exceeding national and international standards for health.
+  explanationType: copied
+  passage: wp:Accra#020
+  generation: rule
+  status: pending
+- id: q-3c19657c9fe4
+  subject: geography
+  topic: Sahara
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Spain captured present-day Western Sahara after _____, although Rio del Oro remained largely under Sahrawi influence.'
+  options:
+  - '1874'
+  - '1873'
+  - '1872'
+  - '1871'
+  answer: 0
+  explanation: Spain captured present-day Western Sahara after 1874, although Rio del Oro remained largely under Sahrawi influence.
+  explanationType: copied
+  passage: wp:Sahara#048
+  generation: rule
+  status: pending
+- id: q-3c44d0cbe64a
+  subject: geography
+  topic: Lake Volta
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Aluminium Limited, the main industrial sponsor of the project, withdrew after Ghana became independent in _____.'
+  options:
+  - '1957'
+  - '1956'
+  - '1958'
+  - '1955'
+  answer: 0
+  explanation: Aluminium Limited, the main industrial sponsor of the project, withdrew after Ghana became independent in 1957.
+  explanationType: copied
+  passage: wp:Lake_Volta#002
+  generation: rule
+  status: pending
+- id: q-3d3d7cc02502
+  subject: history
+  topic: Nok culture
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Nok culture is a population whose material remains are named after the Ham village of Nok in southern Kaduna State of _____, where their terracotta sculptures were first discovered in 1928.'
+  options:
+  - Nigeria
+  - Abidjan
+  - Conakry
+  - Senegal
+  answer: 0
+  explanation: The Nok culture is a population whose material remains are named after the Ham village of Nok in southern Kaduna State of Nigeria, where their terracotta sculptures were first discovered in 1928.
+  explanationType: copied
+  passage: wp:Nok_culture#000
+  generation: rule
+  status: pending
+- id: q-3d72bb8153ba
+  subject: geography
+  topic: Bong County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The main paved road that runs from _____ to Sanniquellie in Nimba County traverses Bong County.'
+  options:
+  - Ethiopia
+  - Timbuktu
+  - Dahomey
+  - Monrovia
+  answer: 3
+  explanation: The main paved road that runs from Monrovia to Sanniquellie in Nimba County traverses Bong County.
+  explanationType: copied
+  passage: wp:Bong_County#001
+  generation: rule
+  status: pending
+- id: q-3e8c92229b39
+  subject: history
+  topic: Sierra Leone Civil War
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The civil war also served as the background for the _____ movie Blood Diamond, starring Leonardo DiCaprio, Djimon Hounsou and Jennifer Connelly.'
+  options:
+  - '2005'
+  - '2004'
+  - '2008'
+  - '2006'
+  answer: 3
+  explanation: The civil war also served as the background for the 2006 movie Blood Diamond, starring Leonardo DiCaprio, Djimon Hounsou and Jennifer Connelly.
+  explanationType: copied
+  passage: wp:Sierra_Leone_Civil_War#044
+  generation: rule
+  status: pending
+- id: q-3eadcdc7aebe
+  subject: geography
+  topic: Ghana
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Ghana was ranked seventh in Africa out of 53 countries in the _____ Ibrahim Index of African Governance.'
+  options:
+  - '2012'
+  - '2011'
+  - '2013'
+  - '2010'
+  answer: 0
+  explanation: Ghana was ranked seventh in Africa out of 53 countries in the 2012 Ibrahim Index of African Governance.
+  explanationType: copied
+  passage: wp:Ghana#018
+  generation: rule
+  status: pending
+- id: q-3ef9057f9394
+  subject: history
+  topic: Western African Ebola epidemic
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: As of February _____ many rapid diagnostic tests were under trial.'
+  options:
+  - '2016'
+  - '2013'
+  - '2015'
+  - '2017'
+  answer: 2
+  explanation: As of February 2015 many rapid diagnostic tests were under trial.
+  explanationType: copied
+  passage: wp:Western_African_Ebola_epidemic#036
+  generation: rule
+  status: pending
+- id: q-3f287d39eb4a
+  subject: geography
+  topic: Abidjan
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Le virus, a film by Bleu Brigitte released in December _____, with Fortuné Akakpo, Fanta Coulibaly, Tatianna de M''C Ensira.'
+  options:
+  - '2007'
+  - '2006'
+  - '2008'
+  - '2005'
+  answer: 0
+  explanation: Le virus, a film by Bleu Brigitte released in December 2007, with Fortuné Akakpo, Fanta Coulibaly, Tatianna de M'C Ensira.
+  explanationType: copied
+  passage: wp:Abidjan#061
+  generation: rule
+  status: pending
+- id: q-3fe8e2be2428
+  subject: history
+  topic: Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The operation ended in _____, though the Michigan National Guard still continues to work with the AFL as part of the U.S. National Guard''s State Partnership Program.'
+  options:
+  - '2015'
+  - '2017'
+  - '2014'
+  - '2016'
+  answer: 3
+  explanation: The operation ended in 2016, though the Michigan National Guard still continues to work with the AFL as part of the U.S. National Guard's State Partnership Program.
+  explanationType: copied
+  passage: wp:Liberia#034
+  generation: rule
+  status: pending
+- id: q-403d96a2f2ed
+  subject: history
+  topic: Samuel Doe
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Charles Taylor, a former ally of Doe, crossed into Liberia from Ivory Coast on 24 December _____ to wage a guerrilla war against Doe.'
+  options:
+  - '1988'
+  - '1989'
+  - '1987'
+  - '1991'
+  answer: 1
+  explanation: Charles Taylor, a former ally of Doe, crossed into Liberia from Ivory Coast on 24 December 1989 to wage a guerrilla war against Doe.
+  explanationType: copied
+  passage: wp:Samuel_Doe#012
+  generation: rule
+  status: pending
+- id: q-407bc8980bf6
+  subject: geography
+  topic: Harper, Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Harper, situated on Cape Palmas, is the capital of _____ in Liberia.'
+  options:
+  - Margibi County
+  - Montserrado County
+  - Maryland County
+  - Nimba County
+  answer: 2
+  explanation: Harper, situated on Cape Palmas, is the capital of Maryland County in Liberia.
+  explanationType: copied
+  passage: wp:Harper,_Liberia#000
+  generation: rule
+  status: pending
+- id: q-4177e6d5a283
+  subject: geography
+  topic: Nimba County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: As of _____, the hospital in Yekepa built by LAMCO, is currently being run by ArcelorMittal.'
+  options:
+  - '2007'
+  - '2008'
+  - '2009'
+  - '2006'
+  answer: 1
+  explanation: As of 2008, the hospital in Yekepa built by LAMCO, is currently being run by ArcelorMittal.
+  explanationType: copied
+  passage: wp:Nimba_County#009
+  generation: rule
+  status: pending
+- id: q-421a09f056e0
+  subject: history
+  topic: Kwame Nkrumah
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Beginning in October _____, Nkrumah sought opinions from councils and from political parties on reform, and consulted widely across the country, including with opposition groups.'
+  options:
+  - '1951'
+  - '1950'
+  - '1952'
+  - '1949'
+  answer: 2
+  explanation: Beginning in October 1952, Nkrumah sought opinions from councils and from political parties on reform, and consulted widely across the country, including with opposition groups.
+  explanationType: copied
+  passage: wp:Kwame_Nkrumah#022
+  generation: rule
+  status: pending
+- id: q-426593e3d2f5
+  subject: history
+  topic: Oyo Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The _____ army also built fortifications such as trenches, which effectively made the use of cavalry useless.'
+  options:
+  - Dahomey
+  - Liberia
+  - ECOWAS
+  - Ethiopia
+  answer: 0
+  explanation: The Dahomey army also built fortifications such as trenches, which effectively made the use of cavalry useless.
+  explanationType: copied
+  passage: wp:Oyo_Empire#008
+  generation: rule
+  status: pending
+- id: q-42bad8a72616
+  subject: history
+  topic: Pan-Africanism
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In London, the Sons of Africa was a political group addressed by Quobna Ottobah Cugoano in the _____ edition of his book Thoughts and Sentiments on the Evil of Slavery.'
+  options:
+  - '1790'
+  - '1791'
+  - '1792'
+  - '1789'
+  answer: 1
+  explanation: In London, the Sons of Africa was a political group addressed by Quobna Ottobah Cugoano in the 1791 edition of his book Thoughts and Sentiments on the Evil of Slavery.
+  explanationType: copied
+  passage: wp:Pan-Africanism#004
+  generation: rule
+  status: pending
+- id: q-42ec9b9fcd60
+  subject: geography
+  topic: Sierra Leone
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The SLPP leadership, led by Sir Milton Margai, negotiated with the British and the educated Krio-dominated colony based in _____ to achieve independence.'
+  options:
+  - Abidjan
+  - Conakry
+  - Freetown
+  - Lake Piso
+  answer: 2
+  explanation: The SLPP leadership, led by Sir Milton Margai, negotiated with the British and the educated Krio-dominated colony based in Freetown to achieve independence.
+  explanationType: copied
+  passage: wp:Sierra_Leone#016
+  generation: rule
+  status: pending
+- id: q-435ce373399b
+  subject: history
+  topic: Organisation of African Unity
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Monrovian bloc, led by Senghor of _____, felt that unity should be achieved gradually, through economic cooperation.'
+  options:
+  - Senegal
+  - Abidjan
+  - Conakry
+  - Freetown
+  answer: 0
+  explanation: The Monrovian bloc, led by Senghor of Senegal, felt that unity should be achieved gradually, through economic cooperation.
+  explanationType: copied
+  passage: wp:Organisation_of_African_Unity#003
+  generation: rule
+  status: pending
+- id: q-4427dac161ec
+  subject: geography
+  topic: Harmattan
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: A _____ study found that dust carried by the Harmattan increases infant and child mortality, as well as persistent adverse health impacts on surviving children.'
+  options:
+  - '2023'
+  - '2025'
+  - '2024'
+  - '2022'
+  answer: 2
+  explanation: A 2024 study found that dust carried by the Harmattan increases infant and child mortality, as well as persistent adverse health impacts on surviving children.
+  explanationType: copied
+  passage: wp:Harmattan#003
+  generation: rule
+  status: pending
+- id: q-44cff047d745
+  subject: geography
+  topic: Grand Bassa County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, LAMCO''s facilities were taken over by ArcelorMittal, which has begun a gradual reconstruction.'
+  options:
+  - '2005'
+  - '2004'
+  - '2006'
+  - '2003'
+  answer: 0
+  explanation: In 2005, LAMCO's facilities were taken over by ArcelorMittal, which has begun a gradual reconstruction.
+  explanationType: copied
+  passage: wp:Grand_Bassa_County#001
+  generation: rule
+  status: pending
+- id: q-459e2cea74d4
+  subject: geography
+  topic: West Africa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Kingdom of Nri was a West African medieval state in present-day southeastern _____ and a subgroup of the Igbo people.'
+  options:
+  - Abidjan
+  - Conakry
+  - Senegal
+  - Nigeria
+  answer: 3
+  explanation: The Kingdom of Nri was a West African medieval state in present-day southeastern Nigeria and a subgroup of the Igbo people.
+  explanationType: copied
+  passage: wp:West_Africa#008
+  generation: rule
+  status: pending
+- id: q-476bd942d02b
+  subject: geography
+  topic: Lake Piso
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Flooding in August _____ occurred due to a blockage of the narrow inlet connecting the lake to the Atlantic Ocean, damaging some homes.'
+  options:
+  - '1997'
+  - '1998'
+  - '1999'
+  - '1996'
+  answer: 1
+  explanation: Flooding in August 1998 occurred due to a blockage of the narrow inlet connecting the lake to the Atlantic Ocean, damaging some homes.
+  explanationType: copied
+  passage: wp:Lake_Piso#003
+  generation: rule
+  status: pending
+- id: q-481fc0f8042b
+  subject: history
+  topic: Timbuktu
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: As of July 2023, Timbuktu Airport is served by Sky _____ to and from Bamako, using Boeing 737 aircraft.'
+  options:
+  - Accra
+  - Mali
+  - Dakar
+  - Ghana
+  answer: 1
+  explanation: As of July 2023, Timbuktu Airport is served by Sky Mali to and from Bamako, using Boeing 737 aircraft.
+  explanationType: copied
+  passage: wp:Timbuktu#045
+  generation: rule
+  status: pending
+- id: q-48d50a2ac116
+  subject: history
+  topic: Ellen Johnson Sirleaf
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Sirleaf crossed party lines to support George Weah in the _____ presidential campaign.'
+  options:
+  - '2016'
+  - '2015'
+  - '2017'
+  - '2019'
+  answer: 2
+  explanation: Sirleaf crossed party lines to support George Weah in the 2017 presidential campaign.
+  explanationType: copied
+  passage: wp:Ellen_Johnson_Sirleaf#013
+  generation: rule
+  status: pending
+- id: q-4a750a1cb7e5
+  subject: history
+  topic: African Union
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Sudan''s membership was suspended by the African Union on 27 October _____, after a military coup deposed the civilian government led by Prime Minister Abdalla Hamdok.'
+  options:
+  - '2019'
+  - '2018'
+  - '2017'
+  - '2021'
+  answer: 3
+  explanation: Sudan's membership was suspended by the African Union on 27 October 2021, after a military coup deposed the civilian government led by Prime Minister Abdalla Hamdok.
+  explanationType: copied
+  passage: wp:African_Union#014
+  generation: rule
+  status: pending
+- id: q-4ab470551c79
+  subject: history
+  topic: African Union
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Since it first met in _____, the PSC has been active in relation to the crises in Darfur, Comoros, Somalia, Democratic Republic of the Congo, Burundi, Ivory Coast and other countries.'
+  options:
+  - '2003'
+  - '2005'
+  - '2002'
+  - '2004'
+  answer: 3
+  explanation: Since it first met in 2004, the PSC has been active in relation to the crises in Darfur, Comoros, Somalia, Democratic Republic of the Congo, Burundi, Ivory Coast and other countries.
+  explanationType: copied
+  passage: wp:African_Union#042
+  generation: rule
+  status: pending
+- id: q-4ad0975d3ea7
+  subject: history
+  topic: Sokoto Caliphate
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In post-colonial Nigeria during the _____s, the label "Sokoto Caliphate" was introduced by Murray Last and became the most widely accepted name.'
+  options:
+  - '1960'
+  - '1959'
+  - '1961'
+  - '1958'
+  answer: 0
+  explanation: In post-colonial Nigeria during the 1960s, the label "Sokoto Caliphate" was introduced by Murray Last and became the most widely accepted name.
+  explanationType: copied
+  passage: wp:Sokoto_Caliphate#004
+  generation: rule
+  status: pending
+- id: q-4ae6ac9134e3
+  subject: geography
+  topic: Guinea
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The third most spoken native language is the Susu, spoken by 21.2% of the population in _____ as their first language.'
+  options:
+  - '2017'
+  - '2019'
+  - '2016'
+  - '2018'
+  answer: 3
+  explanation: The third most spoken native language is the Susu, spoken by 21.2% of the population in 2018 as their first language.
+  explanationType: copied
+  passage: wp:Guinea#040
+  generation: rule
+  status: pending
+- id: q-4b7d90b7e646
+  subject: history
+  topic: First Liberian Civil War
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On August 24, _____, ECOMOG, an ECOWAS intervention force, arrived at the Freeport of Monrovia, landing from Nigerian and Ghanaian vessels.'
+  options:
+  - '1989'
+  - '1990'
+  - '1991'
+  - '1988'
+  answer: 1
+  explanation: On August 24, 1990, ECOMOG, an ECOWAS intervention force, arrived at the Freeport of Monrovia, landing from Nigerian and Ghanaian vessels.
+  explanationType: copied
+  passage: wp:First_Liberian_Civil_War#009
+  generation: rule
+  status: pending
+- id: q-4b98eef646b8
+  subject: history
+  topic: Berlin Conference
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: French claims by Pierre de Brazza were quickly acted on by the French military, which took control of what is now the Republic of the Congo in 1881 and _____ in 1884.'
+  options:
+  - Gulf of Guinea
+  - Sahara
+  - Guinea
+  - Abidjan
+  answer: 2
+  explanation: French claims by Pierre de Brazza were quickly acted on by the French military, which took control of what is now the Republic of the Congo in 1881 and Guinea in 1884.
+  explanationType: copied
+  passage: wp:Berlin_Conference#005
+  generation: rule
+  status: pending
+- id: q-4c7f664b9cb9
+  subject: geography
+  topic: Mali
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On 19 November _____, following progressive economic decline, the Keïta regime was overthrown in a bloodless military coup led by Moussa Traoré, a day which is now commemorated as Liberation Day.'
+  options:
+  - '1968'
+  - '1967'
+  - '1969'
+  - '1966'
+  answer: 0
+  explanation: On 19 November 1968, following progressive economic decline, the Keïta regime was overthrown in a bloodless military coup led by Moussa Traoré, a day which is now commemorated as Liberation Day.
+  explanationType: copied
+  passage: wp:Mali#016
+  generation: rule
+  status: pending
+- id: q-4d77994e1174
+  subject: history
+  topic: Organisation of African Unity
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Thus, when human rights were violated, as in Uganda under Idi Amin in the _____s, the OAU was powerless to stop them.'
+  options:
+  - '1969'
+  - '1971'
+  - '1968'
+  - '1970'
+  answer: 3
+  explanation: Thus, when human rights were violated, as in Uganda under Idi Amin in the 1970s, the OAU was powerless to stop them.
+  explanationType: copied
+  passage: wp:Organisation_of_African_Unity#005
+  generation: rule
+  status: pending
+- id: q-506d52b528ae
+  subject: history
+  topic: History of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On September 3, _____, Ruth Perry followed Sankawulo as chairwoman of the Council of State, with the same three militia leaders in it.'
+  options:
+  - '1997'
+  - '1996'
+  - '1998'
+  - '1993'
+  answer: 1
+  explanation: On September 3, 1996, Ruth Perry followed Sankawulo as chairwoman of the Council of State, with the same three militia leaders in it.
+  explanationType: copied
+  passage: wp:History_of_Liberia#037
+  generation: rule
+  status: pending
+- id: q-511973054457
+  subject: geography
+  topic: Lofa County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Lofa County was established from the former Western Province in _____.'
+  options:
+  - '1963'
+  - '1964'
+  - '1965'
+  - '1962'
+  answer: 1
+  explanation: Lofa County was established from the former Western Province in 1964.
+  explanationType: copied
+  passage: wp:Lofa_County#001
+  generation: rule
+  status: pending
+- id: q-5194aadc45bb
+  subject: history
+  topic: Mali Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____ he sent another envoy proposing an alliance against the threat of Tenguella, but this came to nothing.'
+  options:
+  - '1492'
+  - '1494'
+  - '1493'
+  - '1497'
+  answer: 2
+  explanation: In 1493 he sent another envoy proposing an alliance against the threat of Tenguella, but this came to nothing.
+  explanationType: copied
+  passage: wp:Mali_Empire#011
+  generation: rule
+  status: pending
+- id: q-5251f601fa47
+  subject: geography
+  topic: Mano River
+  difficulty: easy
+  type: cloze-year
+  stem: 'Fill in the blank: Liberia and Sierra Leone founded the Mano River Union in _____.'
+  options:
+  - '1973'
+  - '1972'
+  - '1974'
+  - '1971'
+  answer: 0
+  explanation: Liberia and Sierra Leone founded the Mano River Union in 1973.
+  explanationType: copied
+  passage: wp:Mano_River#000
+  generation: rule
+  status: pending
+- id: q-527f42c22972
+  subject: history
+  topic: Sierra Leone Civil War
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: On 13 January 2003, a small group of armed men tried unsuccessfully to break into an armory in _____.'
+  options:
+  - Abidjan
+  - Conakry
+  - Lake Piso
+  - Freetown
+  answer: 3
+  explanation: On 13 January 2003, a small group of armed men tried unsuccessfully to break into an armory in Freetown.
+  explanationType: copied
+  passage: wp:Sierra_Leone_Civil_War#040
+  generation: rule
+  status: pending
+- id: q-52f0723d261a
+  subject: geography
+  topic: Sinoe County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Long settled by indigenous peoples, this area became colonized by more than 300 freed African-American slaves from Prospect Hill Plantation, Mississippi in _____.'
+  options:
+  - '1834'
+  - '1832'
+  - '1839'
+  - '1835'
+  answer: 3
+  explanation: Long settled by indigenous peoples, this area became colonized by more than 300 freed African-American slaves from Prospect Hill Plantation, Mississippi in 1835.
+  explanationType: copied
+  passage: wp:Sinoe_County#001
+  generation: rule
+  status: pending
+- id: q-54758d518d5c
+  subject: geography
+  topic: Grand Cape Mount County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Portuguese explorer Pedro de Sintra discovered the area in _____.'
+  options:
+  - '1460'
+  - '1462'
+  - '1456'
+  - '1461'
+  answer: 3
+  explanation: Portuguese explorer Pedro de Sintra discovered the area in 1461.
+  explanationType: copied
+  passage: wp:Grand_Cape_Mount_County#001
+  generation: rule
+  status: pending
+- id: q-56be8913f1cd
+  subject: history
+  topic: Mali Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Twelve Doors of _____ were a coalition of conquered or allied territories, mostly within Manden, with sworn allegiance to Sundiata and his descendants.'
+  options:
+  - Accra
+  - Dakar
+  - Mali
+  - Ghana
+  answer: 2
+  explanation: The Twelve Doors of Mali were a coalition of conquered or allied territories, mostly within Manden, with sworn allegiance to Sundiata and his descendants.
+  explanationType: copied
+  passage: wp:Mali_Empire#014
+  generation: rule
+  status: pending
+- id: q-5728074eac61
+  subject: history
+  topic: Liberian Declaration of Independence
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Eleven delegates and one secretary, representing the three counties of Liberia, gathered in the Providence Baptist Church in _____ to sign the Declaration along with the Constitution of Liberia:'
+  options:
+  - Ethiopia
+  - Monrovia
+  - Timbuktu
+  - Dahomey
+  answer: 1
+  explanation: 'Eleven delegates and one secretary, representing the three counties of Liberia, gathered in the Providence Baptist Church in Monrovia to sign the Declaration along with the Constitution of Liberia:'
+  explanationType: copied
+  passage: wp:Liberian_Declaration_of_Independence#004
+  generation: rule
+  status: pending
+- id: q-58905c8d4584
+  subject: geography
+  topic: Dakar
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The quarter also houses Dakar Grand Mosque at the heart of the commune, which is built in _____ and one of the prominent landmarks of the city.'
+  options:
+  - '1963'
+  - '1964'
+  - '1965'
+  - '1962'
+  answer: 1
+  explanation: The quarter also houses Dakar Grand Mosque at the heart of the commune, which is built in 1964 and one of the prominent landmarks of the city.
+  explanationType: copied
+  passage: wp:Dakar#015
+  generation: rule
+  status: pending
+- id: q-5bceae6af96d
+  subject: history
+  topic: Second Liberian Civil War
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The UN slowly built up its forces in the country, with 5,500 projected to be in place by November _____, and worked to disarm the various factions.'
+  options:
+  - '2002'
+  - '2001'
+  - '2005'
+  - '2003'
+  answer: 3
+  explanation: The UN slowly built up its forces in the country, with 5,500 projected to be in place by November 2003, and worked to disarm the various factions.
+  explanationType: copied
+  passage: wp:Second_Liberian_Civil_War#010
+  generation: rule
+  status: pending
+- id: q-5db6af2c6da6
+  subject: geography
+  topic: Abidjan
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In _____, the enrollment rate is 74% and access to secondary education is limited by an entrance assessment at the 6th stage after which one-third of students are allowed to continue their studies.'
+  options:
+  - Lofa County
+  - Niger River
+  - West Africa
+  - Ivory Coast
+  answer: 3
+  explanation: In Ivory Coast, the enrollment rate is 74% and access to secondary education is limited by an entrance assessment at the 6th stage after which one-third of students are allowed to continue their studies.
+  explanationType: copied
+  passage: wp:Abidjan#019
+  generation: rule
+  status: pending
+- id: q-5e8925dc1f01
+  subject: geography
+  topic: West Africa
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The major multi-sport event of West Africa is the ECOWAS Games which commenced at the _____ ECOWAS Games.'
+  options:
+  - '2011'
+  - '2013'
+  - '2012'
+  - '2010'
+  answer: 2
+  explanation: The major multi-sport event of West Africa is the ECOWAS Games which commenced at the 2012 ECOWAS Games.
+  explanationType: copied
+  passage: wp:West_Africa#036
+  generation: rule
+  status: pending
+- id: q-5ec07758195a
+  subject: history
+  topic: Kingdom of Benin
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Another Dutch traveler, David van Nyendael, visited Benin in _____ and also wrote an account of the kingdom.'
+  options:
+  - '1699'
+  - '1698'
+  - '1700'
+  - '1701'
+  answer: 0
+  explanation: Another Dutch traveler, David van Nyendael, visited Benin in 1699 and also wrote an account of the kingdom.
+  explanationType: copied
+  passage: wp:Kingdom_of_Benin#038
+  generation: rule
+  status: pending
+- id: q-5ee7dfba56a1
+  subject: history
+  topic: Trans-Saharan trade
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The eastern trans-Saharan route led to the development of the long-lived Kanem–Bornu Empire as well as the _____, Mali, and Songhai empires, centred on the Lake Chad area.'
+  options:
+  - Accra
+  - Ghana
+  - Dakar
+  - Lagos
+  answer: 1
+  explanation: The eastern trans-Saharan route led to the development of the long-lived Kanem–Bornu Empire as well as the Ghana, Mali, and Songhai empires, centred on the Lake Chad area.
+  explanationType: copied
+  passage: wp:Trans-Saharan_trade#009
+  generation: rule
+  status: pending
+- id: q-60abbb0f6550
+  subject: history
+  topic: Mansa Musa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Mali Empire comprised land that is now part of _____, Senegal, Mauritania, the Gambia, and the modern state of Mali which would be an area of 1,300,000 km2.'
+  options:
+  - Guinea
+  - Gulf of Guinea
+  - Abidjan
+  - Accra
+  answer: 0
+  explanation: The Mali Empire comprised land that is now part of Guinea, Senegal, Mauritania, the Gambia, and the modern state of Mali which would be an area of 1,300,000 km2.
+  explanationType: copied
+  passage: wp:Mansa_Musa#001
+  generation: rule
+  status: pending
+- id: q-60e41846aa6a
+  subject: history
+  topic: Kingdom of Benin
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Several attempts were made to achieve this end beginning with the official visit of Richard Francis Burton in _____ when he was consul at Fernando Pó.'
+  options:
+  - '1861'
+  - '1862'
+  - '1863'
+  - '1860'
+  answer: 1
+  explanation: Several attempts were made to achieve this end beginning with the official visit of Richard Francis Burton in 1862 when he was consul at Fernando Pó.
+  explanationType: copied
+  passage: wp:Kingdom_of_Benin#012
+  generation: rule
+  status: pending
+- id: q-618d5394a536
+  subject: geography
+  topic: Burkina Faso
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Upper Volta became an autonomous republic in the French community on 11 December _____.'
+  options:
+  - '1959'
+  - '1955'
+  - '1961'
+  - '1958'
+  answer: 3
+  explanation: Upper Volta became an autonomous republic in the French community on 11 December 1958.
+  explanationType: copied
+  passage: wp:Burkina_Faso#007
+  generation: rule
+  status: pending
+- id: q-61bee3551147
+  subject: history
+  topic: Leymah Gbowee
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In April _____, when Gbowee''s family and friends gathered to celebrate the 14th birthday of her eldest daughter, Amber, it was clear that Gbowee had developed a serious alcohol problem.'
+  options:
+  - '2007'
+  - '2009'
+  - '2008'
+  - '2006'
+  answer: 2
+  explanation: In April 2008, when Gbowee's family and friends gathered to celebrate the 14th birthday of her eldest daughter, Amber, it was clear that Gbowee had developed a serious alcohol problem.
+  explanationType: copied
+  passage: wp:Leymah_Gbowee#022
+  generation: rule
+  status: pending
+- id: q-62672f2372d7
+  subject: geography
+  topic: Accra
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: A _____ study of low income communities in the city found increasing concern and desire among these communities for urban green spaces for recreation and health.'
+  options:
+  - '2020'
+  - '2022'
+  - '2019'
+  - '2021'
+  answer: 3
+  explanation: A 2021 study of low income communities in the city found increasing concern and desire among these communities for urban green spaces for recreation and health.
+  explanationType: copied
+  passage: wp:Accra#021
+  generation: rule
+  status: pending
+- id: q-63fd8141df32
+  subject: history
+  topic: Sokoto Caliphate
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Oyo Empire, located in present-day southwestern Nigeria, was one of the most powerful kingdoms in _____ during the 18th century.'
+  options:
+  - Ivory Coast
+  - West Africa
+  - Lofa County
+  - Niger River
+  answer: 1
+  explanation: The Oyo Empire, located in present-day southwestern Nigeria, was one of the most powerful kingdoms in West Africa during the 18th century.
+  explanationType: copied
+  passage: wp:Sokoto_Caliphate#015
+  generation: rule
+  status: pending
+- id: q-65d7e5d6e5db
+  subject: history
+  topic: Dahomey
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, an English trader alleged that he witness the Dahomey massacre 400 people during a Vodun ceremony.'
+  options:
+  - '1727'
+  - '1726'
+  - '1728'
+  - '1729'
+  answer: 0
+  explanation: In 1727, an English trader alleged that he witness the Dahomey massacre 400 people during a Vodun ceremony.
+  explanationType: copied
+  passage: wp:Dahomey#038
+  generation: rule
+  status: pending
+- id: q-67e4bf4e8ec1
+  subject: history
+  topic: Ellen Johnson Sirleaf
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Following the death of Justice Wureh in July _____, Sirleaf nominated Christiana Tah, a deputy minister at the Justice Ministry, to fill his seat.'
+  options:
+  - '2006'
+  - '2005'
+  - '2007'
+  - '2004'
+  answer: 0
+  explanation: Following the death of Justice Wureh in July 2006, Sirleaf nominated Christiana Tah, a deputy minister at the Justice Ministry, to fill his seat.
+  explanationType: copied
+  passage: wp:Ellen_Johnson_Sirleaf#027
+  generation: rule
+  status: pending
+- id: q-685a9f7fe663
+  subject: geography
+  topic: Margibi County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The county is bordered by _____ to the west, Grand Bassa County to the east, and Bong County on the north.'
+  options:
+  - Maryland County
+  - Margibi County
+  - Nimba County
+  - Montserrado County
+  answer: 3
+  explanation: The county is bordered by Montserrado County to the west, Grand Bassa County to the east, and Bong County on the north.
+  explanationType: copied
+  passage: wp:Margibi_County#000
+  generation: rule
+  status: pending
+- id: q-6a3f22e38ba5
+  subject: geography
+  topic: Lake Piso
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Lake Piso overflowed its banks at least twice in _____, causing heavy flooding in Garwular District.'
+  options:
+  - '1998'
+  - '1997'
+  - '1999'
+  - '1996'
+  answer: 0
+  explanation: Lake Piso overflowed its banks at least twice in 1998, causing heavy flooding in Garwular District.
+  explanationType: copied
+  passage: wp:Lake_Piso#003
+  generation: rule
+  status: pending
+- id: q-6c4a290a473c
+  subject: history
+  topic: Economy of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In the _____s, Liberia become one of the largest recipients of American aid.'
+  options:
+  - '1939'
+  - '1941'
+  - '1940'
+  - '1938'
+  answer: 2
+  explanation: In the 1940s, Liberia become one of the largest recipients of American aid.
+  explanationType: copied
+  passage: wp:Economy_of_Liberia#004
+  generation: rule
+  status: pending
+- id: q-6ca8582f0a8e
+  subject: geography
+  topic: Accra
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____ Akwamuhene Ansa Sasraku, using the circumcision of a visiting Akwamu prince as pretext, attacked Accra.'
+  options:
+  - '1680'
+  - '1668'
+  - '1687'
+  - '1677'
+  answer: 3
+  explanation: In 1677 Akwamuhene Ansa Sasraku, using the circumcision of a visiting Akwamu prince as pretext, attacked Accra.
+  explanationType: copied
+  passage: wp:Accra#005
+  generation: rule
+  status: pending
+- id: q-6d8d958d416d
+  subject: geography
+  topic: Sapo National Park
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Until the _____s, poaching was limited due to various initiatives, funded by the United States Agency for International Development, that made local villagers stakeholders to the park''s preservation.'
+  options:
+  - '1990'
+  - '1989'
+  - '1991'
+  - '1988'
+  answer: 0
+  explanation: Until the 1990s, poaching was limited due to various initiatives, funded by the United States Agency for International Development, that made local villagers stakeholders to the park's preservation.
+  explanationType: copied
+  passage: wp:Sapo_National_Park#001
+  generation: rule
+  status: pending
+- id: q-6daf0c19528a
+  subject: geography
+  topic: Sierra Leone
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Eventually, 411 passengers sailed to Sierra Leone in April _____.'
+  options:
+  - '1787'
+  - '1788'
+  - '1789'
+  - '1790'
+  answer: 0
+  explanation: Eventually, 411 passengers sailed to Sierra Leone in April 1787.
+  explanationType: copied
+  passage: wp:Sierra_Leone#007
+  generation: rule
+  status: pending
+- id: q-6e01b7e69aee
+  subject: geography
+  topic: Ivory Coast
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In the early _____s, the world recession and a local drought sent shock waves through the Ivorian economy.'
+  options:
+  - '1979'
+  - '1980'
+  - '1981'
+  - '1978'
+  answer: 1
+  explanation: In the early 1980s, the world recession and a local drought sent shock waves through the Ivorian economy.
+  explanationType: copied
+  passage: wp:Ivory_Coast#018
+  generation: rule
+  status: pending
+- id: q-70de99a9f8c8
+  subject: geography
+  topic: Sinoe County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: There is boat connectivity from the town to _____ and Harper.'
+  options:
+  - Ethiopia
+  - Monrovia
+  - Timbuktu
+  - Dahomey
+  answer: 1
+  explanation: There is boat connectivity from the town to Monrovia and Harper.
+  explanationType: copied
+  passage: wp:Sinoe_County#001
+  generation: rule
+  status: pending
+- id: q-718f7a1b1b17
+  subject: geography
+  topic: Sahara
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Kutzbach never formally named his hypothesis and as such it is referred to here as the "Orbital Monsoon Hypothesis" as suggested by Ruddiman in _____.'
+  options:
+  - '2000'
+  - '2002'
+  - '1999'
+  - '2001'
+  answer: 3
+  explanation: Kutzbach never formally named his hypothesis and as such it is referred to here as the "Orbital Monsoon Hypothesis" as suggested by Ruddiman in 2001.
+  explanationType: copied
+  passage: wp:Sahara#014
+  generation: rule
+  status: pending
+- id: q-73639adeb2bb
+  subject: history
+  topic: History of Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: On October 1, 2003, UNMIL took over the peacekeeping duties from _____.'
+  options:
+  - ECOWAS
+  - Dahomey
+  - Ethiopia
+  - Monrovia
+  answer: 0
+  explanation: On October 1, 2003, UNMIL took over the peacekeeping duties from ECOWAS.
+  explanationType: copied
+  passage: wp:History_of_Liberia#045
+  generation: rule
+  status: pending
+- id: q-73d0e85797da
+  subject: history
+  topic: Samuel Doe
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: During his first years in office, Doe openly supported U.S. Cold War foreign policy in Africa during the _____s, severing diplomatic relations between Liberia and the Soviet Union.'
+  options:
+  - '1979'
+  - '1981'
+  - '1980'
+  - '1978'
+  answer: 2
+  explanation: During his first years in office, Doe openly supported U.S. Cold War foreign policy in Africa during the 1980s, severing diplomatic relations between Liberia and the Soviet Union.
+  explanationType: copied
+  passage: wp:Samuel_Doe#008
+  generation: rule
+  status: pending
+- id: q-76454191e2bf
+  subject: history
+  topic: Americo-Liberian people
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, BET founder Robert Johnson called for "African Americans to support Liberia like Jewish Americans support Israel".'
+  options:
+  - '2007'
+  - '2006'
+  - '2008'
+  - '2005'
+  answer: 0
+  explanation: In 2007, BET founder Robert Johnson called for "African Americans to support Liberia like Jewish Americans support Israel".
+  explanationType: copied
+  passage: wp:Americo-Liberian_people#023
+  generation: rule
+  status: pending
+- id: q-76589ee77588
+  subject: geography
+  topic: Lofa County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Red Cross said that in January 2004, many people had begun to return from refugee camps in neighboring Guinea and _____.'
+  options:
+  - Sierra Leone
+  - Burkina Faso
+  - Cestos River
+  - Nimba County
+  answer: 0
+  explanation: The Red Cross said that in January 2004, many people had begun to return from refugee camps in neighboring Guinea and Sierra Leone.
+  explanationType: copied
+  passage: wp:Lofa_County#001
+  generation: rule
+  status: pending
+- id: q-791cb23fb6ff
+  subject: history
+  topic: Scramble for Africa
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, after the Anglo-Zulu War, Britain consolidated its control of most of the territories of South Africa.'
+  options:
+  - '1878'
+  - '1879'
+  - '1876'
+  - '1875'
+  answer: 1
+  explanation: In 1879, after the Anglo-Zulu War, Britain consolidated its control of most of the territories of South Africa.
+  explanationType: copied
+  passage: wp:Scramble_for_Africa#020
+  generation: rule
+  status: pending
+- id: q-7a970e2a2cb7
+  subject: history
+  topic: Kingdom of Benin
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The Benin City walls have been known to Westerners since around _____.'
+  options:
+  - '1502'
+  - '1500'
+  - '1497'
+  - '1494'
+  answer: 1
+  explanation: The Benin City walls have been known to Westerners since around 1500.
+  explanationType: copied
+  passage: wp:Kingdom_of_Benin#028
+  generation: rule
+  status: pending
+- id: q-7ab06622c863
+  subject: history
+  topic: Kanem–Bornu Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In the _____s, new Kanuri nationalist movements developed in Nigeria, mobilising against perceived Hausa domination in northern Nigeria and calling for restoring the territory of the late Kanem–Bornu Empire.'
+  options:
+  - '1950'
+  - '1949'
+  - '1951'
+  - '1948'
+  answer: 0
+  explanation: In the 1950s, new Kanuri nationalist movements developed in Nigeria, mobilising against perceived Hausa domination in northern Nigeria and calling for restoring the territory of the late Kanem–Bornu Empire.
+  explanationType: copied
+  passage: wp:Kanem–Bornu_Empire#029
+  generation: rule
+  status: pending
+- id: q-7ab649608bb8
+  subject: history
+  topic: Joseph Jenkins Roberts
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Roberts was re-elected three more times to serve a total of eight years, until he lost the election in _____ to Vice President Benson.'
+  options:
+  - '1854'
+  - '1856'
+  - '1853'
+  - '1855'
+  answer: 3
+  explanation: Roberts was re-elected three more times to serve a total of eight years, until he lost the election in 1855 to Vice President Benson.
+  explanationType: copied
+  passage: wp:Joseph_Jenkins_Roberts#006
+  generation: rule
+  status: pending
+- id: q-7ad6e9febb9b
+  subject: history
+  topic: Firestone Natural Rubber Company
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Tapping operations commenced shortly thereafter, and by _____, Firestone had achieved a production of over 7,000 tons of latex per year.'
+  options:
+  - '1939'
+  - '1940'
+  - '1941'
+  - '1938'
+  answer: 1
+  explanation: Tapping operations commenced shortly thereafter, and by 1940, Firestone had achieved a production of over 7,000 tons of latex per year.
+  explanationType: copied
+  passage: wp:Firestone_Natural_Rubber_Company#017
+  generation: rule
+  status: pending
+- id: q-7b526d5eac00
+  subject: geography
+  topic: Geography of Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The coastal plain varies in width, being narrow between _____ and Buchanan, but being much wider in the west and in the Cestos Valley in the centre, narrowing again in the eastern end of the country.'
+  options:
+  - Ethiopia
+  - Timbuktu
+  - Monrovia
+  - Dahomey
+  answer: 2
+  explanation: The coastal plain varies in width, being narrow between Monrovia and Buchanan, but being much wider in the west and in the Cestos Valley in the centre, narrowing again in the eastern end of the country.
+  explanationType: copied
+  passage: wp:Geography_of_Liberia#001
+  generation: rule
+  status: pending
+- id: q-7bddf1438196
+  subject: history
+  topic: Mansa Musa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Over a very long period _____ had amassed a large reserve of gold.'
+  options:
+  - Accra
+  - Mali
+  - Dakar
+  - Ghana
+  answer: 1
+  explanation: Over a very long period Mali had amassed a large reserve of gold.
+  explanationType: copied
+  passage: wp:Mansa_Musa#000
+  generation: rule
+  status: pending
+- id: q-7bedb402cce0
+  subject: geography
+  topic: Bong County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Henrique Tokpa, the former Cuttington University President, and also the former Minister of Internal Affairs, was senator in _____.'
+  options:
+  - '2017'
+  - '2018'
+  - '2019'
+  - '2016'
+  answer: 1
+  explanation: Henrique Tokpa, the former Cuttington University President, and also the former Minister of Internal Affairs, was senator in 2018.
+  explanationType: copied
+  passage: wp:Bong_County#005
+  generation: rule
+  status: pending
+- id: q-7c4299174650
+  subject: geography
+  topic: Senegal
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, Senegal participated in the Saudi Arabian-led military intervention in Yemen against the Shia Houthis.'
+  options:
+  - '2014'
+  - '2016'
+  - '2015'
+  - '2013'
+  answer: 2
+  explanation: In 2015, Senegal participated in the Saudi Arabian-led military intervention in Yemen against the Shia Houthis.
+  explanationType: copied
+  passage: wp:Senegal#019
+  generation: rule
+  status: pending
+- id: q-7cacbfcb2167
+  subject: history
+  topic: Monrovia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The newspaper industry in Monrovia dates back to the _____s, with the founding of the Liberia Herald, one of the first newspapers to be published in Africa.'
+  options:
+  - '1819'
+  - '1821'
+  - '1820'
+  - '1818'
+  answer: 2
+  explanation: The newspaper industry in Monrovia dates back to the 1820s, with the founding of the Liberia Herald, one of the first newspapers to be published in Africa.
+  explanationType: copied
+  passage: wp:Monrovia#016
+  generation: rule
+  status: pending
+- id: q-7ddbc7601e23
+  subject: history
+  topic: Ghana Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Sheryl L. Burkhalter in 1992 suggested that there were reasons to believe that there was conflict between the Almoravids and the empire of _____.'
+  options:
+  - Accra
+  - Dakar
+  - Lagos
+  - Ghana
+  answer: 3
+  explanation: Sheryl L. Burkhalter in 1992 suggested that there were reasons to believe that there was conflict between the Almoravids and the empire of Ghana.
+  explanationType: copied
+  passage: wp:Ghana_Empire#013
+  generation: rule
+  status: pending
+- id: q-7e4339f24d78
+  subject: history
+  topic: Asante Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____ Asante forces under Amankwa Tia, the first Kontihene of Kumasi, joined Wassa in a campaign against Denkyira.'
+  options:
+  - '1707'
+  - '1704'
+  - '1706'
+  - '1708'
+  answer: 2
+  explanation: In 1706 Asante forces under Amankwa Tia, the first Kontihene of Kumasi, joined Wassa in a campaign against Denkyira.
+  explanationType: copied
+  passage: wp:Asante_Empire#016
+  generation: rule
+  status: pending
+- id: q-8149d303e2ff
+  subject: geography
+  topic: Buchanan, Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Throughout much of the _____s, Buchanan''s population failed to grow, as deaths outnumbered births and only through immigration from the United States was the community able to avoid a substantial decline.'
+  options:
+  - '1849'
+  - '1850'
+  - '1851'
+  - '1848'
+  answer: 1
+  explanation: Throughout much of the 1850s, Buchanan's population failed to grow, as deaths outnumbered births and only through immigration from the United States was the community able to avoid a substantial decline.
+  explanationType: copied
+  passage: wp:Buchanan,_Liberia#001
+  generation: rule
+  status: pending
+- id: q-81a9499a40a2
+  subject: geography
+  topic: Lake Volta
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the Volta River Authority allocated US$2.5 million to develop Dodi Island’s eco-tourism potential through its hospitality subsidiary, Volta Hotels Limited.'
+  options:
+  - '2010'
+  - '2012'
+  - '2009'
+  - '2011'
+  answer: 3
+  explanation: In 2011, the Volta River Authority allocated US$2.5 million to develop Dodi Island’s eco-tourism potential through its hospitality subsidiary, Volta Hotels Limited.
+  explanationType: copied
+  passage: wp:Lake_Volta#004
+  generation: rule
+  status: pending
+- id: q-83483209ceda
+  subject: history
+  topic: Second Liberian Civil War
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: A new bout of fighting began in March _____ after a relative lull and by early May, LURD and MODEL had gained control of nearly two-thirds of the country, and were threatening Monrovia.'
+  options:
+  - '2003'
+  - '2002'
+  - '2004'
+  - '2001'
+  answer: 0
+  explanation: A new bout of fighting began in March 2003 after a relative lull and by early May, LURD and MODEL had gained control of nearly two-thirds of the country, and were threatening Monrovia.
+  explanationType: copied
+  passage: wp:Second_Liberian_Civil_War#006
+  generation: rule
+  status: pending
+- id: q-8366812d8edb
+  subject: history
+  topic: Economy of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: US aid to Liberia began with the Lend-Lease program of _____.'
+  options:
+  - '1941'
+  - '1942'
+  - '1943'
+  - '1944'
+  answer: 1
+  explanation: US aid to Liberia began with the Lend-Lease program of 1942.
+  explanationType: copied
+  passage: wp:Economy_of_Liberia#004
+  generation: rule
+  status: pending
+- id: q-83db92614eef
+  subject: history
+  topic: Decolonisation of Africa
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: But, in the _____ elections the candidates were arrested by Interior Minister Jules Moch.'
+  options:
+  - '1947'
+  - '1949'
+  - '1946'
+  - '1948'
+  answer: 3
+  explanation: But, in the 1948 elections the candidates were arrested by Interior Minister Jules Moch.
+  explanationType: copied
+  passage: wp:Decolonisation_of_Africa#028
+  generation: rule
+  status: pending
+- id: q-845990cf57c3
+  subject: geography
+  topic: Upper Guinean forests
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Eastern Guinean forests, extending east from the Sassandra River through Côte d''Ivoire and _____ to western Togo, with a few isolated pockets further inland, in the highlands of central Togo and Benin.'
+  options:
+  - Accra
+  - Ghana
+  - Dakar
+  - Lagos
+  answer: 1
+  explanation: The Eastern Guinean forests, extending east from the Sassandra River through Côte d'Ivoire and Ghana to western Togo, with a few isolated pockets further inland, in the highlands of central Togo and Benin.
+  explanationType: copied
+  passage: wp:Upper_Guinean_forests#002
+  generation: rule
+  status: pending
+- id: q-85cfd9b6f8a6
+  subject: history
+  topic: Monrovia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Prior to the establishment of the settlement, representatives of the American Colonization Society negotiated the purchase of land at _____ in December 1821 from local leaders.'
+  options:
+  - Asante Empire
+  - Ghana Empire
+  - Cape Mesurado
+  - Nok culture
+  answer: 2
+  explanation: Prior to the establishment of the settlement, representatives of the American Colonization Society negotiated the purchase of land at Cape Mesurado in December 1821 from local leaders.
+  explanationType: copied
+  passage: wp:Monrovia#003
+  generation: rule
+  status: pending
+- id: q-864401bddb10
+  subject: history
+  topic: Cape Mesurado
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: During the Battle of Fort Hill on 1 December _____, a colonist named Matilda Newport is supposed to have repelled an attack by lighting a cannon with an ember from her pipe.'
+  options:
+  - '1821'
+  - '1823'
+  - '1820'
+  - '1822'
+  answer: 3
+  explanation: During the Battle of Fort Hill on 1 December 1822, a colonist named Matilda Newport is supposed to have repelled an attack by lighting a cannon with an ember from her pipe.
+  explanationType: copied
+  passage: wp:Cape_Mesurado#002
+  generation: rule
+  status: pending
+- id: q-87c39e254162
+  subject: history
+  topic: History of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: No further known settlements by Europeans occurred until the arrival in _____ of free blacks from the United States.'
+  options:
+  - '1821'
+  - '1820'
+  - '1822'
+  - '1819'
+  answer: 0
+  explanation: No further known settlements by Europeans occurred until the arrival in 1821 of free blacks from the United States.
+  explanationType: copied
+  passage: wp:History_of_Liberia#002
+  generation: rule
+  status: pending
+- id: q-87ebb1e40cf1
+  subject: history
+  topic: First Liberian Civil War
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Charles Taylor organized and trained indigenous northerners in _____.'
+  options:
+  - Lofa County
+  - Niger River
+  - West Africa
+  - Ivory Coast
+  answer: 3
+  explanation: Charles Taylor organized and trained indigenous northerners in Ivory Coast.
+  explanationType: copied
+  passage: wp:First_Liberian_Civil_War#006
+  generation: rule
+  status: pending
+- id: q-89bcb2e2cc27
+  subject: geography
+  topic: Ivory Coast
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Activity along the coast stimulated European interest in the interior, especially along the two great rivers, the _____ and the Niger.'
+  options:
+  - Abidjan
+  - Conakry
+  - Nigeria
+  - Senegal
+  answer: 3
+  explanation: Activity along the coast stimulated European interest in the interior, especially along the two great rivers, the Senegal and the Niger.
+  explanationType: copied
+  passage: wp:Ivory_Coast#010
+  generation: rule
+  status: pending
+- id: q-8e80d4c2e2f8
+  subject: geography
+  topic: Geography of Africa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Within the equatorial zone certain areas, especially on the shores of the _____ and in the upper Nile basin, have an intensified rainfall, but this rarely approaches that of the rainiest regions of the world.'
+  options:
+  - Gulf of Guinea
+  - Margibi County
+  - Harper, Liberia
+  - Maryland County
+  answer: 0
+  explanation: Within the equatorial zone certain areas, especially on the shores of the Gulf of Guinea and in the upper Nile basin, have an intensified rainfall, but this rarely approaches that of the rainiest regions of the world.
+  explanationType: copied
+  passage: wp:Geography_of_Africa#022
+  generation: rule
+  status: pending
+- id: q-8f287e268973
+  subject: geography
+  topic: Grand Cape Mount County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The area now known as Grand Cape Mount became the territory of Grand Cape Mount under _____.'
+  options:
+  - Maryland County
+  - Montserrado County
+  - Margibi County
+  - Nimba County
+  answer: 1
+  explanation: The area now known as Grand Cape Mount became the territory of Grand Cape Mount under Montserrado County.
+  explanationType: copied
+  passage: wp:Grand_Cape_Mount_County#001
+  generation: rule
+  status: pending
+- id: q-8fa1ef1bc8fc
+  subject: history
+  topic: Kanem–Bornu Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Although left without a figurehead, British forces occupied much of Bornu in March 1902, put under the Northern _____ Protectorate.'
+  options:
+  - Abidjan
+  - Conakry
+  - Nigeria
+  - Senegal
+  answer: 2
+  explanation: Although left without a figurehead, British forces occupied much of Bornu in March 1902, put under the Northern Nigeria Protectorate.
+  explanationType: copied
+  passage: wp:Kanem–Bornu_Empire#028
+  generation: rule
+  status: pending
+- id: q-909241e5547e
+  subject: history
+  topic: Politics of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Unrest continued, and by _____, two rebel groups were challenging Taylor''s control of the country.'
+  options:
+  - '2002'
+  - '2003'
+  - '2004'
+  - '2001'
+  answer: 1
+  explanation: Unrest continued, and by 2003, two rebel groups were challenging Taylor's control of the country.
+  explanationType: copied
+  passage: wp:Politics_of_Liberia#004
+  generation: rule
+  status: pending
+- id: q-91b190d2bd9e
+  subject: geography
+  topic: The Gambia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: After two years of direct rule, a new constitution was written and in _____, the leader of the AFPRC, Yahya Jammeh, was elected as president.'
+  options:
+  - '1995'
+  - '1996'
+  - '1997'
+  - '1998'
+  answer: 1
+  explanation: After two years of direct rule, a new constitution was written and in 1996, the leader of the AFPRC, Yahya Jammeh, was elected as president.
+  explanationType: copied
+  passage: wp:The_Gambia#020
+  generation: rule
+  status: pending
+- id: q-94e86b1c2459
+  subject: geography
+  topic: Montserrado County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Limited public transportation is available in the capital via the _____ Transit Authority.'
+  options:
+  - Ethiopia
+  - Timbuktu
+  - Monrovia
+  - Dahomey
+  answer: 2
+  explanation: Limited public transportation is available in the capital via the Monrovia Transit Authority.
+  explanationType: copied
+  passage: wp:Montserrado_County#008
+  generation: rule
+  status: pending
+- id: q-955fe76229a2
+  subject: history
+  topic: Western African Ebola epidemic
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In March 2014, Senegal closed its southern border with _____, but on 29 August, the health minister announced the country''s first case, who was being treated in a Dakar hospital.'
+  options:
+  - Gulf of Guinea
+  - Guinea
+  - Sahara
+  - Abidjan
+  answer: 1
+  explanation: In March 2014, Senegal closed its southern border with Guinea, but on 29 August, the health minister announced the country's first case, who was being treated in a Dakar hospital.
+  explanationType: copied
+  passage: wp:Western_African_Ebola_epidemic#020
+  generation: rule
+  status: pending
+- id: q-95828ca98c16
+  subject: history
+  topic: Oyo Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Oyo also became a target of the Fulani Jihad of 1804, which established the _____ and caused frequent clashes with Oyo.'
+  options:
+  - Kingdom of Benin
+  - Asante Empire
+  - Sokoto Caliphate
+  - Cape Mesurado
+  answer: 2
+  explanation: Oyo also became a target of the Fulani Jihad of 1804, which established the Sokoto Caliphate and caused frequent clashes with Oyo.
+  explanationType: copied
+  passage: wp:Oyo_Empire#019
+  generation: rule
+  status: pending
+- id: q-95c7cf5852e4
+  subject: history
+  topic: Kwame Nkrumah
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: After visiting the Soviet Union, Eastern Europe and China in _____, Nkrumah apparently became still more convinced of the need for state control of the economy.'
+  options:
+  - '1960'
+  - '1961'
+  - '1962'
+  - '1963'
+  answer: 1
+  explanation: After visiting the Soviet Union, Eastern Europe and China in 1961, Nkrumah apparently became still more convinced of the need for state control of the economy.
+  explanationType: copied
+  passage: wp:Kwame_Nkrumah#044
+  generation: rule
+  status: pending
+- id: q-972b4ed62397
+  subject: history
+  topic: Charles Taylor (Liberian politician)
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Taylor flew to _____, where the Nigerian government provided houses for him and his entourage in Calabar.'
+  options:
+  - Abidjan
+  - Conakry
+  - Senegal
+  - Nigeria
+  answer: 3
+  explanation: Taylor flew to Nigeria, where the Nigerian government provided houses for him and his entourage in Calabar.
+  explanationType: copied
+  passage: wp:Charles_Taylor_(Liberian_politician)#014
+  generation: rule
+  status: pending
+- id: q-97faae1c45a3
+  subject: geography
+  topic: Mano River
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Liberia and _____ founded the Mano River Union in 1973.'
+  options:
+  - Burkina Faso
+  - Sierra Leone
+  - Cestos River
+  - Nimba County
+  answer: 1
+  explanation: Liberia and Sierra Leone founded the Mano River Union in 1973.
+  explanationType: copied
+  passage: wp:Mano_River#000
+  generation: rule
+  status: pending
+- id: q-9889925d486b
+  subject: history
+  topic: Mali Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: _____, Mandé, Manden, Mande-Bissa, and Manding are all various pronunciations of the same word across different languages and dialects.'
+  options:
+  - Accra
+  - Dakar
+  - Mali
+  - Ghana
+  answer: 2
+  explanation: Mali, Mandé, Manden, Mande-Bissa, and Manding are all various pronunciations of the same word across different languages and dialects.
+  explanationType: copied
+  passage: wp:Mali_Empire#005
+  generation: rule
+  status: pending
+- id: q-99a7373df595
+  subject: history
+  topic: Nok culture
+  difficulty: easy
+  type: cloze-year
+  stem: 'Fill in the blank: Nok culture may have emerged in _____ BCE and continued to persist until 1 BCE.'
+  options:
+  - '1502'
+  - '1497'
+  - '1500'
+  - '1505'
+  answer: 2
+  explanation: Nok culture may have emerged in 1500 BCE and continued to persist until 1 BCE.
+  explanationType: copied
+  passage: wp:Nok_culture#000
+  generation: rule
+  status: pending
+- id: q-9a210682a37f
+  subject: geography
+  topic: Grand Gedeh County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The population was 3 percent of the total population, while it was 3.60 percent in _____.'
+  options:
+  - '1994'
+  - '1993'
+  - '1995'
+  - '1992'
+  answer: 0
+  explanation: The population was 3 percent of the total population, while it was 3.60 percent in 1994.
+  explanationType: copied
+  passage: wp:Grand_Gedeh_County#002
+  generation: rule
+  status: pending
+- id: q-9b9b83e83a7f
+  subject: history
+  topic: Berlin Conference
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Press traces this legal novelty to the purchase of Sarawak by James Brooke, and its _____ recognition of statehood by Britain.'
+  options:
+  - '1862'
+  - '1864'
+  - '1863'
+  - '1861'
+  answer: 2
+  explanation: Press traces this legal novelty to the purchase of Sarawak by James Brooke, and its 1863 recognition of statehood by Britain.
+  explanationType: copied
+  passage: wp:Berlin_Conference#023
+  generation: rule
+  status: pending
+- id: q-9ce7287c6621
+  subject: history
+  topic: Politics of Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: On 24 December 1989, a small band of rebels led by Doe''s former procurement chief, Charles Taylor invaded Liberia from _____.'
+  options:
+  - Lofa County
+  - Ivory Coast
+  - Niger River
+  - Burkina Faso
+  answer: 1
+  explanation: On 24 December 1989, a small band of rebels led by Doe's former procurement chief, Charles Taylor invaded Liberia from Ivory Coast.
+  explanationType: copied
+  passage: wp:Politics_of_Liberia#003
+  generation: rule
+  status: pending
+- id: q-9e7b1187d358
+  subject: geography
+  topic: Niger River
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Niger River is a key river of _____ and it is considered the third-longest river in Africa.'
+  options:
+  - West Africa
+  - Ivory Coast
+  - Lofa County
+  - Burkina Faso
+  answer: 0
+  explanation: The Niger River is a key river of West Africa and it is considered the third-longest river in Africa.
+  explanationType: copied
+  passage: wp:Niger_River#014
+  generation: rule
+  status: pending
+- id: q-9edee8621351
+  subject: history
+  topic: Scramble for Africa
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Rhodes sent two expeditions to Msiri in _____ led by Alfred Sharpe, who was rebuffed, and Joseph Thomson, who failed to reach Katanga.'
+  options:
+  - '1889'
+  - '1891'
+  - '1888'
+  - '1890'
+  answer: 3
+  explanation: Rhodes sent two expeditions to Msiri in 1890 led by Alfred Sharpe, who was rebuffed, and Joseph Thomson, who failed to reach Katanga.
+  explanationType: copied
+  passage: wp:Scramble_for_Africa#014
+  generation: rule
+  status: pending
+- id: q-9f33cc1aacc9
+  subject: geography
+  topic: Maryland County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the Republic of Maryland requested military aid from nearby Liberia in a war with the Grebo and Kru peoples who were resisting the Maryland settlers'' efforts to control their trade in slaves.'
+  options:
+  - '1852'
+  - '1860'
+  - '1856'
+  - '1851'
+  answer: 2
+  explanation: In 1856, the Republic of Maryland requested military aid from nearby Liberia in a war with the Grebo and Kru peoples who were resisting the Maryland settlers' efforts to control their trade in slaves.
+  explanationType: copied
+  passage: wp:Maryland_County#001
+  generation: rule
+  status: pending
+- id: q-9f52f8deea4d
+  subject: geography
+  topic: Dakar
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The construction of the Dakar BRT was funded by the World Bank and the European Investment Bank, and the Government of _____.'
+  options:
+  - Abidjan
+  - Conakry
+  - Senegal
+  - Nigeria
+  answer: 2
+  explanation: The construction of the Dakar BRT was funded by the World Bank and the European Investment Bank, and the Government of Senegal.
+  explanationType: copied
+  passage: wp:Dakar#024
+  generation: rule
+  status: pending
+- id: q-9f898604c5fc
+  subject: geography
+  topic: Mali
+  difficulty: easy
+  type: cloze-year
+  stem: 'Fill in the blank: From this, Mali experienced economic growth and increased civil liberties, though this began to reverse after _____.'
+  options:
+  - '2011'
+  - '2012'
+  - '2013'
+  - '2010'
+  answer: 1
+  explanation: From this, Mali experienced economic growth and increased civil liberties, though this began to reverse after 2012.
+  explanationType: copied
+  passage: wp:Mali#001
+  generation: rule
+  status: pending
+- id: q-9f9279cec47e
+  subject: history
+  topic: Songhai Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Islam was so important to him that, upon his return, he established more learning centres throughout his empire and recruited Muslim scholars from Egypt and Morocco to teach at the Sankore Mosque in _____.'
+  options:
+  - Ethiopia
+  - Monrovia
+  - Dahomey
+  - Timbuktu
+  answer: 3
+  explanation: Islam was so important to him that, upon his return, he established more learning centres throughout his empire and recruited Muslim scholars from Egypt and Morocco to teach at the Sankore Mosque in Timbuktu.
+  explanationType: copied
+  passage: wp:Songhai_Empire#010
+  generation: rule
+  status: pending
+- id: q-a057f6d0329a
+  subject: history
+  topic: Ghana Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In al-Bakri''s time, the rulers of _____ had begun to incorporate more Muslims into government, including the treasurer, his interpreter, and "the majority of his officials."'
+  options:
+  - Accra
+  - Ghana
+  - Dakar
+  - Lagos
+  answer: 1
+  explanation: In al-Bakri's time, the rulers of Ghana had begun to incorporate more Muslims into government, including the treasurer, his interpreter, and "the majority of his officials."
+  explanationType: copied
+  passage: wp:Ghana_Empire#024
+  generation: rule
+  status: pending
+- id: q-a14a4ac1e05a
+  subject: history
+  topic: Monrovia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____ Leymah Gbowee organized the Women of Liberia Mass Action for Peace, a group consisting of local Monrovian women, who gathered in a fish market to pray and sing.'
+  options:
+  - '2002'
+  - '2001'
+  - '2000'
+  - '2004'
+  answer: 0
+  explanation: In 2002 Leymah Gbowee organized the Women of Liberia Mass Action for Peace, a group consisting of local Monrovian women, who gathered in a fish market to pray and sing.
+  explanationType: copied
+  passage: wp:Monrovia#005
+  generation: rule
+  status: pending
+- id: q-a345f90a615d
+  subject: geography
+  topic: Upper Guinean forests
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Upper Guinean forests extend from Guinea and _____ in the west through Liberia, Côte d''Ivoire and Ghana to Togo in the east, and a few hundred kilometers inland from the Atlantic coast.'
+  options:
+  - Sierra Leone
+  - Burkina Faso
+  - Cestos River
+  - Nimba County
+  answer: 0
+  explanation: The Upper Guinean forests extend from Guinea and Sierra Leone in the west through Liberia, Côte d'Ivoire and Ghana to Togo in the east, and a few hundred kilometers inland from the Atlantic coast.
+  explanationType: copied
+  passage: wp:Upper_Guinean_forests#000
+  generation: rule
+  status: pending
+- id: q-a3b11d77daa8
+  subject: history
+  topic: Ghana Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Sheryl L. Burkhalter in _____ suggested that there were reasons to believe that there was conflict between the Almoravids and the empire of Ghana.'
+  options:
+  - '1991'
+  - '1992'
+  - '1993'
+  - '1990'
+  answer: 1
+  explanation: Sheryl L. Burkhalter in 1992 suggested that there were reasons to believe that there was conflict between the Almoravids and the empire of Ghana.
+  explanationType: copied
+  passage: wp:Ghana_Empire#013
+  generation: rule
+  status: pending
+- id: q-a5644b9499b7
+  subject: history
+  topic: Ellen Johnson Sirleaf
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Sirleaf was born in _____ to a Gola father and Kru-German mother.'
+  options:
+  - Ethiopia
+  - Monrovia
+  - Timbuktu
+  - Dahomey
+  answer: 1
+  explanation: Sirleaf was born in Monrovia to a Gola father and Kru-German mother.
+  explanationType: copied
+  passage: wp:Ellen_Johnson_Sirleaf#000
+  generation: rule
+  status: pending
+- id: q-a5d755a9e661
+  subject: geography
+  topic: Guinea
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On 22 November _____, Portuguese forces from neighbouring Portuguese Guinea staged Operation Green Sea, a raid on Conakry by several hundred exiled Guinean opposition forces.'
+  options:
+  - '1969'
+  - '1971'
+  - '1970'
+  - '1968'
+  answer: 2
+  explanation: On 22 November 1970, Portuguese forces from neighbouring Portuguese Guinea staged Operation Green Sea, a raid on Conakry by several hundred exiled Guinean opposition forces.
+  explanationType: copied
+  passage: wp:Guinea#008
+  generation: rule
+  status: pending
+- id: q-a65103354162
+  subject: geography
+  topic: Mount Richard-Molard
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Mount Nimba Strict Nature Reserve has been listed as a World Heritage Site in both _____ and Ivory Coast, under the criteria for natural heritage.'
+  options:
+  - Gulf of Guinea
+  - Sahara
+  - Guinea
+  - Abidjan
+  answer: 2
+  explanation: Mount Nimba Strict Nature Reserve has been listed as a World Heritage Site in both Guinea and Ivory Coast, under the criteria for natural heritage.
+  explanationType: copied
+  passage: wp:Mount_Richard-Molard#004
+  generation: rule
+  status: pending
+- id: q-a7d3a4c2142c
+  subject: history
+  topic: Atlantic slave trade
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The Africans on board were sold as slaves; however, slavery in the US was abolished five years later following the end of the American Civil War in _____.'
+  options:
+  - '1864'
+  - '1866'
+  - '1863'
+  - '1865'
+  answer: 3
+  explanation: The Africans on board were sold as slaves; however, slavery in the US was abolished five years later following the end of the American Civil War in 1865.
+  explanationType: copied
+  passage: wp:Atlantic_slave_trade#061
+  generation: rule
+  status: pending
+- id: q-a83387e930a4
+  subject: geography
+  topic: Gulf of Guinea
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The modern application of the name _____ to the coast dates only from 1481.'
+  options:
+  - Gulf of Guinea
+  - Sahara
+  - Abidjan
+  - Guinea
+  answer: 3
+  explanation: The modern application of the name Guinea to the coast dates only from 1481.
+  explanationType: copied
+  passage: wp:Gulf_of_Guinea#002
+  generation: rule
+  status: pending
+- id: q-a84ddf3c9fbf
+  subject: geography
+  topic: Freetown
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Creoles play a leading role in the city, although they are a minority of the overall _____ population.'
+  options:
+  - Burkina Faso
+  - Cestos River
+  - Nimba County
+  - Sierra Leone
+  answer: 3
+  explanation: The Creoles play a leading role in the city, although they are a minority of the overall Sierra Leone population.
+  explanationType: copied
+  passage: wp:Freetown#009
+  generation: rule
+  status: pending
+- id: q-a877fb5b22ec
+  subject: geography
+  topic: Grand Gedeh County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The number of Cocoa plantations was _____, which was 2.9 percent of the total area of Cassava planted in the country.'
+  options:
+  - '1140'
+  - '1100'
+  - '1200'
+  - '1078'
+  answer: 0
+  explanation: The number of Cocoa plantations was 1140, which was 2.9 percent of the total area of Cassava planted in the country.
+  explanationType: copied
+  passage: wp:Grand_Gedeh_County#003
+  generation: rule
+  status: pending
+- id: q-a8e83ef1f283
+  subject: geography
+  topic: Grand Bassa County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The county is bordered by Margibi County to the northwest, Bong County to the north, _____ to the east, and Rivercess County to the south and east.'
+  options:
+  - Sinoe County
+  - Lofa County
+  - Nimba County
+  - Maryland County
+  answer: 2
+  explanation: The county is bordered by Margibi County to the northwest, Bong County to the north, Nimba County to the east, and Rivercess County to the south and east.
+  explanationType: copied
+  passage: wp:Grand_Bassa_County#000
+  generation: rule
+  status: pending
+- id: q-a987015abee3
+  subject: geography
+  topic: Sierra Leone
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In March _____, Stevens was elected without opposition to a second five-year term as president.'
+  options:
+  - '1979'
+  - '1980'
+  - '1981'
+  - '1976'
+  answer: 3
+  explanation: In March 1976, Stevens was elected without opposition to a second five-year term as president.
+  explanationType: copied
+  passage: wp:Sierra_Leone#025
+  generation: rule
+  status: pending
+- id: q-aa4be6df8d8a
+  subject: geography
+  topic: Guinea
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Hyperdynamics will have until September _____, under the current agreement, to begin drilling its next selected site, the Fatala Cenomanian turbidite fan prospect.'
+  options:
+  - '2015'
+  - '2016'
+  - '2017'
+  - '2014'
+  answer: 1
+  explanation: Hyperdynamics will have until September 2016, under the current agreement, to begin drilling its next selected site, the Fatala Cenomanian turbidite fan prospect.
+  explanationType: copied
+  passage: wp:Guinea#033
+  generation: rule
+  status: pending
+- id: q-aaad1ac471a5
+  subject: history
+  topic: Sierra Leone Civil War
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In March _____, with much help from ECOMOG troops provided by Nigeria, the SLA recaptured the Koidu and Kono diamond districts and pushed the RUF to the Sierra Leone – Liberia border.'
+  options:
+  - '1994'
+  - '1993'
+  - '1991'
+  - '1995'
+  answer: 1
+  explanation: In March 1993, with much help from ECOMOG troops provided by Nigeria, the SLA recaptured the Koidu and Kono diamond districts and pushed the RUF to the Sierra Leone – Liberia border.
+  explanationType: copied
+  passage: wp:Sierra_Leone_Civil_War#013
+  generation: rule
+  status: pending
+- id: q-abd46a0779b2
+  subject: geography
+  topic: Mount Richard-Molard
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Mount Nimba Strict Nature Reserve is a site with outstanding universal value and was therefore nominated to the World Heritage List in _____.'
+  options:
+  - '1980'
+  - '1982'
+  - '1979'
+  - '1981'
+  answer: 3
+  explanation: Mount Nimba Strict Nature Reserve is a site with outstanding universal value and was therefore nominated to the World Heritage List in 1981.
+  explanationType: copied
+  passage: wp:Mount_Richard-Molard#004
+  generation: rule
+  status: pending
+- id: q-ad610eee3fb0
+  subject: geography
+  topic: Mano River
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The districts through which the river flows include the Parrot''s Beak area of Guinea, Liberia''s _____ and the Kono and Kailahun District of Sierra Leone.'
+  options:
+  - Lofa County
+  - Nimba County
+  - Sinoe County
+  - Margibi County
+  answer: 0
+  explanation: The districts through which the river flows include the Parrot's Beak area of Guinea, Liberia's Lofa County and the Kono and Kailahun District of Sierra Leone.
+  explanationType: copied
+  passage: wp:Mano_River#000
+  generation: rule
+  status: pending
+- id: q-add99660bd92
+  subject: history
+  topic: Economy of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the Liberian government gave the Firestone Tire company the right to lease up to 1 million acres of land for 99 years at a cost of 6 cents per acre.'
+  options:
+  - '1925'
+  - '1927'
+  - '1924'
+  - '1926'
+  answer: 3
+  explanation: In 1926, the Liberian government gave the Firestone Tire company the right to lease up to 1 million acres of land for 99 years at a cost of 6 cents per acre.
+  explanationType: copied
+  passage: wp:Economy_of_Liberia#003
+  generation: rule
+  status: pending
+- id: q-b20ea5dec9ae
+  subject: history
+  topic: Ethiopia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: A report by UNDP in _____ showed that the literacy rate in Ethiopia was 46.7%.'
+  options:
+  - '2010'
+  - '2012'
+  - '2009'
+  - '2011'
+  answer: 3
+  explanation: A report by UNDP in 2011 showed that the literacy rate in Ethiopia was 46.7%.
+  explanationType: copied
+  passage: wp:Ethiopia#065
+  generation: rule
+  status: pending
+- id: q-b322a68deefb
+  subject: geography
+  topic: Burkina Faso
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In December _____, due to deteriorating relations between Burkina Faso and the French government, the Burkina Faso government announced it was elevating national languages to the status of official languages.'
+  options:
+  - '2022'
+  - '2021'
+  - '2023'
+  - '2025'
+  answer: 2
+  explanation: In December 2023, due to deteriorating relations between Burkina Faso and the French government, the Burkina Faso government announced it was elevating national languages to the status of official languages.
+  explanationType: copied
+  passage: wp:Burkina_Faso#050
+  generation: rule
+  status: pending
+- id: q-b3cc50f3c062
+  subject: history
+  topic: ECOWAS
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: On 29 November 2025 _____-Bissau was suspended by ECOWAS following a coup d''état.'
+  options:
+  - Guinea
+  - Gulf of Guinea
+  - Sahara
+  - Abidjan
+  answer: 0
+  explanation: On 29 November 2025 Guinea-Bissau was suspended by ECOWAS following a coup d'état.
+  explanationType: copied
+  passage: wp:ECOWAS#007
+  generation: rule
+  status: pending
+- id: q-b4f9e3a66ad8
+  subject: history
+  topic: Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The _____ elections marked the first time that the president''s party did not gain a majority of seats in the Legislature.'
+  options:
+  - '2005'
+  - '2004'
+  - '2006'
+  - '2003'
+  answer: 0
+  explanation: The 2005 elections marked the first time that the president's party did not gain a majority of seats in the Legislature.
+  explanationType: copied
+  passage: wp:Liberia#032
+  generation: rule
+  status: pending
+- id: q-b61e763cd886
+  subject: history
+  topic: Scramble for Africa
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Portugal, which also claimed the area because of old treaties with the Kingdom of Kongo, made a treaty with Britain on 26 February _____ to block off Leopold''s access to the Atlantic.'
+  options:
+  - '1885'
+  - '1886'
+  - '1884'
+  - '1887'
+  answer: 2
+  explanation: Portugal, which also claimed the area because of old treaties with the Kingdom of Kongo, made a treaty with Britain on 26 February 1884 to block off Leopold's access to the Atlantic.
+  explanationType: copied
+  passage: wp:Scramble_for_Africa#012
+  generation: rule
+  status: pending
+- id: q-b7e6ba97d445
+  subject: history
+  topic: Liberian Declaration of Independence
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The Commonwealth of Liberia declared its independence from the American Colonization Society on 26 July _____, as the Republic of Liberia.'
+  options:
+  - '1845'
+  - '1847'
+  - '1849'
+  - '1844'
+  answer: 1
+  explanation: The Commonwealth of Liberia declared its independence from the American Colonization Society on 26 July 1847, as the Republic of Liberia.
+  explanationType: copied
+  passage: wp:Liberian_Declaration_of_Independence#002
+  generation: rule
+  status: pending
+- id: q-b9d5c9d74d6d
+  subject: history
+  topic: Decolonisation of Africa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In September 1974, Emperor Haile Selassie was overthrown by a military coup in _____.'
+  options:
+  - Ethiopia
+  - Monrovia
+  - Timbuktu
+  - Dahomey
+  answer: 0
+  explanation: In September 1974, Emperor Haile Selassie was overthrown by a military coup in Ethiopia.
+  explanationType: copied
+  passage: wp:Decolonisation_of_Africa#042
+  generation: rule
+  status: pending
+- id: q-bacbba50a694
+  subject: geography
+  topic: Conakry
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Periodic power and water cuts have been a daily burden for Conakry''s residents since early _____.'
+  options:
+  - '2003'
+  - '2002'
+  - '2000'
+  - '1999'
+  answer: 1
+  explanation: Periodic power and water cuts have been a daily burden for Conakry's residents since early 2002.
+  explanationType: copied
+  passage: wp:Conakry#008
+  generation: rule
+  status: pending
+- id: q-bc22dcc0035a
+  subject: geography
+  topic: Buchanan, Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On June 10, _____, the Indigenous Bassa people destroyed the Americo-Liberian colony of Port Cresson, killing 10.'
+  options:
+  - '1835'
+  - '1834'
+  - '1838'
+  - '1830'
+  answer: 0
+  explanation: On June 10, 1835, the Indigenous Bassa people destroyed the Americo-Liberian colony of Port Cresson, killing 10.
+  explanationType: copied
+  passage: wp:Buchanan,_Liberia#001
+  generation: rule
+  status: pending
+- id: q-bc8cbb92498c
+  subject: history
+  topic: Timbuktu
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In _____, the city holds an image that has been compared to Europe''s view on Athens.'
+  options:
+  - Ivory Coast
+  - Lofa County
+  - Niger River
+  - West Africa
+  answer: 3
+  explanation: In West Africa, the city holds an image that has been compared to Europe's view on Athens.
+  explanationType: copied
+  passage: wp:Timbuktu#047
+  generation: rule
+  status: pending
+- id: q-bc8d76577d67
+  subject: geography
+  topic: Lagos
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Lagos Leather Fair is the largest leather fair in _____.'
+  options:
+  - Ivory Coast
+  - Lofa County
+  - West Africa
+  - Niger River
+  answer: 2
+  explanation: The Lagos Leather Fair is the largest leather fair in West Africa.
+  explanationType: copied
+  passage: wp:Lagos#035
+  generation: rule
+  status: pending
+- id: q-bebab9aa7e1d
+  subject: history
+  topic: Oyo Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Others who ruled after Adeyemi I were Lawani Agogo ija, Ladigbolu I, Adeyemi II, Gbadegesin, and Lamidi Adeyemi, who died in _____.'
+  options:
+  - '2022'
+  - '2021'
+  - '2023'
+  - '2020'
+  answer: 0
+  explanation: Others who ruled after Adeyemi I were Lawani Agogo ija, Ladigbolu I, Adeyemi II, Gbadegesin, and Lamidi Adeyemi, who died in 2022.
+  explanationType: copied
+  passage: wp:Oyo_Empire#018
+  generation: rule
+  status: pending
+- id: q-bf7113f6f975
+  subject: geography
+  topic: Sinoe County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Greenville was named after Judge James Green and was established with the freed Black Americans of the society in _____.'
+  options:
+  - '1839'
+  - '1840'
+  - '1834'
+  - '1838'
+  answer: 3
+  explanation: Greenville was named after Judge James Green and was established with the freed Black Americans of the society in 1838.
+  explanationType: copied
+  passage: wp:Sinoe_County#001
+  generation: rule
+  status: pending
+- id: q-bfb78963384c
+  subject: history
+  topic: Charles Taylor (Liberian politician)
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In addition to aiding the RUF in these acts, Taylor reportedly personally directed RUF operations in _____.'
+  options:
+  - Sierra Leone
+  - Burkina Faso
+  - Cestos River
+  - Nimba County
+  answer: 0
+  explanation: In addition to aiding the RUF in these acts, Taylor reportedly personally directed RUF operations in Sierra Leone.
+  explanationType: copied
+  passage: wp:Charles_Taylor_(Liberian_politician)#009
+  generation: rule
+  status: pending
+- id: q-c49321691d06
+  subject: history
+  topic: William Tolbert
+  difficulty: easy
+  type: cloze-year
+  stem: 'Fill in the blank: Tolbert was an Americo-Liberian and trained as a civil servant before entering the House of Representatives in _____ for the True Whig Party, then the only established party in Liberia.'
+  options:
+  - '1943'
+  - '1942'
+  - '1944'
+  - '1941'
+  answer: 0
+  explanation: Tolbert was an Americo-Liberian and trained as a civil servant before entering the House of Representatives in 1943 for the True Whig Party, then the only established party in Liberia.
+  explanationType: copied
+  passage: wp:William_Tolbert#000
+  generation: rule
+  status: pending
+- id: q-c5ad2af79c0b
+  subject: history
+  topic: Kanem–Bornu Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In the 14th century, around the year _____, the Bilala were able to oust the Sayfawa from power in Kanem and capture Njimi.'
+  options:
+  - '1375'
+  - '1380'
+  - '1387'
+  - '1389'
+  answer: 1
+  explanation: In the 14th century, around the year 1380, the Bilala were able to oust the Sayfawa from power in Kanem and capture Njimi.
+  explanationType: copied
+  passage: wp:Kanem–Bornu_Empire#011
+  generation: rule
+  status: pending
+- id: q-c5b0ea82490a
+  subject: history
+  topic: Liberian Declaration of Independence
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On 3 January _____, Joseph Jenkins Roberts, a free man of color born in Norfolk, Virginia, United States, was sworn in as Liberia''s first president.'
+  options:
+  - '1848'
+  - '1849'
+  - '1850'
+  - '1845'
+  answer: 0
+  explanation: On 3 January 1848, Joseph Jenkins Roberts, a free man of color born in Norfolk, Virginia, United States, was sworn in as Liberia's first president.
+  explanationType: copied
+  passage: wp:Liberian_Declaration_of_Independence#002
+  generation: rule
+  status: pending
+- id: q-c77030a23727
+  subject: geography
+  topic: Grand Gedeh County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The county is bordered by _____ to the west, Sinoe County to the southwest, and River Gee County to the southeast.'
+  options:
+  - Lofa County
+  - Margibi County
+  - Nimba County
+  - Maryland County
+  answer: 2
+  explanation: The county is bordered by Nimba County to the west, Sinoe County to the southwest, and River Gee County to the southeast.
+  explanationType: copied
+  passage: wp:Grand_Gedeh_County#000
+  generation: rule
+  status: pending
+- id: q-c7b43bfcda9c
+  subject: history
+  topic: ECOWAS
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Within 15 hours of a thwarted coup in Benin in _____, a joint ECOWAS deployment of Nigerian, Sierra Leonean, Ivorian, and Ghanaian soldiers were sent to aid the Beninese government.'
+  options:
+  - '2026'
+  - '2023'
+  - '2022'
+  - '2025'
+  answer: 3
+  explanation: Within 15 hours of a thwarted coup in Benin in 2025, a joint ECOWAS deployment of Nigerian, Sierra Leonean, Ivorian, and Ghanaian soldiers were sent to aid the Beninese government.
+  explanationType: copied
+  passage: wp:ECOWAS#011
+  generation: rule
+  status: pending
+- id: q-c7e5480f0816
+  subject: geography
+  topic: The Gambia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In November _____, the Gambia filed a case against Myanmar in The Hague, accusing its military of genocide against Myanmar''s ethnic Rohingya community.'
+  options:
+  - '2019'
+  - '2018'
+  - '2020'
+  - '2017'
+  answer: 0
+  explanation: In November 2019, the Gambia filed a case against Myanmar in The Hague, accusing its military of genocide against Myanmar's ethnic Rohingya community.
+  explanationType: copied
+  passage: wp:The_Gambia#027
+  generation: rule
+  status: pending
+- id: q-c8b0bb694d90
+  subject: history
+  topic: Berlin Conference
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The Belgian official Law Gazette later stated that from 1 August _____ onwards, Leopold II was to be considered Sovereign of the new state, even though this determination was not made at the Berlin Conference.'
+  options:
+  - '1885'
+  - '1884'
+  - '1886'
+  - '1887'
+  answer: 0
+  explanation: The Belgian official Law Gazette later stated that from 1 August 1885 onwards, Leopold II was to be considered Sovereign of the new state, even though this determination was not made at the Berlin Conference.
+  explanationType: copied
+  passage: wp:Berlin_Conference#009
+  generation: rule
+  status: pending
+- id: q-c948c0f9c4b5
+  subject: geography
+  topic: Geography of Africa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The countries bordering the _____ are much exposed to a very dry wind, full of fine particles of sand, blowing from the desert towards the sea.'
+  options:
+  - Abidjan
+  - Sahara
+  - Accra
+  - Conakry
+  answer: 1
+  explanation: The countries bordering the Sahara are much exposed to a very dry wind, full of fine particles of sand, blowing from the desert towards the sea.
+  explanationType: copied
+  passage: wp:Geography_of_Africa#023
+  generation: rule
+  status: pending
+- id: q-ccc3a1d119ac
+  subject: geography
+  topic: Nimba County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: During the late _____s, iron ore was found in "the Iron Mountain" Mount Nimba.'
+  options:
+  - '1950'
+  - '1949'
+  - '1951'
+  - '1948'
+  answer: 0
+  explanation: During the late 1950s, iron ore was found in "the Iron Mountain" Mount Nimba.
+  explanationType: copied
+  passage: wp:Nimba_County#005
+  generation: rule
+  status: pending
+- id: q-cd3667c7f4f4
+  subject: geography
+  topic: Freetown
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: On 24 August 1792, the Black Poor or Old Settlers of the second Granville Town were incorporated into the new _____ Colony, but remained at Granville Town.'
+  options:
+  - Sierra Leone
+  - Burkina Faso
+  - Cestos River
+  - Nimba County
+  answer: 0
+  explanation: On 24 August 1792, the Black Poor or Old Settlers of the second Granville Town were incorporated into the new Sierra Leone Colony, but remained at Granville Town.
+  explanationType: copied
+  passage: wp:Freetown#005
+  generation: rule
+  status: pending
+- id: q-ce0fe03d7ca4
+  subject: geography
+  topic: Sapo National Park
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Logging and poaching became more common after the war''s end in _____.'
+  options:
+  - '1995'
+  - '1997'
+  - '1994'
+  - '1996'
+  answer: 3
+  explanation: Logging and poaching became more common after the war's end in 1996.
+  explanationType: copied
+  passage: wp:Sapo_National_Park#002
+  generation: rule
+  status: pending
+- id: q-ce21ec4b715c
+  subject: geography
+  topic: Abidjan
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Since _____, Ivory Coast has experienced a sharp rise in drug trafficking.'
+  options:
+  - '1999'
+  - '2001'
+  - '1998'
+  - '2000'
+  answer: 3
+  explanation: Since 2000, Ivory Coast has experienced a sharp rise in drug trafficking.
+  explanationType: copied
+  passage: wp:Abidjan#024
+  generation: rule
+  status: pending
+- id: q-ceccfec6a2b3
+  subject: geography
+  topic: Lake Volta
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: On October 11, 2025, a boat accident occurred on Lake Volta near Kete Krachi in the Oti Region of _____, resulting in the deaths of 15 people.'
+  options:
+  - Accra
+  - Dakar
+  - Lagos
+  - Ghana
+  answer: 3
+  explanation: On October 11, 2025, a boat accident occurred on Lake Volta near Kete Krachi in the Oti Region of Ghana, resulting in the deaths of 15 people.
+  explanationType: copied
+  passage: wp:Lake_Volta#006
+  generation: rule
+  status: pending
+- id: q-cf0403b9eac1
+  subject: history
+  topic: Pan-Africanism
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the CAA was charged with subversion under the McCarran Internal Security Act.'
+  options:
+  - '1953'
+  - '1952'
+  - '1954'
+  - '1951'
+  answer: 0
+  explanation: In 1953, the CAA was charged with subversion under the McCarran Internal Security Act.
+  explanationType: copied
+  passage: wp:Pan-Africanism#032
+  generation: rule
+  status: pending
+- id: q-cff4381b0100
+  subject: history
+  topic: Songhai Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Following Musa''s overthrow in _____, the Songhai Empire went into decline.'
+  options:
+  - '1531'
+  - '1530'
+  - '1529'
+  - '1535'
+  answer: 0
+  explanation: Following Musa's overthrow in 1531, the Songhai Empire went into decline.
+  explanationType: copied
+  passage: wp:Songhai_Empire#011
+  generation: rule
+  status: pending
+- id: q-d198a307d7e7
+  subject: geography
+  topic: Maryland County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: During the _____s, Maryland County was terrorized by ritual killings.'
+  options:
+  - '1970'
+  - '1969'
+  - '1971'
+  - '1968'
+  answer: 0
+  explanation: During the 1970s, Maryland County was terrorized by ritual killings.
+  explanationType: copied
+  passage: wp:Maryland_County#002
+  generation: rule
+  status: pending
+- id: q-d1c29db18a6d
+  subject: geography
+  topic: Montserrado County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In health care, the county has eight hospitals, nine health centers, and approximately 93 medical clinics functioning as of _____.'
+  options:
+  - '2007'
+  - '2009'
+  - '2006'
+  - '2008'
+  answer: 3
+  explanation: In health care, the county has eight hospitals, nine health centers, and approximately 93 medical clinics functioning as of 2008.
+  explanationType: copied
+  passage: wp:Montserrado_County#011
+  generation: rule
+  status: pending
+- id: q-d1e51192d227
+  subject: history
+  topic: Dahomey
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In order to repress the navies of its neighbors, Dahomey built causeways starting from _____.'
+  options:
+  - '1772'
+  - '1777'
+  - '1770'
+  - '1774'
+  answer: 3
+  explanation: In order to repress the navies of its neighbors, Dahomey built causeways starting from 1774.
+  explanationType: copied
+  passage: wp:Dahomey#026
+  generation: rule
+  status: pending
+- id: q-d20efc1b8a61
+  subject: history
+  topic: American Colonization Society
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Madison served as the Society''s president in the early _____s.'
+  options:
+  - '1829'
+  - '1831'
+  - '1828'
+  - '1830'
+  answer: 3
+  explanation: Madison served as the Society's president in the early 1830s.
+  explanationType: copied
+  passage: wp:American_Colonization_Society#007
+  generation: rule
+  status: pending
+- id: q-d2b58f0a37bf
+  subject: history
+  topic: Trans-Saharan trade
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: As it became a desert, the _____ separated the Mediterranean economy from the Niger River basin.'
+  options:
+  - Guinea
+  - Abidjan
+  - Sahara
+  - Accra
+  answer: 2
+  explanation: As it became a desert, the Sahara separated the Mediterranean economy from the Niger River basin.
+  explanationType: copied
+  passage: wp:Trans-Saharan_trade#000
+  generation: rule
+  status: pending
+- id: q-d4c98b6a77b4
+  subject: geography
+  topic: Harmattan
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: In some countries in _____, the heavy amount of dust in the air can severely limit visibility and block the sun for several days, comparable to a heavy fog.'
+  options:
+  - West Africa
+  - Ivory Coast
+  - Lofa County
+  - Niger River
+  answer: 0
+  explanation: In some countries in West Africa, the heavy amount of dust in the air can severely limit visibility and block the sun for several days, comparable to a heavy fog.
+  explanationType: copied
+  passage: wp:Harmattan#002
+  generation: rule
+  status: pending
+- id: q-d7c598f97912
+  subject: geography
+  topic: Sapo National Park
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Sapo National Park''s forest is one of the country''s last remaining blocks of tropical lowland rain forest, and one of _____''s least disturbed lowland rainforests.'
+  options:
+  - West Africa
+  - Ivory Coast
+  - Lofa County
+  - Niger River
+  answer: 0
+  explanation: Sapo National Park's forest is one of the country's last remaining blocks of tropical lowland rain forest, and one of West Africa's least disturbed lowland rainforests.
+  explanationType: copied
+  passage: wp:Sapo_National_Park#008
+  generation: rule
+  status: pending
+- id: q-d83c916b7714
+  subject: history
+  topic: Americo-Liberian people
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: As a result, Liberia experienced a period of rapid development and economic prosperity in the _____s.'
+  options:
+  - '1959'
+  - '1960'
+  - '1961'
+  - '1958'
+  answer: 1
+  explanation: As a result, Liberia experienced a period of rapid development and economic prosperity in the 1960s.
+  explanationType: copied
+  passage: wp:Americo-Liberian_people#010
+  generation: rule
+  status: pending
+- id: q-da9ceb8498d8
+  subject: geography
+  topic: Nimba County
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The ethnic Krahn live along the _____ border in Kpeahbleee District.'
+  options:
+  - Lofa County
+  - Niger River
+  - Ivory Coast
+  - West Africa
+  answer: 2
+  explanation: The ethnic Krahn live along the Ivory Coast border in Kpeahbleee District.
+  explanationType: copied
+  passage: wp:Nimba_County#008
+  generation: rule
+  status: pending
+- id: q-dd72566aef50
+  subject: history
+  topic: Americo-Liberian people
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: A marble Masonic Lodge was built in 1867 as one of _____''s most impressive buildings.'
+  options:
+  - Ethiopia
+  - Timbuktu
+  - Monrovia
+  - Dahomey
+  answer: 2
+  explanation: A marble Masonic Lodge was built in 1867 as one of Monrovia's most impressive buildings.
+  explanationType: copied
+  passage: wp:Americo-Liberian_people#013
+  generation: rule
+  status: pending
+- id: q-dd87bd05b1b6
+  subject: history
+  topic: Samuel Doe
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Over the next ten years, he was assigned to duty stations, including education at a military school and commanding garrisons and prisons in _____.'
+  options:
+  - Ethiopia
+  - Timbuktu
+  - Dahomey
+  - Monrovia
+  answer: 3
+  explanation: Over the next ten years, he was assigned to duty stations, including education at a military school and commanding garrisons and prisons in Monrovia.
+  explanationType: copied
+  passage: wp:Samuel_Doe#002
+  generation: rule
+  status: pending
+- id: q-dea23bdc1dd1
+  subject: history
+  topic: Trans-Saharan trade
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Many in _____ converted to Islam, and it is likely that the empire''s trade was privileged as a result.'
+  options:
+  - Ghana
+  - Accra
+  - Dakar
+  - Lagos
+  answer: 0
+  explanation: Many in Ghana converted to Islam, and it is likely that the empire's trade was privileged as a result.
+  explanationType: copied
+  passage: wp:Trans-Saharan_trade#008
+  generation: rule
+  status: pending
+- id: q-df6dafbdf0c5
+  subject: geography
+  topic: Nigeria
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The largest airline in Nigeria is privately owned Air Peace, founded in _____.'
+  options:
+  - '2011'
+  - '2013'
+  - '2010'
+  - '2012'
+  answer: 3
+  explanation: The largest airline in Nigeria is privately owned Air Peace, founded in 2012.
+  explanationType: copied
+  passage: wp:Nigeria#065
+  generation: rule
+  status: pending
+- id: q-df8421d2fe10
+  subject: history
+  topic: William Tubman
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: When Tubman was appointed to the Supreme Court in the _____s, Liberia was seriously underdeveloped, lacking basic infrastructure of roads, railways, and sanitation systems.'
+  options:
+  - '1929'
+  - '1930'
+  - '1931'
+  - '1928'
+  answer: 1
+  explanation: When Tubman was appointed to the Supreme Court in the 1930s, Liberia was seriously underdeveloped, lacking basic infrastructure of roads, railways, and sanitation systems.
+  explanationType: copied
+  passage: wp:William_Tubman#009
+  generation: rule
+  status: pending
+- id: q-dfc6aaddcc00
+  subject: geography
+  topic: Conakry
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: By the _____ Census, the original five communes had been split, with a new Kassa Commune split from Kaloum to create a new commune to cover the archipelagic Iles de Los.'
+  options:
+  - '2024'
+  - '2026'
+  - '2023'
+  - '2025'
+  answer: 3
+  explanation: By the 2025 Census, the original five communes had been split, with a new Kassa Commune split from Kaloum to create a new commune to cover the archipelagic Iles de Los.
+  explanationType: copied
+  passage: wp:Conakry#005
+  generation: rule
+  status: pending
+- id: q-e0c998e14352
+  subject: geography
+  topic: Dakar
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Following a plague epidemic in _____, the authorities forced most of the African population out of old neighborhoods, or "Plateau", and into a new quarter, called Médina, separated from it by a "sanitary cordon".'
+  options:
+  - '1914'
+  - '1915'
+  - '1912'
+  - '1916'
+  answer: 0
+  explanation: Following a plague epidemic in 1914, the authorities forced most of the African population out of old neighborhoods, or "Plateau", and into a new quarter, called Médina, separated from it by a "sanitary cordon".
+  explanationType: copied
+  passage: wp:Dakar#005
+  generation: rule
+  status: pending
+- id: q-e0e246a02ded
+  subject: geography
+  topic: Lofa County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The Red Cross said that in January _____, many people had begun to return from refugee camps in neighboring Guinea and Sierra Leone.'
+  options:
+  - '2003'
+  - '2004'
+  - '2002'
+  - '2001'
+  answer: 1
+  explanation: The Red Cross said that in January 2004, many people had begun to return from refugee camps in neighboring Guinea and Sierra Leone.
+  explanationType: copied
+  passage: wp:Lofa_County#001
+  generation: rule
+  status: pending
+- id: q-e19ff7891eb8
+  subject: geography
+  topic: Bong County
+  difficulty: easy
+  type: cloze-year
+  stem: 'Fill in the blank: The county was organized in _____ and is important for its mining industry.'
+  options:
+  - '1963'
+  - '1965'
+  - '1962'
+  - '1964'
+  answer: 3
+  explanation: The county was organized in 1964 and is important for its mining industry.
+  explanationType: copied
+  passage: wp:Bong_County#000
+  generation: rule
+  status: pending
+- id: q-e2ab1a2b2490
+  subject: geography
+  topic: Buchanan, Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: Africa''s first iron-ore washing and pelletizing plant was opened in Buchanan in _____.'
+  options:
+  - '1967'
+  - '1969'
+  - '1968'
+  - '1966'
+  answer: 2
+  explanation: Africa's first iron-ore washing and pelletizing plant was opened in Buchanan in 1968.
+  explanationType: copied
+  passage: wp:Buchanan,_Liberia#002
+  generation: rule
+  status: pending
+- id: q-e3e8570a8628
+  subject: history
+  topic: American Colonization Society
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, a British organization, the Committee for the Relief of the Black Poor, launched its efforts to establish the Sierra Leone Province of Freedom, a colony in West Africa for London''s "black poor".'
+  options:
+  - '1787'
+  - '1784'
+  - '1788'
+  - '1786'
+  answer: 3
+  explanation: In 1786, a British organization, the Committee for the Relief of the Black Poor, launched its efforts to establish the Sierra Leone Province of Freedom, a colony in West Africa for London's "black poor".
+  explanationType: copied
+  passage: wp:American_Colonization_Society#005
+  generation: rule
+  status: pending
+- id: q-e72ccf9c4d9a
+  subject: history
+  topic: William Tolbert
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____ Liberia held elections to decide president and vice president.'
+  options:
+  - '1950'
+  - '1952'
+  - '1951'
+  - '1949'
+  answer: 2
+  explanation: In 1951 Liberia held elections to decide president and vice president.
+  explanationType: copied
+  passage: wp:William_Tolbert#002
+  generation: rule
+  status: pending
+- id: q-e72eddb53d68
+  subject: geography
+  topic: Nigeria
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On 13 March _____, at the grand market square of Sokoto, the last vizier of the caliphate officially conceded to British rule.'
+  options:
+  - '1904'
+  - '1903'
+  - '1901'
+  - '1905'
+  answer: 1
+  explanation: On 13 March 1903, at the grand market square of Sokoto, the last vizier of the caliphate officially conceded to British rule.
+  explanationType: copied
+  passage: wp:Nigeria#012
+  generation: rule
+  status: pending
+- id: q-e81c936965b0
+  subject: history
+  topic: Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, 0.5% identified adherence to traditional indigenous religions, while 1.5% claimed no religion.'
+  options:
+  - '2007'
+  - '2008'
+  - '2009'
+  - '2006'
+  answer: 1
+  explanation: In 2008, 0.5% identified adherence to traditional indigenous religions, while 1.5% claimed no religion.
+  explanationType: copied
+  passage: wp:Liberia#055
+  generation: rule
+  status: pending
+- id: q-e9fd31ace374
+  subject: geography
+  topic: Upper Guinean forests
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The Upper Guinean forests is a tropical seasonal forest region of _____.'
+  options:
+  - West Africa
+  - Ivory Coast
+  - Lofa County
+  - Niger River
+  answer: 0
+  explanation: The Upper Guinean forests is a tropical seasonal forest region of West Africa.
+  explanationType: copied
+  passage: wp:Upper_Guinean_forests#000
+  generation: rule
+  status: pending
+- id: q-ea54a4189f46
+  subject: geography
+  topic: Senegal
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The first Bahá''is to set foot in the territory of French _____ that would become Senegal arrived in 1953.'
+  options:
+  - Ivory Coast
+  - West Africa
+  - Lofa County
+  - Niger River
+  answer: 1
+  explanation: The first Bahá'is to set foot in the territory of French West Africa that would become Senegal arrived in 1953.
+  explanationType: copied
+  passage: wp:Senegal#040
+  generation: rule
+  status: pending
+- id: q-eaaf0277d9ad
+  subject: geography
+  topic: Freetown
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: The APC presidential candidate Ernest Bai Koroma received 69% of the votes in Freetown in the _____ Sierra Leone Presidential election; compared to the SLPP presidential candidate Julius Maada Bio who received 30%.'
+  options:
+  - '2011'
+  - '2013'
+  - '2010'
+  - '2012'
+  answer: 3
+  explanation: The APC presidential candidate Ernest Bai Koroma received 69% of the votes in Freetown in the 2012 Sierra Leone Presidential election; compared to the SLPP presidential candidate Julius Maada Bio who received 30%.
+  explanationType: copied
+  passage: wp:Freetown#018
+  generation: rule
+  status: pending
+- id: q-eb2ab4097411
+  subject: history
+  topic: Ethiopia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: After a power struggle in _____, Mengistu Haile Mariam gained undisputed leadership of the Derg.'
+  options:
+  - '1976'
+  - '1977'
+  - '1978'
+  - '1979'
+  answer: 1
+  explanation: After a power struggle in 1977, Mengistu Haile Mariam gained undisputed leadership of the Derg.
+  explanationType: copied
+  passage: wp:Ethiopia#020
+  generation: rule
+  status: pending
+- id: q-eba423c1beae
+  subject: history
+  topic: Politics of Liberia
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On 12 November _____, former Army Commanding General Thomas Quiwonkpa invaded Liberia by way of neighboring Sierra Leone and almost succeeded in toppling the government of Samuel Doe.'
+  options:
+  - '1984'
+  - '1985'
+  - '1986'
+  - '1983'
+  answer: 1
+  explanation: On 12 November 1985, former Army Commanding General Thomas Quiwonkpa invaded Liberia by way of neighboring Sierra Leone and almost succeeded in toppling the government of Samuel Doe.
+  explanationType: copied
+  passage: wp:Politics_of_Liberia#003
+  generation: rule
+  status: pending
+- id: q-ee94633fbfec
+  subject: history
+  topic: Asante Empire
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Upon _____''s independence in 1957, the Asante Kingdom became part of the new nation.'
+  options:
+  - Accra
+  - Ghana
+  - Dakar
+  - Lagos
+  answer: 1
+  explanation: Upon Ghana's independence in 1957, the Asante Kingdom became part of the new nation.
+  explanationType: copied
+  passage: wp:Asante_Empire#035
+  generation: rule
+  status: pending
+- id: q-efaa5ce470a5
+  subject: geography
+  topic: Senegal
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, France gained control of what had become a minor hub in the Atlantic slave trade: the island of Gorée, near modern Dakar, used as a base to purchase slaves from the warring chiefdoms on the mainland.'
+  options:
+  - '1680'
+  - '1681'
+  - '1668'
+  - '1677'
+  answer: 3
+  explanation: 'In 1677, France gained control of what had become a minor hub in the Atlantic slave trade: the island of Gorée, near modern Dakar, used as a base to purchase slaves from the warring chiefdoms on the mainland.'
+  explanationType: copied
+  passage: wp:Senegal#005
+  generation: rule
+  status: pending
+- id: q-efb90cef96c4
+  subject: history
+  topic: Joseph Jenkins Roberts
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: On February 9, _____, they sailed for Africa on the ship Harriet, along with Roberts''s mother and five of his six siblings.'
+  options:
+  - '1828'
+  - '1830'
+  - '1829'
+  - '1827'
+  answer: 2
+  explanation: On February 9, 1829, they sailed for Africa on the ship Harriet, along with Roberts's mother and five of his six siblings.
+  explanationType: copied
+  passage: wp:Joseph_Jenkins_Roberts#004
+  generation: rule
+  status: pending
+- id: q-efeef10e1f73
+  subject: history
+  topic: Western African Ebola epidemic
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In August _____, the WHO held a meeting to work out a "Comprehensive care plan for Ebola survivors" and identify research needed to optimise clinical care and social well-being.'
+  options:
+  - '2014'
+  - '2015'
+  - '2016'
+  - '2013'
+  answer: 1
+  explanation: In August 2015, the WHO held a meeting to work out a "Comprehensive care plan for Ebola survivors" and identify research needed to optimise clinical care and social well-being.
+  explanationType: copied
+  passage: wp:Western_African_Ebola_epidemic#049
+  generation: rule
+  status: pending
+- id: q-f526110c6e90
+  subject: history
+  topic: Timbuktu
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Although Bambara is the lingua franca of _____, today the large majority of Timbuktu''s inhabitants speaks Koyra Chiini, a Songhay language that also functions as the lingua franca.'
+  options:
+  - Accra
+  - Mali
+  - Dakar
+  - Ghana
+  answer: 1
+  explanation: Although Bambara is the lingua franca of Mali, today the large majority of Timbuktu's inhabitants speaks Koyra Chiini, a Songhay language that also functions as the lingua franca.
+  explanationType: copied
+  passage: wp:Timbuktu#043
+  generation: rule
+  status: pending
+- id: q-f57706f3faca
+  subject: geography
+  topic: Gulf of Guinea
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The name _____ is usually said to have been a corrupt form of the name Ghana, picked up by the Portuguese in the Maghrib.'
+  options:
+  - Gulf of Guinea
+  - Sahara
+  - Guinea
+  - Abidjan
+  answer: 2
+  explanation: The name Guinea is usually said to have been a corrupt form of the name Ghana, picked up by the Portuguese in the Maghrib.
+  explanationType: copied
+  passage: wp:Gulf_of_Guinea#002
+  generation: rule
+  status: pending
+- id: q-f728b8f98d72
+  subject: geography
+  topic: West Africa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Further east, Oyo arose as the dominant Yoruba state and the Aro Confederacy as a dominant Igbo state in modern-day _____.'
+  options:
+  - Abidjan
+  - Conakry
+  - Senegal
+  - Nigeria
+  answer: 3
+  explanation: Further east, Oyo arose as the dominant Yoruba state and the Aro Confederacy as a dominant Igbo state in modern-day Nigeria.
+  explanationType: copied
+  passage: wp:West_Africa#008
+  generation: rule
+  status: pending
+- id: q-f934a91a5b18
+  subject: geography
+  topic: Grand Cape Mount County
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, Liberia became independent with three counties: Montserrado, Grand Bassa, and Sinoe.'
+  options:
+  - '1848'
+  - '1850'
+  - '1847'
+  - '1843'
+  answer: 2
+  explanation: 'In 1847, Liberia became independent with three counties: Montserrado, Grand Bassa, and Sinoe.'
+  explanationType: copied
+  passage: wp:Grand_Cape_Mount_County#001
+  generation: rule
+  status: pending
+- id: q-f9e49610f0fc
+  subject: geography
+  topic: Sahel
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Representing a climatic and ecological transition zone with hot semi-desert and steppe conditions, the region borders the more humid Sudanian savannas to its south and the dry _____ desert to the north.'
+  options:
+  - Guinea
+  - Abidjan
+  - Sahara
+  - Accra
+  answer: 2
+  explanation: Representing a climatic and ecological transition zone with hot semi-desert and steppe conditions, the region borders the more humid Sudanian savannas to its south and the dry Sahara desert to the north.
+  explanationType: copied
+  passage: wp:Sahel#002
+  generation: rule
+  status: pending
+- id: q-fa3c79f87e9e
+  subject: history
+  topic: Asante Empire
+  difficulty: medium
+  type: cloze-year
+  stem: 'Fill in the blank: In _____, the Asante turned down an unofficial offer to become a British protectorate.'
+  options:
+  - '1894'
+  - '1895'
+  - '1896'
+  - '1893'
+  answer: 1
+  explanation: In 1895, the Asante turned down an unofficial offer to become a British protectorate.
+  explanationType: copied
+  passage: wp:Asante_Empire#034
+  generation: rule
+  status: pending
+- id: q-fafb533fb003
+  subject: geography
+  topic: Geography of Liberia
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Northernmost point – unnamed location on the border with Guinea in the Sodia river immediately north of the town of Voinjama, _____.'
+  options:
+  - Nimba County
+  - Sinoe County
+  - Margibi County
+  - Lofa County
+  answer: 3
+  explanation: Northernmost point – unnamed location on the border with Guinea in the Sodia river immediately north of the town of Voinjama, Lofa County.
+  explanationType: copied
+  passage: wp:Geography_of_Liberia#003
+  generation: rule
+  status: pending
+- id: q-fe82d6b4aeae
+  subject: geography
+  topic: Mount Richard-Molard
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: Mount Richard-Molard lies within the Mount Nimba Strict Nature Reserve, which currently covers 17,540 hectares and straddles the borders of _____ and Ivory Coast.'
+  options:
+  - Gulf of Guinea
+  - Guinea
+  - Sahara
+  - Abidjan
+  answer: 1
+  explanation: Mount Richard-Molard lies within the Mount Nimba Strict Nature Reserve, which currently covers 17,540 hectares and straddles the borders of Guinea and Ivory Coast.
+  explanationType: copied
+  passage: wp:Mount_Richard-Molard#003
+  generation: rule
+  status: pending
+- id: q-ff0780539e56
+  subject: geography
+  topic: Geography of Africa
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: From the inner slopes of the plateau numerous wadis take a direction toward the _____.'
+  options:
+  - Guinea
+  - Abidjan
+  - Sahara
+  - Accra
+  answer: 2
+  explanation: From the inner slopes of the plateau numerous wadis take a direction toward the Sahara.
+  explanationType: copied
+  passage: wp:Geography_of_Africa#008
+  generation: rule
+  status: pending
+- id: q-ff3b85941381
+  subject: geography
+  topic: Sahel
+  difficulty: medium
+  type: cloze-title
+  stem: 'Fill in the blank: The larger Sahelian kingdoms emerged from 750 AD and founded several large cities in the Niger valley region, including _____, Gao and Djenné.'
+  options:
+  - Ethiopia
+  - Timbuktu
+  - Monrovia
+  - Dahomey
+  answer: 1
+  explanation: The larger Sahelian kingdoms emerged from 750 AD and founded several large cities in the Niger valley region, including Timbuktu, Gao and Djenné.
+  explanationType: copied
+  passage: wp:Sahel#021
+  generation: rule
+  status: pending

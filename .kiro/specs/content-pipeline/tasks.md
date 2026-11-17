@@ -42,8 +42,8 @@ Each task names the requirements it satisfies and the plan task it advances. Che
   - [~] 6b.3 Build `timeline.json` from `timeline.yaml` and add event checks to the validator. _R10.3_ (62 events built and validated; none reviewed by the subject expert yet)
 
 - [ ] 6c. Quiz bank (plan 3.7)
-  - [ ] 6c.1 Build `quiz-bank.json` from `pipeline/quiz/reviewed.yaml` and add the quiz checks to the validator. _R11.1, R11.2_
-  - [ ] 6c.2 Deterministic candidate generator writes `pipeline/quiz/candidates.yaml` only. _R11.3_
+  - [~] 6c.1 Build `quiz-bank.json` from `pipeline/quiz/reviewed.yaml` and add the quiz checks to the validator. _R11.1, R11.2_ (builder, promote step and validator checks done; no reviewed questions yet, so no quiz-bank.json in the pack)
+  - [x] 6c.2 Deterministic candidate generator writes `pipeline/quiz/candidates.yaml` only. _R11.3_
 
 - [ ] 7. Orchestration
   - [ ] 7.1 `build.py` runs stages in order, prints progress and a summary, supports `--subjects`. _R8.2, R8.3_
